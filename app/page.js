@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewsletterForm from "@/components/NewsletterForm";
 
 const valueProps = [
   {
@@ -149,24 +150,7 @@ export default function Home() {
           <p className="mt-2 text-brand-cream/80">
             Short, seasonal, specific to Indian balconies. Unsubscribe anytime.
           </p>
-          <form className="mx-auto mt-6 flex max-w-md flex-col gap-3 sm:flex-row">
-            <input
-              type="email"
-              placeholder="you@example.com"
-              className="w-full rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm text-white placeholder:text-white/50 focus:border-white/40 focus:outline-none"
-              disabled
-            />
-            <button
-              type="button"
-              className="rounded-full bg-brand-terracotta px-6 py-3 text-sm font-semibold text-white"
-              disabled
-            >
-              Notify me
-            </button>
-          </form>
-          <p className="mt-3 text-xs text-brand-cream/50">
-            Signup isn't wired up yet — this is a design preview.
-          </p>
+          <NewsletterForm />
         </div>
       </section>
     </div>
