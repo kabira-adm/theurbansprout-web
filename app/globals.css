@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FBF8F1;
+  --foreground: #1F3A2E;
+  --brand-green: #2E7D4F;
+  --brand-green-dark: #1F3A2E;
+  --brand-cream: #FBF8F1;
+  --brand-terracotta: #C96F4A;
+  --brand-sand: #EFE6D3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-green: var(--brand-green);
+  --color-brand-green-dark: var(--brand-green-dark);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-terracotta: var(--brand-terracotta);
+  --color-brand-sand: var(--brand-sand);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
