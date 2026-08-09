@@ -14,6 +14,7 @@ export default function sitemap() {
     { url: `${BASE_URL}/balcony-gardening`, priority: 0.8 },
     { url: `${BASE_URL}/indoor-plants`, priority: 0.8 },
     { url: `${BASE_URL}/kitchen-gardening`, priority: 0.8 },
+    { url: `${BASE_URL}/plant-encyclopedia`, priority: 0.8 },
   ].map((h) => ({ ...h, changeFrequency: "weekly" }));
 
   const balconyArticles = [
@@ -48,7 +49,19 @@ export default function sitemap() {
     { url: `${BASE_URL}/tools/watering-scheduler`, priority: 0.6, changeFrequency: "monthly" },
   ];
 
-  return [...staticPages, ...hubs, ...articles, ...tools].map((entry) => ({
+  const plantSlugs = [
+    "money-plant-pothos", "snake-plant", "zz-plant", "peace-lily", "spider-plant",
+    "areca-palm", "aloe-vera", "curry-leaf-plant", "tulsi-holy-basil", "marigold",
+    "hibiscus", "jade-plant", "boston-fern", "calathea", "coriander", "mint",
+    "tomato", "green-chilli",
+  ];
+  const plantPages = plantSlugs.map((slug) => ({
+    url: `${BASE_URL}/plant-encyclopedia/${slug}`,
+    priority: 0.6,
+    changeFrequency: "monthly",
+  }));
+
+  return [...staticPages, ...hubs, ...articles, ...tools, ...plantPages].map((entry) => ({
     ...entry,
     lastModified: now,
   }));
