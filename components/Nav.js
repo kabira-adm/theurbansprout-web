@@ -44,7 +44,7 @@ export default function Nav() {
           ))}
         </nav>
         <Link
-          href="#newsletter"
+          href="/#newsletter"
           className="rounded-full bg-brand-green px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-green-dark"
         >
           Get weekly tips
