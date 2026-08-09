@@ -43,12 +43,7 @@ export default function Privacy() {
             AdSense. Google and its partners may use cookies to serve ads based on your visits to
             this and other websites. You can learn more about how Google uses this data, and opt
             out of personalized advertising, at{" "}
-            
-              href="https://policies.google.com/technologies/ads"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2"
-            >
+            <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
               Google&apos;s Advertising Policies page
             </a>
             .
