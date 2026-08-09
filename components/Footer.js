@@ -35,7 +35,7 @@ export default function Footer() {
               One useful gardening tip a week, written for Indian balconies. No spam.
             </p>
             <Link
-              href="#newsletter"
+              href="/#newsletter"
               className="mt-3 inline-block text-sm font-semibold text-brand-green hover:text-brand-green-dark"
             >
               Sign up on the homepage →
