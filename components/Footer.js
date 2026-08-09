@@ -42,10 +42,14 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="mt-10 flex flex-col gap-2 border-t border-brand-sand pt-6 text-xs text-brand-green-dark/60 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Urban Sprout. All rights reserved.</p>
-          <p>Built for balconies, kitchens, and window sills across India.</p>
-        </div>
+        <div className="mt-10 flex flex-col gap-3 border-t border-brand-sand pt-6 text-xs text-brand-green-dark/60 sm:flex-row sm:items-center sm:justify-between">
+  <p>© {new Date().getFullYear()} Urban Sprout. All rights reserved.</p>
+  <div className="flex items-center gap-4">
+    <Link href="/privacy" className="hover:text-brand-green">Privacy Policy</Link>
+    <Link href="/contact" className="hover:text-brand-green">Contact</Link>
+  </div>
+  <p>Built for balconies, kitchens, and window sills across India.</p>
+</div>
       </div>
     </footer>
   );
