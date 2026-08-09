@@ -19,10 +19,7 @@ export default function Contact() {
         </p>
         <p>
           Email us at{" "}
-          
-            href="mailto:hello@theurbansprout.in"
-            className="font-semibold text-brand-green-dark underline underline-offset-2"
-          >
+          <a href="mailto:hello@theurbansprout.in" className="font-semibold text-brand-green-dark underline underline-offset-2">
             hello@theurbansprout.in
           </a>{" "}
           — we read every message, even if it takes us a few days to reply.
