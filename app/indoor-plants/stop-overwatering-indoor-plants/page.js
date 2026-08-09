@@ -25,11 +25,11 @@ export default function Article() {
       }}
     >
       <p>
-        Outdoors, excess water evaporates fast in Indian heat or drains away with the next spell
-        of sun and wind. Indoors, none of that happens — no direct sun to dry the soil, no
-        breeze, and often a decorative pot with no drainage hole at all. That combination is why
-        overwatering, not underwatering, is the leading cause of indoor plant death in
-        apartments.
+        Outdoors, extra water evaporates fast in Indian heat or drains off with the next round of
+        sun and wind. Indoors, none of that helps you. There&apos;s no sun beating down to dry the
+        soil, no breeze, and often a decorative pot with no drainage hole to begin with. Put those
+        three together and you get the leading cause of indoor plant death in apartments: too much
+        water, not too little.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Why it happens indoors specifically</h2>
@@ -51,17 +51,15 @@ export default function Article() {
       </ul>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">The checks that actually work</h2>
-      <p>
-        Skip the calendar and use the plant, not the day of the week, to decide:
-      </p>
+      <p>Skip the calendar. Let the plant decide, not the day of the week.</p>
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Finger test.</strong> Push a finger 2–3 cm into the soil. If it&apos;s still
           moist, wait — check again in two or three days rather than watering anyway.
         </li>
         <li>
-          <strong>Weight test.</strong> Lift the pot after watering to feel how heavy it is when
-          wet, then lift it periodically. A pot that still feels heavy doesn&apos;t need water yet.
+          <strong>Weight test.</strong> Lift the pot right after watering so you know how it feels
+          wet, then lift it again every so often. Still heavy? It doesn&apos;t need water yet.
         </li>
         <li>
           <strong>Look at the plant, not just the soil.</strong> Yellowing lower leaves that feel
@@ -69,26 +67,26 @@ export default function Article() {
           underwatering or low humidity.
         </li>
         <li>
-          <strong>Always empty the saucer.</strong> Water that drains through and collects in a
-          saucer or outer pot is still in contact with the roots — tip it out within 30 minutes of
-          watering, every time.
+          <strong>Always empty the saucer.</strong> Water that drains through and pools in a
+          saucer or outer pot is still touching the roots, even if you can&apos;t see it. Tip it
+          out within half an hour of watering, every time.
         </li>
       </ul>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">A note on Indian tap water</h2>
       <p>
-        Hard tap water, common across much of urban India, leaves a white mineral crust on soil
-        and pot rims over time and can slowly affect root health. Where possible, let tap water
-        stand in an open container for 24 hours before using it — this lets chlorine dissipate and
-        lets any sediment settle. It doesn&apos;t remove hardness, but it&apos;s a simple habit
-        that reduces buildup. If you notice a persistent white crust, scrape the top layer off and
-        top up with fresh potting mix instead of trying to flush it out with more watering.
+        Hard tap water, common across much of urban India, leaves a chalky white crust on soil and
+        pot rims over time and can slowly wear on root health. Where you can, let tap water stand
+        in an open container for 24 hours before using it — chlorine dissipates and any sediment
+        settles to the bottom. It won&apos;t fix hardness itself, but it&apos;s a small habit that
+        cuts down on buildup. See a persistent white crust forming? Scrape the top layer off and
+        top up with fresh potting mix rather than trying to flush it out with more water.
       </p>
 
       <p>
-        Once you switch from a fixed schedule to checking the plant, watering frequency naturally
-        drops for most indoor species — especially the low-light ones, which use water far more
-        slowly than sun-loving plants do.{" "}
+        Switch from a fixed schedule to actually checking the plant, and watering frequency drops
+        for most indoor species on its own, especially the low-light ones, which barely sip
+        compared to a sun-loving plant.{" "}
         <Link
           href="/indoor-plants/low-light-indoor-plants-indian-apartments"
           className="font-medium text-brand-green hover:text-brand-green-dark"

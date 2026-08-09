@@ -25,12 +25,13 @@ export default function Article() {
       }}
     >
       <p>
-        &quot;Low light&quot; doesn&apos;t mean no light — it means no direct sun, which is the
-        situation in most Indian apartment living rooms and bedrooms. A room can look bright to
-        your eyes and still get almost no usable light for a plant a few metres from the window.
-        Before buying anything, hold your hand about a metre from the window at midday: if it
-        casts a soft, blurry shadow, that spot works for the plants below. If it casts no shadow
-        at all, you&apos;re looking at a spot for artificial grow lights, not a live plant.
+        &quot;Low light&quot; isn&apos;t the same as no light. It means no direct sun, which
+        describes most Indian apartment living rooms and bedrooms whether you&apos;ve noticed or
+        not. A room can look plenty bright to your eyes and still hand a plant a few metres from
+        the window almost nothing usable. Try this before buying anything: hold your hand about a
+        metre from the window at midday. A soft, blurry shadow means the spot works for the
+        plants below. No shadow at all, and you&apos;re looking at a spot for a grow light, not a
+        living plant.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Plants that genuinely handle low light</h2>
@@ -61,17 +62,18 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Placement matters more than the plant list</h2>
       <p>
-        Even a shade-tolerant plant needs some indirect daylight — a spot within 2–3 metres of a
-        window, or directly in the light path of a balcony door, works for all five plants above.
-        Rooms with no window at all (an interior study, a windowless bathroom) need at least a few
-        hours of a warm-white LED grow bulb a day; no plant on this list survives permanent
-        darkness indefinitely.
+        Even a shade-tolerant plant wants some indirect daylight. A spot within 2–3 metres of a
+        window, or in the light path of a balcony door, works for all five plants above. A room
+        with no window at all — an interior study, a windowless bathroom — needs at least a few
+        hours of a warm-white LED grow bulb daily. Nothing on this list survives permanent
+        darkness indefinitely, however tough its reputation.
       </p>
       <p>
-        One adjustment specific to low light: these plants use water more slowly than a sun-loving
-        plant would, because photosynthesis — and therefore water uptake — slows down without
-        direct light. Watering on the same schedule you&apos;d use for a sunny balcony plant is
-        the single most common way people kill an otherwise well-chosen low-light plant.{" "}
+        One thing changes specifically because of the low light: these plants pull water more
+        slowly than a sun-loving plant does, since photosynthesis (and the water uptake that goes
+        with it) slows down without direct sun. Watering on the schedule you&apos;d use for a
+        sunny balcony plant is probably the most common way people kill an otherwise well-chosen
+        low-light plant.{" "}
         <Link
           href="/indoor-plants/stop-overwatering-indoor-plants"
           className="font-medium text-brand-green hover:text-brand-green-dark"
@@ -82,16 +84,11 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Rotating and cleaning leaves</h2>
       <p>
-        Low-light plants lean hard toward whatever light source they have — turn the pot a quarter
-        turn every week or two so growth stays even instead of one-sided. Dust also blocks a
-        surprising amount of light in a city apartment; wipe broad leaves (Peace Lily, Pothos)
-        with a damp cloth once a month rather than relying on rain, which indoor plants never get.
-      </p>
-
-      <p>
-        Get placement and watering right for these five, and you&apos;ve covered nearly every room
-        type in a typical Indian flat — from a bright balcony-adjacent corner to a dim interior
-        passage.
+        Low-light plants lean hard toward whatever light they can find, so give the pot a quarter
+        turn every week or two to keep growth even instead of lopsided. Dust matters more than
+        people expect in a city flat too. It settles on broad leaves and blocks a surprising
+        amount of the little light there is, so wipe leaves like Peace Lily and Pothos with a damp
+        cloth once a month. Indoor plants never get rain to do that job for them.
       </p>
     </ArticleLayout>
   );

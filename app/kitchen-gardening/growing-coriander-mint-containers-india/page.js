@@ -25,27 +25,26 @@ export default function Article() {
       }}
     >
       <p>
-        Both of these plants are forgiving, fast, and don&apos;t need a proper garden bed — just a
-        container, decent light, and a bit of patience with the first sowing. They also fail for
-        different reasons, so treat them separately rather than assuming one routine works for
-        both.
+        Neither of these needs a proper garden bed. A container, decent light, and a little
+        patience with the first sowing is all it takes. They fail for completely different
+        reasons though, so don&apos;t assume one routine covers both.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Coriander (dhania): starting from kitchen seed</h2>
       <p>
-        The whole dried coriander seeds sold as a spice will germinate — you don&apos;t need
-        packet seed to start.
+        The whole dried coriander seeds sitting in your spice box will germinate just fine — no
+        need to buy packet seed.
       </p>
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Crack the seeds first.</strong> Each coriander &quot;seed&quot; is actually two
-          seeds fused together. Gently crush them with a rolling pin or the back of a spoon to
-          split the pair — this roughly doubles your germination rate.
+          seeds fused together. Roll them under a rolling pin or press with the back of a spoon
+          until you hear them crack and split; this roughly doubles your germination rate.
         </li>
         <li>
-          <strong>Use a wide, shallow container.</strong> A 6–8 inch deep tub works better than a
-          tall pot; coriander has a taproot but doesn&apos;t need much depth, and a wide surface
-          lets you sow densely.
+          <strong>Use a wide, shallow container.</strong> A 6–8 inch deep tub beats a tall pot.
+          Coriander has a taproot but doesn&apos;t need much depth, and a wide surface lets you
+          sow densely.
         </li>
         <li>
           <strong>Sow shallow and scatter.</strong> Press seeds about 1 cm into moist potting mix,
@@ -54,26 +53,26 @@ export default function Article() {
         </li>
         <li>
           <strong>Keep it out of peak afternoon sun while germinating.</strong> Morning sun is
-          fine, but harsh 1–4 pm summer sun can dry out the surface before seeds sprout. Move it
-          to a slightly shadier spot for the first 10 days, then shift to a sunnier one.
+          fine, but harsh 1–4 pm summer sun can dry the surface out before seeds even sprout. Give
+          it a slightly shadier spot for the first 10 days, then move it somewhere sunnier.
         </li>
         <li>
-          <strong>Harvest by cutting, not pulling.</strong> Once plants are 10–15 cm tall, snip
-          outer stems near the base instead of uprooting the plant — this keeps it producing for
-          several more weeks.
+          <strong>Harvest by cutting, not pulling.</strong> Once plants reach 10–15 cm, snip outer
+          stems near the base instead of pulling the whole plant up. It keeps producing for
+          several more weeks that way.
         </li>
       </ul>
       <p>
-        Coriander bolts (flowers and turns bitter) fast once temperatures cross around 30°C, so in
-        most of India it grows best from October to February. In peak summer, expect a shorter
-        window before it bolts — treat it as a quick, repeat-sown crop rather than a
-        year-round plant.
+        Coriander bolts (flowers and turns bitter) fast once temperatures cross about 30°C, so
+        across most of India it does best from October to February. Sow it in peak summer and
+        expect a much shorter window before it bolts on you — treat it as a quick, repeat-sown
+        crop rather than something you keep going year-round.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Mint (pudina): starting from a cutting</h2>
       <p>
-        Unlike coriander, mint grows year-round in most Indian cities and is nearly impossible to
-        kill once it roots — the challenge is containing it, not growing it.
+        Mint grows year-round in most Indian cities and is nearly impossible to kill once it takes
+        root. The real challenge is containing it, not growing it.
       </p>
       <ul className="list-disc space-y-2 pl-5">
         <li>
@@ -93,7 +92,7 @@ export default function Article() {
         </li>
         <li>
           <strong>Keep soil consistently moist.</strong> Mint is far less drought-tolerant than
-          most herbs and wilts quickly in dry soil, especially in a small pot on a hot balcony.
+          most herbs and wilts fast in dry soil, especially in a small pot on a hot balcony.
         </li>
         <li>
           <strong>Pinch the tips regularly.</strong> Removing the growing tips every couple of
@@ -103,14 +102,14 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">A note on water and soil</h2>
       <p>
-        Both herbs are sensitive to compacted soil in small containers — mix in coco peat or
-        compost so water drains through rather than sitting at the bottom. If you&apos;re not sure
-        what mix to use or how often to feed these containers,{" "}
+        Both herbs struggle in compacted soil in a small container, so mix in coco peat or
+        compost so water drains through instead of pooling at the bottom. Not sure what mix to
+        use or how often to feed these pots?{" "}
         <Link
           href="/kitchen-gardening/soil-and-fertilizer-basics-container-vegetables"
           className="font-medium text-brand-green hover:text-brand-green-dark"
         >
-          our soil and fertilizer basics guide
+          Our soil and fertilizer basics guide
         </Link>{" "}
         covers exactly that. And if your balcony runs hot through summer,{" "}
         <Link
@@ -119,7 +118,7 @@ export default function Article() {
         >
           this watering schedule for Indian summers and monsoons
         </Link>{" "}
-        will help you adjust frequency instead of watering on autopilot.
+        will help you adjust rather than watering on autopilot.
       </p>
     </ArticleLayout>
   );

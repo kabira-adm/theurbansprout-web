@@ -25,11 +25,11 @@ export default function Article() {
       }}
     >
       <p>
-        Regrowing from scraps is a genuinely good starting point for a kitchen garden — it costs
-        nothing and uses vegetables you were about to throw out anyway. But not every viral
-        &quot;grow it from scraps&quot; claim actually produces something worth eating. Here&apos;s
-        an honest split, based on what actually works with the vegetables common in Indian
-        kitchens.
+        Regrowing from scraps costs nothing and puts vegetables you were about to bin to work
+        instead — a genuinely good place to start a kitchen garden. But not every viral &quot;grow
+        it from scraps&quot; video actually leads anywhere edible. Some of it is closer to a
+        science-fair project than a food source. Here&apos;s an honest split, based on the
+        vegetables that actually show up in Indian kitchens.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Actually works, and worth doing</h2>
@@ -37,7 +37,7 @@ export default function Article() {
         <li>
           <strong>Spring onion (green onion).</strong> Save the white base with roots attached,
           place it root-down in a shallow bowl of water, and it regrows fresh green shoots within
-          a week. This is the single most reliable regrow — near-guaranteed success.
+          a week. This is the most reliable regrow on the list, near-guaranteed success.
         </li>
         <li>
           <strong>Coriander and mint stems.</strong> If you buy bunches with intact stems, the same
@@ -57,8 +57,8 @@ export default function Article() {
         </li>
         <li>
           <strong>Fenugreek (methi) seeds.</strong> Not technically a scrap, but the whole
-          fenugreek seeds in your spice box germinate readily when soaked overnight and sown
-          shallow — a genuinely fast, easy win, ready to harvest as microgreens in under two
+          fenugreek seeds sitting in your spice box germinate readily when soaked overnight and
+          sown shallow. A genuinely fast, easy win — ready to harvest as microgreens in under two
           weeks.
         </li>
         <li>
@@ -102,12 +102,11 @@ export default function Article() {
       </ul>
 
       <p>
-        The pattern worth remembering: scraps that regrow the edible part fast (spring onion,
-        herbs, methi) are worth the counter space. Scraps that only regrow leaves, or take many
-        months for a modest yield, are better left as compost — feed them into your potting mix
-        instead. Once you&apos;ve got a working scrap regrow going, get it into proper soil rather
-        than leaving it in water indefinitely; roots left in water long-term tend to be weaker
-        than ones that transition to potting mix within a week or two.
+        If your scrap is regrowing something you can actually eat within a week or two — spring
+        onion, herbs, methi — it's worth the counter space. If it only regrows leaves, or takes
+        months for a small return, it's usually more useful chopped into the compost. Either way,
+        once a scrap has rooted, get it into proper soil sooner rather than later. Roots left
+        sitting in water for weeks tend to come out weaker than ones moved to potting mix early.
       </p>
     </ArticleLayout>
   );

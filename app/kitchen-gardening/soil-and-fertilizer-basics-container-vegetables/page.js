@@ -25,11 +25,11 @@ export default function Article() {
       }}
     >
       <p>
-        Garden soil dug straight from the ground compacts hard in a container and drains badly —
-        it works outdoors because roots can spread and worms keep it aerated, neither of which
-        happens in a pot. Container vegetables need a mix built for containers, and they need
-        feeding on a schedule, because a pot has a fixed, limited store of nutrients that plain
-        garden soil doesn&apos;t.
+        Dig soil straight out of the ground and dump it in a pot, and it compacts hard, almost
+        like clay, and drains badly. It works fine outdoors because roots can spread out and worms
+        keep it aerated — neither of which happens inside a container. Container vegetables need a
+        mix built specifically for pots, and they need feeding on a schedule, because a pot only
+        has so much nutrient stored in it, unlike open garden soil.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">A simple mix that works for most vegetables</h2>
@@ -51,15 +51,15 @@ export default function Article() {
         </li>
       </ul>
       <p>
-        Mix these together dry before filling the container, and always start with a layer of
-        broken pot shards or pebbles at the very bottom to keep the drainage hole from clogging
-        with soil.
+        Mix these together dry before filling the container. Always start with a layer of broken
+        pot shards or pebbles right at the bottom, so the drainage hole doesn&apos;t clog with
+        soil the first time you water.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Feeding once the mix runs out</h2>
       <p>
-        A fresh mix has enough nutrients for roughly 4–6 weeks of active growth. After that,
-        vegetables — especially fruiting ones like tomatoes and chillies — need regular feeding to
+        A fresh mix carries enough nutrients for roughly 4–6 weeks of active growth. After that,
+        vegetables, especially fruiting ones like tomatoes and chillies, need regular feeding to
         keep producing.
       </p>
       <ul className="list-disc space-y-2 pl-5">
@@ -88,23 +88,24 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Dealing with hard Indian tap water</h2>
       <p>
         Hard tap water, common in most Indian cities, gradually raises the mineral content and pH
-        of container soil, which can lock out nutrients even when you&apos;re feeding correctly.
+        of container soil, which can lock out nutrients even when your feeding routine is spot on.
         Two habits help: let tap water stand uncovered for a day before using it, and flush each
-        container thoroughly with extra water every few weeks so mineral buildup washes through
-        the drainage hole instead of accumulating. If you see a white crust forming on the soil
-        surface, scrape it off and top up with fresh mix rather than trying to water it away.
+        container thoroughly with extra water every few weeks so the mineral buildup washes
+        through the drainage hole rather than sitting and accumulating. A white crust forming on
+        the soil surface is the tell — scrape it off and top up with fresh mix rather than trying
+        to water it away.
       </p>
 
       <p>
-        Getting the mix and feeding right matters most for the plants working hardest —{" "}
+        The plants working hardest need this the most.{" "}
         <Link
           href="/kitchen-gardening/growing-tomatoes-chillies-balcony-containers"
           className="font-medium text-brand-green hover:text-brand-green-dark"
         >
-          tomatoes and chillies
+          Tomatoes and chillies
         </Link>{" "}
-        in particular will stall out on plain potting mix once fruiting starts, while herbs like
-        coriander and mint are far more forgiving and a good place to practice the basics first.
+        will stall on plain potting mix the moment fruiting starts, while coriander and mint are
+        forgiving enough to be a good place to practice the basics first.
       </p>
     </ArticleLayout>
   );

@@ -25,9 +25,9 @@ export default function Article() {
       }}
     >
       <p>
-        Repotting isn&apos;t something to do on a fixed yearly schedule — most indoor plants in
-        small pots grow slowly enough that they only need repotting every 1–3 years. Repot based
-        on what the plant is actually telling you.
+        Repotting doesn&apos;t belong on a fixed yearly calendar. Most indoor plants in small pots
+        grow slowly enough that they only need it every 1–3 years, sometimes longer. Let the plant
+        tell you, not the date.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Signs it's actually time</h2>
@@ -50,25 +50,25 @@ export default function Article() {
         </li>
       </ul>
       <p>
-        Note what&apos;s <em>not</em> on this list: a plant that&apos;s merely a bit slow, or
-        leaves that yellow occasionally. Those are usually watering or light issues, not a pot-size
-        problem —{" "}
+        Worth noting what&apos;s <em>not</em> on that list: a plant that&apos;s just a bit slow, or
+        leaves that yellow now and then. Those usually point to watering or light, not pot size.{" "}
         <Link
           href="/indoor-plants/stop-overwatering-indoor-plants"
           className="font-medium text-brand-green hover:text-brand-green-dark"
         >
-          check the overwatering guide first →
+          Check the overwatering guide first →
         </Link>{" "}
-        before assuming a plant needs repotting.
+        before you assume a plant needs a bigger home.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">The best time of year in India</h2>
       <p>
         Repot in early monsoon or the cooler months (roughly June to September, or October to
-        February depending on your city), when the plant is actively growing and can recover
-        quickly. Avoid repotting during peak summer heat (April–May) — the combined stress of
-        root disturbance and high temperatures is a common way to lose an otherwise healthy plant.
-        Avoid the coldest weeks of winter in North India too, since root growth slows in cold soil.
+        February depending on your city), while the plant is actively growing and can bounce back
+        fast. Skip repotting during peak summer heat (April–May); root disturbance plus high
+        temperatures is a common way to lose a plant that was otherwise perfectly healthy. The
+        coldest weeks of North Indian winter aren&apos;t ideal either, since root growth slows
+        right down in cold soil.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Step by step</h2>
@@ -101,10 +101,10 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Aftercare</h2>
       <p>
-        Keep the freshly repotted plant out of direct sun and away from AC vents for a week or two
-        — it&apos;s recovering from root disturbance and is more sensitive to stress than usual
-        during that window. Some leaf droop in the first few days is normal and typically resolves
-        once new roots establish in the fresh mix.
+        Keep the freshly repotted plant out of direct sun and away from AC vents for a week or
+        two. It's recovering from root disturbance and feels every bit of stress more than usual
+        during that stretch. A little leaf droop in the first few days is normal, and it usually
+        settles once new roots take hold in the fresh mix.
       </p>
     </ArticleLayout>
   );

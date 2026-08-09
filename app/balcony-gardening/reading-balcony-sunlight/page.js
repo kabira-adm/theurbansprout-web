@@ -22,10 +22,11 @@ export default function Article() {
       }}
     >
       <p>
-        Ask most people how much sun their balcony gets and they&apos;ll guess — &quot;pretty
-        sunny&quot; or &quot;kind of shady.&quot; That guess is usually wrong, because sunlight
-        changes through the day in ways that are easy to misjudge from memory. Before choosing any
-        plant, spend one day actually measuring it.
+        Ask most people how much sun their balcony gets and they&apos;ll guess: &quot;pretty
+        sunny,&quot; maybe, or &quot;kind of shady.&quot; It&apos;s usually wrong. Sunlight moves
+        through a day in ways that are hard to hold in memory, especially once a building or a
+        water tank across the street starts throwing shade at odd hours. Before buying a single
+        plant, spend one day actually watching it.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">The three light categories that matter</h2>
@@ -44,29 +45,28 @@ export default function Article() {
         <li>5 PM</li>
       </ul>
       <p>
-        Add up the direct-sun hours. Do this on one clear day and, if you can, once more a few
-        weeks later — the sun&apos;s angle shifts across seasons, so a balcony that&apos;s
-        full sun in May can drop to partial sun by December.
+        Add up the direct-sun hours. Do it once on a clear day, and if you have the patience,
+        repeat the check a few weeks later — the sun&apos;s angle drifts across the seasons, so a
+        balcony that&apos;s full sun in May can slide to partial sun by December without anything
+        about the balcony itself changing.
       </p>
-
-      <h2 className="text-xl font-semibold text-brand-green-dark">Why neighbouring buildings matter more than orientation</h2>
       <p>
-        In dense Indian cities, a technically south-facing balcony can still be mostly shaded if a
-        taller building sits close by. Orientation is a starting guess; the audit above is the
-        actual answer. Trust what you measured over what the compass suggests.
+        Orientation on its own is a starting guess at best. A technically south-facing balcony can
+        still sit mostly in shade if a taller tower is close by, which is common enough in dense
+        Indian neighbourhoods that it&apos;s worth checking rather than assuming. Trust what the
+        audit tells you over what the compass suggests.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Matching plants to what you measured</h2>
       <p>
-        Once you know your category, plant selection becomes far more reliable. Full-sun spots
-        suit marigold, hibiscus, and most vegetables. Partial-sun spots work well for curry leaf,
-        aloe vera, and many herbs. Low-light balconies do best with money plant (pothos), ZZ
-        plant, and peace lily — plants that tolerate shade rather than merely surviving it.
+        Once you know your category, plant selection stops being a gamble. Full-sun spots suit
+        marigold, hibiscus, and most vegetables. Partial-sun spots work well for curry leaf, aloe
+        vera, and many herbs. Low-light balconies do best with money plant (pothos), ZZ plant, and
+        peace lily — plants built to hold on in shade, not just limp along in it.
       </p>
 
       <p>
-        Buy the plant to match the light you actually measured, not the light you hoped for — it&apos;s
-        the single highest-leverage decision in balcony gardening.
+        Buy for the light you actually measured, not the light you were hoping for.
       </p>
     </ArticleLayout>
   );

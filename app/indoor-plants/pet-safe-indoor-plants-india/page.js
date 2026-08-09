@@ -25,10 +25,10 @@ export default function Article() {
       }}
     >
       <p>
-        A lot of the plants that get recommended for Indian apartments are not actually safe
-        around cats or dogs that chew on leaves. This isn&apos;t about avoiding indoor plants if
-        you have a pet — it&apos;s about knowing which ones to keep out of reach and which ones you
-        don&apos;t have to worry about at all.
+        Quite a few of the plants that get recommended for Indian apartments aren&apos;t actually
+        safe around a cat or dog that likes to chew leaves. That doesn&apos;t mean giving up on
+        indoor plants if you have a pet at home. It means knowing which ones need to stay out of
+        reach, and which ones you can stop worrying about entirely.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Common plants that are actually risky</h2>
@@ -57,9 +57,9 @@ export default function Article() {
         </li>
       </ul>
       <p>
-        None of these are emergencies in small amounts, but if you have a pet that chews plants
-        habitually, it&apos;s simpler to avoid them or keep them somewhere genuinely inaccessible,
-        like a high shelf a cat can&apos;t reach.
+        None of these are emergencies in small amounts. But if your pet chews on plants as a
+        habit rather than a one-off, it's simpler to skip them altogether or keep them somewhere
+        genuinely out of reach, like a high shelf a cat can't jump to.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Genuinely non-toxic options</h2>
@@ -84,24 +84,24 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">If a pet does eat a toxic plant</h2>
       <p>
-        Mild symptoms — drooling, pawing at the mouth, mild vomiting — usually resolve on their
-        own within a few hours. Remove any remaining plant material, offer water, and watch for
-        worsening symptoms. If your pet is struggling to breathe, has swelling in the mouth or
-        throat, or symptoms don&apos;t settle within a few hours, call a vet rather than waiting it
-        out.
+        Mild symptoms — drooling, pawing at the mouth, some vomiting — usually settle down within
+        a few hours on their own. Remove any leftover plant material, offer water, and keep an eye
+        out for anything getting worse. If your pet struggles to breathe, develops swelling in the
+        mouth or throat, or the symptoms don&apos;t ease within a few hours, call a vet. Don&apos;t
+        wait it out.
       </p>
 
       <p>
-        You don&apos;t need to give up on the popular low-light options entirely — a Pothos on a
-        high shelf out of paw&apos;s reach is a reasonable compromise. But if you&apos;d rather not
-        manage placement at all,{" "}
+        You don&apos;t have to rule out the popular low-light options entirely — a Pothos kept on
+        a high shelf, well out of paw&apos;s reach, is a reasonable middle ground. If you&apos;d
+        rather not manage placement at all,{" "}
         <Link
           href="/indoor-plants/low-light-indoor-plants-indian-apartments"
           className="font-medium text-brand-green hover:text-brand-green-dark"
         >
           swap in Spider Plant from the low-light list →
         </Link>{" "}
-        and skip the risk altogether.
+        and remove the risk from the equation.
       </p>
     </ArticleLayout>
   );

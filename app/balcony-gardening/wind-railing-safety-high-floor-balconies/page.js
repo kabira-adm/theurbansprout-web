@@ -22,17 +22,17 @@ export default function Article() {
       }}
     >
       <p>
-        A pot that topples on a ground-floor balcony is an inconvenience. The same pot falling
-        from the 12th floor is a genuine hazard to people below. If you&apos;re gardening above a
-        few storeys, wind and anchoring deserve as much attention as sunlight and watering.
+        A pot that tips over on a ground-floor balcony makes a mess. The same pot falling from the
+        12th floor can seriously hurt someone. If you&apos;re gardening a few storeys up, wind and
+        anchoring deserve just as much thought as sunlight and watering, maybe more.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Never rely on the railing ledge alone</h2>
       <p>
-        Pots balanced on a narrow railing ledge with nothing holding them in place are the most
-        common cause of falls, usually during a sudden gust rather than a storm. If you want
-        railing-mounted planters, use ones designed for it — they clip or bolt onto the railing on
-        both sides, rather than resting on top.
+        Pots balanced on a narrow railing ledge, with nothing actually holding them there, are the
+        most common cause of falls. It's rarely a storm that does it, usually just one sudden
+        gust. If you want railing-mounted planters, use ones made for the job — they clip or bolt
+        onto the railing from both sides instead of just resting on top and hoping for the best.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Anchoring pots that sit on the floor</h2>
@@ -44,22 +44,23 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Plants that handle wind poorly</h2>
       <p>
-        Tall, top-heavy plants in narrow pots — think a young tree or a tall single-stem plant —
-        catch wind like a sail. On an exposed high floor, favour bushier, lower-profile plants, or
-        stake tall ones securely against a wall rather than the railing.
+        A tall, top-heavy plant in a narrow pot catches wind the way a sail does — think a young
+        tree, or anything with a single tall stem and most of its leaf mass up top. On an exposed
+        high floor, lean toward bushier, lower-profile plants instead. If you do keep something
+        tall, stake it against a wall rather than the railing.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Check your housing society's rules</h2>
       <p>
-        Many Indian apartment complexes have specific rules about railing planters and overhanging
-        pots, partly because of exactly this risk. It&apos;s worth a quick check with your RWA or
-        facility management before mounting anything outward-facing — it&apos;s a much smaller
-        conversation now than after an incident.
+        Plenty of Indian apartment complexes have specific rules about railing planters and
+        overhanging pots, and this risk is exactly why. A quick conversation with your RWA or
+        facility management before you mount anything outward-facing is a much easier conversation
+        to have now than after something falls.
       </p>
 
       <p>
-        None of this should make high-floor gardening feel off-limits — it just means treating
-        anchoring as a real step in the setup, not an afterthought.
+        None of this is a reason to avoid high-floor gardening. It just means treating anchoring as
+        part of the setup from day one, not something you get around to later.
       </p>
     </ArticleLayout>
   );

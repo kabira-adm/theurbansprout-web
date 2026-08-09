@@ -25,10 +25,10 @@ export default function Article() {
       }}
     >
       <p>
-        Tomatoes and chillies are among the few vegetables that genuinely thrive in Indian balcony
-        heat rather than merely surviving it. Most failures come down to a container that&apos;s
-        too small, not enough direct sun, or letting the plant flop over once it starts fruiting.
-        Fix those three and both crops are realistic even on a modest balcony.
+        Tomatoes and chillies actually thrive in Indian balcony heat, unlike most vegetables that
+        just about tolerate it. Most failures trace back to one of three things: a container
+        that's too small, not enough direct sun, or a plant that's been left to flop over once it
+        starts fruiting. Fix those and both crops are realistic even on a fairly modest balcony.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Container size — the most common mistake</h2>
@@ -52,11 +52,11 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Sunlight and placement</h2>
       <p>
-        Both crops need a minimum of 5–6 hours of direct sun daily to fruit well — filtered light
-        through a grille or the edge of a shaded balcony will grow leaves but disappoint on
-        yield. A west or south-facing balcony that gets harsh afternoon sun, which is often too
-        much for leafy herbs, is exactly what these two plants want. If your balcony is
-        borderline, chillies tolerate partial shade noticeably better than tomatoes do.
+        Both crops need a minimum of 5–6 hours of direct sun daily to fruit well. Filtered light
+        through a grille, or the edge of a shaded balcony, will grow leaves and disappoint on
+        yield. A west- or south-facing balcony with harsh afternoon sun (often too intense for
+        leafy herbs) is exactly what these two want. Borderline balcony? Chillies handle partial
+        shade noticeably better than tomatoes do.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Supporting the plant as it grows</h2>
@@ -73,8 +73,8 @@ export default function Article() {
         </li>
         <li>
           <strong>Chillies rarely need staking</strong> unless the plant is top-heavy with fruit,
-          but a short stake helps in windy high-floor balconies. If you&apos;re gardening above
-          the fifth floor or so, see{" "}
+          but a short stake helps in windy high-floor balconies. If you're gardening above the
+          fifth floor or so, see{" "}
           <Link
             href="/balcony-gardening/wind-railing-safety-high-floor-balconies"
             className="font-medium text-brand-green hover:text-brand-green-dark"
@@ -87,18 +87,18 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Flowers dropping without fruiting</h2>
       <p>
-        This is the single most common complaint with balcony tomatoes, and it&apos;s rarely a
-        disease — it&apos;s usually one of three things: temperatures consistently above 35°C
-        (flowers abort in extreme heat), irregular watering causing stress, or poor pollination
-        because there&apos;s no wind or insect movement at balcony height. Gently shaking the
-        flowering stems for a few seconds every couple of days mimics wind pollination and
-        noticeably improves fruit set indoors and on enclosed balconies.
+        This is the most common complaint with balcony tomatoes, and it's rarely disease. Usually
+        it comes down to one of three things: temperatures consistently above 35°C (flowers abort
+        in extreme heat), irregular watering causing stress, or poor pollination because there's
+        no wind or insect movement at balcony height. Give the flowering stems a gentle shake for a
+        few seconds every couple of days. It mimics wind pollination and makes a noticeable
+        difference to fruit set indoors and on enclosed balconies.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Feeding through the fruiting stage</h2>
       <p>
-        Both plants are heavy feeders once they start flowering — a container that was fine on
-        plain potting mix at the seedling stage will run out of nutrients fast once fruit starts
+        Both plants turn into heavy feeders once flowering starts. A container that was fine on
+        plain potting mix at the seedling stage runs out of nutrients fast the moment fruit begins
         forming.{" "}
         <Link
           href="/kitchen-gardening/soil-and-fertilizer-basics-container-vegetables"
@@ -106,8 +106,8 @@ export default function Article() {
         >
           Our soil and fertilizer basics guide
         </Link>{" "}
-        covers what to add and how often, including a simple potassium boost that helps fruit
-        develop rather than just leaves.
+        covers what to add and how often, including a simple potassium boost that pushes energy
+        into fruit instead of just leaves.
       </p>
     </ArticleLayout>
   );
