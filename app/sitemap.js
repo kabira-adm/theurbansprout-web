@@ -5,6 +5,7 @@ export default function sitemap() {
 
   const staticPages = [
     { url: `${BASE_URL}/`, priority: 1, changeFrequency: "weekly" },
+    { url: `${BASE_URL}/articles`, priority: 0.7, changeFrequency: "daily" },
     { url: `${BASE_URL}/about`, priority: 0.3, changeFrequency: "yearly" },
     { url: `${BASE_URL}/contact`, priority: 0.3, changeFrequency: "yearly" },
     { url: `${BASE_URL}/privacy`, priority: 0.2, changeFrequency: "yearly" },
@@ -45,12 +46,14 @@ export default function sitemap() {
     "growing-tomatoes-chillies-balcony-containers",
     "kitchen-scraps-regrow-vegetables",
     "soil-and-fertilizer-basics-container-vegetables",
+    "organic-pest-control-kitchen-garden-vegetables",
   ].map((slug) => `${BASE_URL}/kitchen-gardening/${slug}`);
 
   const terraceArticles = [
     "is-your-terrace-ready-load-waterproofing-layout",
     "raised-beds-vs-containers-terrace-gardening-india",
     "full-sun-full-wind-terrace-gardening-india",
+    "common-terrace-gardening-mistakes",
   ].map((slug) => `${BASE_URL}/terrace-gardening/${slug}`);
 
   const articles = [...balconyArticles, ...indoorArticles, ...kitchenArticles, ...terraceArticles].map((url) => ({

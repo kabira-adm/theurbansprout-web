@@ -17,6 +17,10 @@ const guides = [
     title: "Soil and fertilizer basics for container vegetables",
     href: "/kitchen-gardening/soil-and-fertilizer-basics-container-vegetables",
   },
+  {
+    title: "Organic pest control for kitchen garden vegetables (safe to eat)",
+    href: "/kitchen-gardening/organic-pest-control-kitchen-garden-vegetables",
+  },
 ];
 
 const starterPlants = [

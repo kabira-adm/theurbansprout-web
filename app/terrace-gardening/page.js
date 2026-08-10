@@ -13,6 +13,10 @@ const guides = [
     title: "Full sun, full wind: terrace gardening in India",
     href: "/terrace-gardening/full-sun-full-wind-terrace-gardening-india",
   },
+  {
+    title: "Common terrace gardening mistakes (and how to avoid them)",
+    href: "/terrace-gardening/common-terrace-gardening-mistakes",
+  },
 ];
 
 const starterPlants = [

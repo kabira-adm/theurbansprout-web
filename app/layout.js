@@ -2,13 +2,31 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
+const SITE_URL = "https://www.theurbansprout.in";
+const SITE_NAME = "Urban Sprout";
+const SITE_DESCRIPTION =
+  "Practical, tested gardening guidance for apartment balconies and small Indian homes — starting with balcony gardening.";
+
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Urban Sprout | Balcony & Indoor Gardening for Indian Homes",
     template: "%s | Urban Sprout",
   },
-  description:
-    "Practical, tested gardening guidance for apartment balconies and small Indian homes — starting with balcony gardening.",
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    locale: "en_IN",
+    title: "Urban Sprout | Balcony & Indoor Gardening for Indian Homes",
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary",
+    title: "Urban Sprout | Balcony & Indoor Gardening for Indian Homes",
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({ children }) {
