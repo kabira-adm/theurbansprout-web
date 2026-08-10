@@ -15,6 +15,7 @@ export default function sitemap() {
     { url: `${BASE_URL}/indoor-plants`, priority: 0.8 },
     { url: `${BASE_URL}/kitchen-gardening`, priority: 0.8 },
     { url: `${BASE_URL}/plant-encyclopedia`, priority: 0.8 },
+    { url: `${BASE_URL}/terrace-gardening`, priority: 0.8 },
   ].map((h) => ({ ...h, changeFrequency: "weekly" }));
 
   const balconyArticles = [
@@ -39,7 +40,13 @@ export default function sitemap() {
     "soil-and-fertilizer-basics-container-vegetables",
   ].map((slug) => `${BASE_URL}/kitchen-gardening/${slug}`);
 
-  const articles = [...balconyArticles, ...indoorArticles, ...kitchenArticles].map((url) => ({
+  const terraceArticles = [
+    "is-your-terrace-ready-load-waterproofing-layout",
+    "raised-beds-vs-containers-terrace-gardening-india",
+    "full-sun-full-wind-terrace-gardening-india",
+  ].map((slug) => `${BASE_URL}/terrace-gardening/${slug}`);
+
+  const articles = [...balconyArticles, ...indoorArticles, ...kitchenArticles, ...terraceArticles].map((url) => ({
     url,
     priority: 0.7,
     changeFrequency: "monthly",

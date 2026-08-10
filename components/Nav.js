@@ -3,6 +3,7 @@ import Link from "next/link";
 const links = [
   { href: "/", label: "Home" },
   { href: "/balcony-gardening", label: "Balcony Gardening" },
+  { href: "/terrace-gardening", label: "Terrace Gardening" },
   { href: "/plant-encyclopedia", label: "Plant Encyclopedia" },
   { href: "/tools/watering-scheduler", label: "Watering Scheduler" },
   { href: "/about", label: "About" },

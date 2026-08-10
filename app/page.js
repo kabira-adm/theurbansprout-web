@@ -43,6 +43,13 @@ const hubs = [
       "A quick-reference lookup for 18 plants — light, watering, difficulty, and pet safety at a glance.",
     href: "/plant-encyclopedia",
   },
+  {
+    title: "Terrace Gardening",
+    status: "live",
+    description:
+      "Structural load, waterproofing, raised beds vs containers, and plants built for full sun and wind.",
+    href: "/terrace-gardening",
+  },
 ];
 
 export default function Home() {
@@ -111,7 +118,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-semibold text-brand-green-dark">Where to start</h2>
         <p className="mt-2 max-w-xl text-brand-green-dark/70">
-          Four ways into Urban Sprout, depending on what you need right now — a full guide, a
+          Five ways into Urban Sprout, depending on what you need right now — a full guide, a
           quick plant lookup, or somewhere to start from scratch.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
