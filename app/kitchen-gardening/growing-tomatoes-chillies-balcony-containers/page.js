@@ -27,7 +27,7 @@ export default function Article() {
       <p>
         Tomatoes and chillies actually thrive in Indian balcony heat, unlike most vegetables that
         just about tolerate it. Most failures trace back to one of three things: a container
-        that's too small, not enough direct sun, or a plant that's been left to flop over once it
+        that&apos;s too small, not enough direct sun, or a plant that&apos;s been left to flop over once it
         starts fruiting. Fix those and both crops are realistic even on a fairly modest balcony.
       </p>
 
@@ -73,7 +73,7 @@ export default function Article() {
         </li>
         <li>
           <strong>Chillies rarely need staking</strong> unless the plant is top-heavy with fruit,
-          but a short stake helps in windy high-floor balconies. If you're gardening above the
+          but a short stake helps in windy high-floor balconies. If you&apos;re gardening above the
           fifth floor or so, see{" "}
           <Link
             href="/balcony-gardening/wind-railing-safety-high-floor-balconies"
@@ -87,9 +87,9 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Flowers dropping without fruiting</h2>
       <p>
-        This is the most common complaint with balcony tomatoes, and it's rarely disease. Usually
+        This is the most common complaint with balcony tomatoes, and it&apos;s rarely disease. Usually
         it comes down to one of three things: temperatures consistently above 35°C (flowers abort
-        in extreme heat), irregular watering causing stress, or poor pollination because there's
+        in extreme heat), irregular watering causing stress, or poor pollination because there&apos;s
         no wind or insect movement at balcony height. Give the flowering stems a gentle shake for a
         few seconds every couple of days. It mimics wind pollination and makes a noticeable
         difference to fruit set indoors and on enclosed balconies.

@@ -48,7 +48,7 @@ export default function Article() {
         </Link>
       </p>
 
-      <h2 className="text-xl font-semibold text-brand-green-dark">3. Using a pot with no drainage, or one that's oversized</h2>
+      <h2 className="text-xl font-semibold text-brand-green-dark">3. Using a pot with no drainage, or one that&apos;s oversized</h2>
       <p>
         Both land you in the same place: roots sitting in moisture they don&apos;t need. Match pot
         size to the plant and confirm drainage holes before anything goes into the soil.{" "}
@@ -66,7 +66,7 @@ export default function Article() {
         </Link>
       </p>
 
-      <h2 className="text-xl font-semibold text-brand-green-dark">5. Over-fertilizing to "help" a struggling plant</h2>
+      <h2 className="text-xl font-semibold text-brand-green-dark">5. Over-fertilizing to &quot;help&quot; a struggling plant</h2>
       <p>
         A stressed plant is usually reacting to water or light, not a shortage of nutrients.
         Fertilizer piled on top of that stress tends to make things worse, and chemical burn on

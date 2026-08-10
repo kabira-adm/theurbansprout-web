@@ -67,7 +67,7 @@ export default function IndoorPlants() {
       <section className="mx-auto max-w-3xl px-6 py-16">
         <h2 className="text-xl font-semibold text-brand-green-dark">Start here — the core guides</h2>
         <p className="mt-2 text-brand-green-dark/70">
-          Read these in order if you're starting from scratch:
+          Read these in order if you&apos;re starting from scratch:
         </p>
         <ul className="mt-6 space-y-3">
           {guides.map((guide, i) => (

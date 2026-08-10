@@ -30,7 +30,7 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Never rely on the railing ledge alone</h2>
       <p>
         Pots balanced on a narrow railing ledge, with nothing actually holding them there, are the
-        most common cause of falls. It's rarely a storm that does it, usually just one sudden
+        most common cause of falls. It&apos;s rarely a storm that does it, usually just one sudden
         gust. If you want railing-mounted planters, use ones made for the job — they clip or bolt
         onto the railing from both sides instead of just resting on top and hoping for the best.
       </p>
@@ -38,7 +38,7 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Anchoring pots that sit on the floor</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>Choose wider, heavier-based pots over tall, narrow ones for anything exposed to open wind</li>
-        <li>Keep large or top-heavy plants away from the balcony's outer edge</li>
+        <li>Keep large or top-heavy plants away from the balcony&apos;s outer edge</li>
         <li>A layer of gravel or stones at the base adds weight low in the pot, lowering its centre of gravity</li>
       </ul>
 
@@ -50,7 +50,7 @@ export default function Article() {
         tall, stake it against a wall rather than the railing.
       </p>
 
-      <h2 className="text-xl font-semibold text-brand-green-dark">Check your housing society's rules</h2>
+      <h2 className="text-xl font-semibold text-brand-green-dark">Check your housing society&apos;s rules</h2>
       <p>
         Plenty of Indian apartment complexes have specific rules about railing planters and
         overhanging pots, and this risk is exactly why. A quick conversation with your RWA or

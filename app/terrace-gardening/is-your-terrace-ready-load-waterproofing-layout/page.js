@@ -27,13 +27,13 @@ export default function Article() {
       <p>
         A balcony garden that goes wrong usually just means a few dead plants. A terrace garden
         that goes wrong can mean cracked waterproofing, a leak in the ceiling of the flat below, or
-        a structural problem nobody notices until it's expensive to fix. That's not a reason to
+        a structural problem nobody notices until it&apos;s expensive to fix. That&apos;s not a reason to
         avoid terrace gardening — a terrace is genuinely the best growing space most Indian homes
         will ever have, flat, open, and usually getting more sun than any balcony in the building.
-        It's a reason to spend one honest afternoon checking three things before you drag a single
+        It&apos;s a reason to spend one honest afternoon checking three things before you drag a single
         bag of soil upstairs: how much weight the slab can actually take, whether the waterproofing
         under your feet can survive daily watering on top of the monsoon it already deals with, and
-        how the whole space should be laid out so water has somewhere to go. Skip these and you're
+        how the whole space should be laid out so water has somewhere to go. Skip these and you&apos;re
         gardening on borrowed time. Get them right and everything you build afterward — raised
         beds, a full container setup, whatever you end up with — sits on solid ground, literally.
       </p>
@@ -41,29 +41,29 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Structural load — how much weight your terrace can actually take</h2>
       <p>
         Soil looks harmless in a bag. Wet, packed into a container, and topped up with actively
-        growing plants, it isn't. A single large container — the kind you'd want for a dwarf
+        growing plants, it isn&apos;t. A single large container — the kind you&apos;d want for a dwarf
         pomegranate or a full-grown curry leaf tree — can weigh over 150 kg once the mix is
         saturated after watering. Line up a dozen of those along one wall, or fill a raised bed with
-        the same soil, and you're talking about a genuinely significant, concentrated load sitting
+        the same soil, and you&apos;re talking about a genuinely significant, concentrated load sitting
         on a slab that was probably designed with laundry lines and the occasional gathering in
         mind, not a garden.
       </p>
       <p>
         Most residential terraces in India are built for a live load of somewhere around 150–200 kg
-        per square metre, spread evenly. That's a reasonable amount for a garden, as long as you
+        per square metre, spread evenly. That&apos;s a reasonable amount for a garden, as long as you
         actually spread it. The trouble starts when everything gets clustered — pots pushed into one
-        corner because that's where the sun is best, or a raised bed built right over the middle of
-        the slab because that's where there happened to be space. Concentrated weight in one spot is
-        a very different load case than the same weight spread across the terrace, and it's the
+        corner because that&apos;s where the sun is best, or a raised bed built right over the middle of
+        the slab because that&apos;s where there happened to be space. Concentrated weight in one spot is
+        a very different load case than the same weight spread across the terrace, and it&apos;s the
         scenario most people never think to ask about.
       </p>
       <p>
-        If you're planning anything beyond a modest scatter of pots — a proper raised-bed setup, a
-        row of large trees in containers, anything that adds up to real, sustained weight — it's
-        worth ten minutes with whoever holds your building's structural drawings, or a short
+        If you&apos;re planning anything beyond a modest scatter of pots — a proper raised-bed setup, a
+        row of large trees in containers, anything that adds up to real, sustained weight — it&apos;s
+        worth ten minutes with whoever holds your building&apos;s structural drawings, or a short
         conversation with a structural engineer if you can get one. This matters more in older
         buildings, and it matters more the higher up you are, since load calculations get more
-        conservative on upper floors. It can feel like overkill for what's essentially a gardening
+        conservative on upper floors. It can feel like overkill for what&apos;s essentially a gardening
         hobby, but the cost of asking is a phone call; the cost of not asking, in the rare case it
         goes wrong, is not something you want to find out about after the fact.
       </p>
@@ -74,21 +74,21 @@ export default function Article() {
         are almost always its strongest points. Second, use a lightweight potting mix rather than
         straight garden soil for anything large. A mix built around coco peat, compost, and a bit of
         sand holds noticeably less dead weight than raw soil while still growing vegetables, herbs,
-        and flowering shrubs perfectly well — it's a small switch that meaningfully lowers what
-        you're asking the slab to carry.
+        and flowering shrubs perfectly well — it&apos;s a small switch that meaningfully lowers what
+        you&apos;re asking the slab to carry.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Waterproofing — protecting the slab before you place a single pot</h2>
       <p>
         Terraces are waterproofed to shed rain fast, not to sit under a container of permanently
-        damp soil for months on end. There's a real difference between the two. Monsoon rain comes,
+        damp soil for months on end. There&apos;s a real difference between the two. Monsoon rain comes,
         soaks the surface, and drains off within a day or two. A pot of vegetables you water every
         morning keeps a small patch of that same surface damp continuously, for the entire growing
-        season, and that's a kind of sustained moisture most waterproofing membranes were never
+        season, and that&apos;s a kind of sustained moisture most waterproofing membranes were never
         really tested against.
       </p>
       <p>
-        The fix isn't complicated, but it does need to happen before you start, not after you
+        The fix isn&apos;t complicated, but it does need to happen before you start, not after you
         notice a damp patch on the ceiling downstairs. Every container and every raised bed should
         sit up off the bare slab — on pot feet, bricks, or a simple raised grid — so water drains
         away underneath instead of pooling against the waterproofing and slowly working through it.
@@ -98,14 +98,14 @@ export default function Article() {
         or drain in an afternoon.
       </p>
       <p>
-        It's also worth being honest about the state of your terrace before you commit to anything.
-        If the waterproofing hasn't been redone in several years, or if you can already see damp
+        It&apos;s also worth being honest about the state of your terrace before you commit to anything.
+        If the waterproofing hasn&apos;t been redone in several years, or if you can already see damp
         staining on the ceiling below, get it inspected — and if needed, redone — before you build
         raised beds or settle into a fixed layout. Moving an established garden later to fix a leak
         underneath it is a far bigger job than doing the waterproofing first and building on top of
         it once. And keep drains completely clear: never let a pot, a bed, or even a stray bag of
         soil sit against a terrace drain. In a heavy monsoon downpour, that drain is doing more work
-        than anything else on the terrace, and it's the one thing you really don't want blocked.
+        than anything else on the terrace, and it&apos;s the one thing you really don&apos;t want blocked.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Layout — planning drainage, access, and sun before you start</h2>
@@ -119,14 +119,14 @@ export default function Article() {
       <p>
         Leave real paths between planting areas, not just gaps you can squeeze through sideways.
         Something like 60–75 cm of clear space lets you move a watering can, a wheelbarrow, or a
-        bag of compost through without knocking pots over or trampling whatever's growing at the
-        edge. It sounds like a small thing until you're doing it every day for a year, at which
-        point it's the difference between a garden you keep up with and one you start resenting.
+        bag of compost through without knocking pots over or trampling whatever&apos;s growing at the
+        edge. It sounds like a small thing until you&apos;re doing it every day for a year, at which
+        point it&apos;s the difference between a garden you keep up with and one you start resenting.
       </p>
       <p>
         Group plants by how thirsty they are, not just by what kind of plant they are. Put a
         drought-tolerant succulent next to a vegetable that wants daily watering and one of the two
-        is always being either drowned or starved, because you'll end up watering to whichever
+        is always being either drowned or starved, because you&apos;ll end up watering to whichever
         plant is loudest about it. Zone the layout instead by watering frequency — the daily-water
         vegetables in one area, the once-a-week aloe and succulents somewhere else entirely — and
         the whole routine gets simpler almost immediately.
@@ -137,8 +137,8 @@ export default function Article() {
         from a water tank, a parapet wall, or the building next door shift through the day in ways
         that are easy to misjudge from a single glance in the morning. Check it again at midday and
         again in the late afternoon before you commit a raised bed to a spot — what looks like full
-        sun at 9 a.m. can be shaded solid by 4 p.m., and you'll only find that out the hard way if
-        you don't check first.
+        sun at 9 a.m. can be shaded solid by 4 p.m., and you&apos;ll only find that out the hard way if
+        you don&apos;t check first.
       </p>
 
       <p>
@@ -150,7 +150,7 @@ export default function Article() {
         >
           raised beds vs containers for terrace gardening in India
         </Link>{" "}
-        — and then how to pick plants that can actually handle the conditions you've just mapped
+        — and then how to pick plants that can actually handle the conditions you&apos;ve just mapped
         out. Our guide to{" "}
         <Link
           href="/terrace-gardening/full-sun-full-wind-terrace-gardening-india"

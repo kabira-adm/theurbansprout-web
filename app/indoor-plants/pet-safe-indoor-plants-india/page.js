@@ -58,8 +58,8 @@ export default function Article() {
       </ul>
       <p>
         None of these are emergencies in small amounts. But if your pet chews on plants as a
-        habit rather than a one-off, it's simpler to skip them altogether or keep them somewhere
-        genuinely out of reach, like a high shelf a cat can't jump to.
+        habit rather than a one-off, it&apos;s simpler to skip them altogether or keep them somewhere
+        genuinely out of reach, like a high shelf a cat can&apos;t jump to.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Genuinely non-toxic options</h2>

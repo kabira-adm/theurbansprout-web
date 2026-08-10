@@ -57,7 +57,7 @@ export default function KitchenGardening() {
             Kitchen Gardening
           </p>
           <h1 className="mt-3 text-3xl font-semibold text-brand-green-dark sm:text-4xl">
-            You don't need a farm to stop buying coriander every week.
+            You don&apos;t need a farm to stop buying coriander every week.
           </h1>
           <p className="mt-5 text-lg leading-8 text-brand-green-dark/75">
             A kitchen garden is just a handful of containers doing one job well: fresh herbs and a
@@ -72,7 +72,7 @@ export default function KitchenGardening() {
       <section className="mx-auto max-w-3xl px-6 py-16">
         <h2 className="text-xl font-semibold text-brand-green-dark">Start here — the core guides</h2>
         <p className="mt-2 text-brand-green-dark/70">
-          Read these in order if you're starting from scratch:
+          Read these in order if you&apos;re starting from scratch:
         </p>
         <ul className="mt-6 space-y-3">
           {guides.map((guide, i) => (

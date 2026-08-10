@@ -87,7 +87,7 @@ export default function Article() {
         </li>
       </ul>
 
-      <h2 className="text-xl font-semibold text-brand-green-dark">Doesn't really work — skip these</h2>
+      <h2 className="text-xl font-semibold text-brand-green-dark">Doesn&apos;t really work — skip these</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Tomato slices or seeds squeezed from a store tomato.</strong> They can
@@ -103,8 +103,8 @@ export default function Article() {
 
       <p>
         If your scrap is regrowing something you can actually eat within a week or two — spring
-        onion, herbs, methi — it's worth the counter space. If it only regrows leaves, or takes
-        months for a small return, it's usually more useful chopped into the compost. Either way,
+        onion, herbs, methi — it&apos;s worth the counter space. If it only regrows leaves, or takes
+        months for a small return, it&apos;s usually more useful chopped into the compost. Either way,
         once a scrap has rooted, get it into proper soil sooner rather than later. Roots left
         sitting in water for weeks tend to come out weaker than ones moved to potting mix early.
       </p>

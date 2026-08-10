@@ -59,7 +59,7 @@ export default function TerraceGardening() {
             A terrace is the biggest growing space most Indian homes ever get, and also the one
             most people undersell — a few loose pots, no real plan. Terrace gardening comes with
             questions a balcony never asks: how much weight the slab can safely take, whether the
-            waterproofing can survive daily watering, and how to lay everything out so it doesn't
+            waterproofing can survive daily watering, and how to lay everything out so it doesn&apos;t
             turn into a flooded, wind-battered mess. Get those basics right first, then build up
             from raised beds or containers.
           </p>
@@ -69,7 +69,7 @@ export default function TerraceGardening() {
       <section className="mx-auto max-w-3xl px-6 py-16">
         <h2 className="text-xl font-semibold text-brand-green-dark">Start here — the core guides</h2>
         <p className="mt-2 text-brand-green-dark/70">
-          Read these in order if you're starting from scratch:
+          Read these in order if you&apos;re starting from scratch:
         </p>
         <ul className="mt-6 space-y-3">
           {guides.map((guide, i) => (

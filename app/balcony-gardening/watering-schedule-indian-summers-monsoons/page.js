@@ -67,7 +67,7 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Signs you&apos;ve got it wrong</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li><span className="font-medium text-brand-green-dark">Overwatered:</span> yellowing lower leaves, soft or mushy stems, a sour smell from the soil</li>
-        <li><span className="font-medium text-brand-green-dark">Underwatered:</span> dry, crisp leaf edges, soil pulling away from the pot's sides</li>
+        <li><span className="font-medium text-brand-green-dark">Underwatered:</span> dry, crisp leaf edges, soil pulling away from the pot&apos;s sides</li>
       </ul>
 
       <p>

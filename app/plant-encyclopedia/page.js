@@ -22,7 +22,7 @@ export default function PlantEncyclopedia() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-brand-green-dark/75">
             A lookup table, not an article. {plants.length} plants covering light needs, how
-            often to water, difficulty, mature size, and whether they're safe around pets — filter
+            often to water, difficulty, mature size, and whether they&apos;re safe around pets — filter
             by category and click through for the full profile.
           </p>
         </div>

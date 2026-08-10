@@ -30,7 +30,7 @@ export default function Article() {
         tell you, not the date.
       </p>
 
-      <h2 className="text-xl font-semibold text-brand-green-dark">Signs it's actually time</h2>
+      <h2 className="text-xl font-semibold text-brand-green-dark">Signs it&apos;s actually time</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Roots visible at the drainage hole or circling the surface</strong> — the clearest
@@ -102,7 +102,7 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Aftercare</h2>
       <p>
         Keep the freshly repotted plant out of direct sun and away from AC vents for a week or
-        two. It's recovering from root disturbance and feels every bit of stress more than usual
+        two. It&apos;s recovering from root disturbance and feels every bit of stress more than usual
         during that stretch. A little leaf droop in the first few days is normal, and it usually
         settles once new roots take hold in the fresh mix.
       </p>
