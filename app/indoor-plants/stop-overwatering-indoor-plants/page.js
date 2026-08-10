@@ -29,6 +29,7 @@ export default function Article() {
       title="How to stop overwatering indoor plants (the #1 killer)"
       description="More indoor plants die from too much water than from too little. Here's why it happens indoors specifically, and how to break the habit."
       readTime="7 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -69,7 +70,16 @@ export default function Article() {
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Finger test.</strong> Push a finger 2–3 cm into the soil. If it&apos;s still
-          moist, wait — check again in two or three days rather than watering anyway.
+          moist, wait — check again in two or three days rather than watering anyway. A{" "}
+          <a
+            href="https://www.amazon.in/s?k=soil+moisture+meter&tag=theurbansprou-21"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="font-medium text-brand-green hover:text-brand-green-dark"
+          >
+            moisture meter
+          </a>{" "}
+          does the same job for a bit more precision, if you&apos;d rather not guess by feel.
         </li>
         <li>
           <strong>Weight test.</strong> Lift the pot right after watering so you know how it feels

@@ -29,6 +29,7 @@ export default function Article() {
       title="Raised beds vs containers for terrace gardening in India"
       description="A terrace is the one space where you genuinely get to choose between the two — and the right answer depends more on your slab and your budget than on which one looks nicer."
       readTime="9 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -76,8 +77,16 @@ export default function Article() {
           our terrace readiness guide
         </Link>{" "}
         need to happen properly before you build, not as an afterthought once the bricks are
-        already stacked. There&apos;s a real cost question too: materials — brick, treated wood, or one
-        of the modular kits now sold for exactly this — plus enough soil to fill the whole bed adds
+        already stacked. There&apos;s a real cost question too: materials — brick, treated wood, or a{" "}
+        <a
+          href="https://www.amazon.in/s?k=hdpe+raised+garden+bed&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          HDPE grow bed
+        </a>{" "}
+        kit, one of the modular options now sold for exactly this — plus enough soil to fill the whole bed adds
         up to more than most people expect at the outset. It&apos;s a bigger investment than a handful of
         pots, though it does pay that back over time, since a bed grows considerably more per square
         foot of terrace than the same footprint covered in containers ever could.

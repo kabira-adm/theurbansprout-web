@@ -26,6 +26,7 @@ export default function Article() {
       title="Choosing potting mix and soil for balcony plants"
       description="Garden soil and potting mix are not the same thing, and container plants pay the price when they're treated as if they are. Here's what to actually put in the pot."
       readTime="9 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -65,7 +66,18 @@ export default function Article() {
       </p>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          <strong>Cocopeat (coco peat / coir pith)</strong> — the backbone of most Indian potting
+          <strong>
+            <a
+              href="https://www.amazon.in/dp/B00K4AG2CQ?tag=theurbansprou-21"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-medium text-brand-green hover:text-brand-green-dark"
+            >
+              Cocopeat
+            </a>{" "}
+            (coco peat / coir pith)
+          </strong>{" "}
+          — the backbone of most Indian potting
           mixes. It&apos;s a byproduct of coconut husk processing, holds moisture well without
           waterlogging, and has a naturally loose texture that keeps the mix from compacting. Buy
           it as a compressed brick and soak it in water for 15–20 minutes to expand it before use.
@@ -73,10 +85,30 @@ export default function Article() {
         <li>
           <strong>Compost or well-rotted manure</strong> — the nutrient source. Compost also adds
           a small amount of structure and beneficial microbial life that a purely mineral mix
-          lacks. Vermicompost is widely available in Indian nurseries and works well here.
+          lacks.{" "}
+          <a
+            href="https://www.amazon.in/dp/B07PRXV7MJ?tag=theurbansprou-21"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="font-medium text-brand-green hover:text-brand-green-dark"
+          >
+            Vermicompost
+          </a>{" "}
+          is widely available in Indian nurseries and works well here.
         </li>
         <li>
-          <strong>Perlite, sand, or coarse grit</strong> — pure drainage and aeration, with no
+          <strong>
+            <a
+              href="https://www.amazon.in/s?k=perlite+for+plants&tag=theurbansprou-21"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-medium text-brand-green hover:text-brand-green-dark"
+            >
+              Perlite
+            </a>
+            , sand, or coarse grit
+          </strong>{" "}
+          — pure drainage and aeration, with no
           nutrient value at all. These create physical air pockets in the mix that plain cocopeat
           and compost, both quite fine-textured on their own, can&apos;t provide by themselves.
         </li>

@@ -26,6 +26,7 @@ export default function Article() {
       title="A ₹2,000 starter balcony garden"
       description="You don't need a big budget to start. Here's a realistic shopping list, what it actually costs, and the beginner purchases worth skipping entirely."
       readTime="8 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -49,8 +50,8 @@ export default function Article() {
         The shopping list
       </h2>
       <ul className="list-disc space-y-2 pl-5">
-        <li><strong>4–5 plastic pots (8–10 inch), ₹40–70 each — ₹250</strong>: plastic over terracotta at this stage — it&apos;s lighter, cheaper, and holds moisture longer, which is more forgiving while you&apos;re learning to water.</li>
-        <li><strong>Potting mix, one 20L bag — ₹250–350</strong>: covers roughly 4–5 medium pots. Buying a bag beats mixing your own for a first garden — there&apos;s no cocopeat brick or compost sitting unused if it doesn&apos;t work out.</li>
+        <li><strong><a href="https://www.amazon.in/dp/B08C7FLS3P?tag=theurbansprou-21" target="_blank" rel="noopener noreferrer sponsored" className="font-medium text-brand-green hover:text-brand-green-dark">4–5 plastic pots</a> (8–10 inch), ₹40–70 each — ₹250</strong>: plastic over terracotta at this stage — it&apos;s lighter, cheaper, and holds moisture longer, which is more forgiving while you&apos;re learning to water.</li>
+        <li><strong><a href="https://www.amazon.in/s?k=potting+mix+for+plants&tag=theurbansprou-21" target="_blank" rel="noopener noreferrer sponsored" className="font-medium text-brand-green hover:text-brand-green-dark">Potting mix</a>, one 20L bag — ₹250–350</strong>: covers roughly 4–5 medium pots. Buying a bag beats mixing your own for a first garden — there&apos;s no cocopeat brick or compost sitting unused if it doesn&apos;t work out.</li>
         <li><strong>2–3 beginner-friendly plants — ₹300–450</strong>: money plant, curry leaf, and marigold are a good spread — one near-indestructible, one genuinely useful, one that flowers fast enough to feel like progress.</li>
         <li><strong>A basic watering can, 1.5–2L — ₹150–250</strong>: a narrow spout matters more than capacity; it lets you water the soil directly instead of splashing leaves and the balcony floor.</li>
         <li><strong>A small hand trowel and gloves — ₹150–200</strong>: the only tools worth buying up front. Everything else — shears, cultivators, sprayers — can wait.</li>

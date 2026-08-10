@@ -29,6 +29,7 @@ export default function Article() {
       title="Full sun, full wind: terrace gardening in India"
       description="A terrace usually has no overhang, no neighbouring wall, and nothing breaking the wind — which means more light than a balcony gets, but also more stress on every plant you put up there."
       readTime="9 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -61,7 +62,16 @@ export default function Article() {
         with the soil or the watering.
       </p>
       <p>
-        A simple shade net rigged over the more vulnerable plants — young seedlings, leafy greens,
+        A simple{" "}
+        <a
+          href="https://www.amazon.in/dp/B0GV4T5RC7?tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          shade net
+        </a>{" "}
+        rigged over the more vulnerable plants — young seedlings, leafy greens,
         anything you know scorches easily — through the harshest afternoon stretch, roughly noon to
         3 p.m. in peak summer, cuts that damage significantly without meaningfully reducing the
         light the plant needs to grow, fruit, or flower. Something in the 40–50% shade range is

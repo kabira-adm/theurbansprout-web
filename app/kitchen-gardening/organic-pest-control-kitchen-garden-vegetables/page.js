@@ -29,6 +29,7 @@ export default function Article() {
       title="Organic pest control for kitchen garden vegetables (safe to eat)"
       description="A pest problem on an ornamental plant is a cosmetic issue. The same problem on a tomato or a bunch of coriander you're about to eat changes what you're willing to spray on it — here's what actually works without that trade-off."
       readTime="8 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -59,7 +60,16 @@ export default function Article() {
         Neem oil — the one product worth actually keeping around
       </h2>
       <p>
-        If you only keep one pest treatment on hand for a kitchen garden, make it neem oil. Mix
+        If you only keep one pest treatment on hand for a kitchen garden, make it{" "}
+        <a
+          href="https://www.amazon.in/dp/B09D5VL99M?tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          neem oil
+        </a>
+        . Mix
         roughly 5 ml of cold-pressed neem oil with a few drops of mild liquid soap (the soap helps
         it emulsify in water) per litre of water, and spray it directly on affected leaves,
         including the undersides where most pests actually feed and lay eggs. Spray in the early
@@ -82,7 +92,16 @@ export default function Article() {
         </li>
         <li>
           <strong>Whiteflies underneath leaves.</strong> Tiny white insects that scatter in a cloud
-          when you brush the plant. Yellow sticky traps placed just above the canopy catch adults
+          when you brush the plant.{" "}
+          <a
+            href="https://www.amazon.in/s?k=yellow+sticky+traps+garden&tag=theurbansprou-21"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="font-medium text-brand-green hover:text-brand-green-dark"
+          >
+            Yellow sticky traps
+          </a>{" "}
+          placed just above the canopy catch adults
           effectively and cheaply — a piece of cardboard coated in petroleum jelly works nearly as
           well as a bought trap. Combine with a neem oil spray for anything already established.
         </li>

@@ -26,6 +26,7 @@ export default function Article() {
       title="Choosing the right pot size and drainage for balcony containers"
       description="Most balcony gardening problems start at the pot, not the plant. Get size and drainage right first."
       readTime="6 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -71,16 +72,43 @@ export default function Article() {
         up without complaint will happily stain a balcony tile, and given enough time it can seep
         into the floor slab underneath. Use a saucer under every pot, but only if you actually
         empty it after watering; a saucer that&apos;s left full just becomes a second container
-        the roots are sitting in. Raising pots slightly on pot feet or a couple of bricks helps
+        the roots are sitting in. Raising pots slightly on{" "}
+        <a
+          href="https://www.amazon.in/s?k=pot+risers+feet&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          pot feet
+        </a>{" "}
+        or a couple of bricks helps
         air move under the base and slows staining. For railing planters, always fit the matching
         drip tray — runoff dripping straight onto the balcony below is one of the more common
         sources of society complaints in high-rises.
       </p>
 
       <p>
-        On materials, briefly: terracotta breathes and dries fast, which forgives you if you tend
+        On materials, briefly:{" "}
+        <a
+          href="https://www.amazon.in/dp/B0C9J5RKRB?tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          terracotta
+        </a>{" "}
+        breathes and dries fast, which forgives you if you tend
         to overwater, but it&apos;s heavy and chips if you knock it. Plastic holds moisture longer
-        and suits hot, dry corners where things dry out too quickly anyway. Grow bags are cheap,
+        and suits hot, dry corners where things dry out too quickly anyway.{" "}
+        <a
+          href="https://www.amazon.in/s?k=grow+bags+gardening&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Grow bags
+        </a>{" "}
+        are cheap,
         drain well without any fuss, and are the easiest option to shift around if you&apos;re
         renting and might be moving the whole setup next year.
       </p>

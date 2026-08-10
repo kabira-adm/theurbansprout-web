@@ -29,6 +29,7 @@ export default function Article() {
       title="Is your terrace ready? Load, waterproofing, and layout"
       description="Before you buy a single pot, three questions decide whether a terrace garden survives its first monsoon: how much weight it can carry, whether the slab is protected, and how water will actually leave it."
       readTime="9 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -104,10 +105,29 @@ export default function Article() {
       <p>
         The fix isn&apos;t complicated, but it does need to happen before you start, not after you
         notice a damp patch on the ceiling downstairs. Every container and every raised bed should
-        sit up off the bare slab — on pot feet, bricks, or a simple raised grid — so water drains
+        sit up off the bare slab — on{" "}
+        <a
+          href="https://www.amazon.in/s?k=pot+risers+feet&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          pot feet
+        </a>
+        , bricks, or a simple raised grid — so water drains
         away underneath instead of pooling against the waterproofing and slowly working through it.
-        For anything more permanent, like a raised bed, put a proper root barrier or a heavy-duty
-        plastic sheet down first. Roots and constant moisture reaching the slab directly is a much
+        For anything more permanent, like a raised bed, put a proper root barrier down first — a
+        heavy-duty plastic sheet works, or a{" "}
+        <a
+          href="https://www.amazon.in/s?k=geotextile+mat&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          geotextile mat
+        </a>{" "}
+        if you also want the layer to breathe and drain rather than seal completely. Roots and
+        constant moisture reaching the slab directly is a much
         bigger, much harder problem than the same thing happening under a movable pot you can shift
         or drain in an afternoon.
       </p>

@@ -7,6 +7,7 @@ export default function ArticleLayout({
   jsonLd,
   hub = "Balcony Gardening",
   hubHref = "/balcony-gardening",
+  hasAffiliateLinks = false,
   children,
 }) {
   return (
@@ -32,6 +33,11 @@ export default function ArticleLayout({
       <p className="mt-4 text-lg leading-8 text-brand-green-dark/75">{description}</p>
       {readTime ? (
         <p className="mt-3 text-xs font-medium text-brand-green-dark/50">{readTime} read</p>
+      ) : null}
+      {hasAffiliateLinks ? (
+        <p className="mt-3 text-xs italic text-brand-green-dark/50">
+          As an Amazon Associate, Urban Sprout earns from qualifying purchases.
+        </p>
       ) : null}
       <div className="prose-article mt-10 space-y-6 leading-7 text-brand-green-dark/85">
         {children}

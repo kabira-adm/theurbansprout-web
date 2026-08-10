@@ -26,6 +26,7 @@ export default function Article() {
       title="Organic pest control for open-air balconies"
       description="Most balcony pest problems are one of three culprits, and none of them need a chemical pesticide to fix. Here's how to spot and treat them."
       readTime="9 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -120,7 +121,15 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Making your own neem oil spray</h2>
       <p>
-        Neem oil shows up repeatedly in this list because it genuinely is the single most useful
+        <a
+          href="https://www.amazon.in/dp/B09D5VL99M?tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Neem oil
+        </a>{" "}
+        shows up repeatedly in this list because it genuinely is the single most useful
         organic treatment for an Indian balcony, and it&apos;s worth having a working mix on hand
         rather than buying a new bottle every time. A standard dilution is roughly 5ml of cold-pressed
         neem oil and a few drops of mild liquid soap, used as an emulsifier, mixed thoroughly into a

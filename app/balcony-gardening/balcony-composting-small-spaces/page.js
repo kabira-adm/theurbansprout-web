@@ -26,6 +26,7 @@ export default function Article() {
       title="Balcony composting in small spaces"
       description="You don't need a terrace or a backyard to compost your own kitchen waste. Here's what actually fits on a balcony, and what to keep out of it."
       readTime="8 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -55,7 +56,15 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Bokashi bins</h2>
       <p>
-        Bokashi is a fermentation method rather than traditional composting — kitchen waste is
+        <a
+          href="https://www.amazon.in/s?k=bokashi+compost+bin&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Bokashi
+        </a>{" "}
+        is a fermentation method rather than traditional composting — kitchen waste is
         layered with a bran inoculated with effective microorganisms, packed down to limit air, and
         sealed in an airtight bucket. It ferments rather than rots, which means far less smell than
         open composting and, crucially, no fruit flies, since the bin stays sealed throughout.
@@ -76,7 +85,16 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Small compost tumblers</h2>
       <p>
-        A tumbler is a sealed rotating drum, usually on a stand or frame, that you turn every few
+        A{" "}
+        <a
+          href="https://www.amazon.in/s?k=compost+tumbler&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          tumbler
+        </a>{" "}
+        is a sealed rotating drum, usually on a stand or frame, that you turn every few
         days to mix and aerate the contents. Compact models sized for balconies exist and process
         purely plant-based kitchen waste into usable compost over 4–6 weeks, without the fermentation
         step Bokashi needs.

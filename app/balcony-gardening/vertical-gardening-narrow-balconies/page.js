@@ -26,6 +26,7 @@ export default function Article() {
       title="Vertical gardening for narrow balconies"
       description="When there's no floor space to spare, the wall, the railing, and the ceiling are still available. Here's how to garden upward instead of outward."
       readTime="8 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -47,7 +48,15 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Wall-mounted planters</h2>
       <p>
-        Wall planters — pockets, modular grid systems, or simple bracketed pots — turn a bare wall
+        <a
+          href="https://www.amazon.in/s?k=wall+mounted+planters&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Wall planters
+        </a>{" "}
+        — pockets, modular grid systems, or simple bracketed pots — turn a bare wall
         into growing space without touching the floor at all. Felt pocket planters are the
         lightest and cheapest option and work well for herbs and shallow-rooted plants, though they
         dry out faster than a rigid pot and need more frequent watering as a result. Modular plastic
@@ -104,7 +113,15 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Railing planters</h2>
       <p>
-        Railing planters clip or bolt onto the balcony railing itself and are one of the most
+        <a
+          href="https://www.amazon.in/s?k=balcony+railing+planters&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Railing planters
+        </a>{" "}
+        clip or bolt onto the balcony railing itself and are one of the most
         space-efficient options available, since they add growing space without occupying any
         floor or wall area at all. Always use planters made specifically for railing mounting, with
         brackets on both the inside and outside of the rail — never a pot simply balanced on top of

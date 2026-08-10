@@ -27,6 +27,7 @@ export default function Article() {
       title="A fertilizing schedule for balcony plants"
       description="Getting the mix right at planting time is only half the job. This is about what to feed, and how often, for as long as the plant is in that pot."
       readTime="9 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -168,12 +169,32 @@ export default function Article() {
           nurseries and online in India.
         </li>
         <li>
-          <strong>Neem cake</strong> — a slow-release organic feed that also has some mild
+          <strong>
+            <a
+              href="https://www.amazon.in/dp/B09CZCXVGY?tag=theurbansprou-21"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-medium text-brand-green hover:text-brand-green-dark"
+            >
+              Neem cake
+            </a>
+          </strong>{" "}
+          — a slow-release organic feed that also has some mild
           pest-deterrent properties, worked into the topsoil roughly monthly during the growing
           season.
         </li>
         <li>
-          <strong>Bone meal</strong> — a phosphorus-heavy option specifically useful for flowering
+          <strong>
+            <a
+              href="https://www.amazon.in/dp/B09P8RR5F9?tag=theurbansprou-21"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-medium text-brand-green hover:text-brand-green-dark"
+            >
+              Bone meal
+            </a>
+          </strong>{" "}
+          — a phosphorus-heavy option specifically useful for flowering
           and fruiting plants, applied sparingly a few times through the growing season rather than
           on the same frequent schedule as a gentler liquid feed.
         </li>
@@ -182,7 +203,18 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Synthetic options available in India</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          <strong>Balanced NPK water-soluble fertiliser</strong> (commonly sold as 19:19:19 or
+          <strong>
+            Balanced{" "}
+            <a
+              href="https://www.amazon.in/dp/B0F3HRWZRF?tag=theurbansprou-21"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-medium text-brand-green hover:text-brand-green-dark"
+            >
+              NPK water-soluble fertiliser
+            </a>
+          </strong>{" "}
+          (commonly sold as 19:19:19 or
           similar) — fast-acting and easy to dose precisely, a reasonable default for general
           feeding on the standard growing-season schedule.
         </li>

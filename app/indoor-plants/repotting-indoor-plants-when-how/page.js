@@ -29,6 +29,7 @@ export default function Article() {
       title="Repotting indoor plants: when and how"
       description="Repotting too early stresses a plant for no reason, and repotting too late stunts it. Here's how to time it correctly and get the process right."
       readTime="6 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -100,8 +101,26 @@ export default function Article() {
           this encourages them to grow outward into the new soil instead of continuing to spiral.
         </li>
         <li>
-          Use a well-draining mix suited to Indian conditions: roughly 50% cocopeat or coco
-          peat-based potting soil, 30% compost, and 20% perlite or coarse sand for drainage.
+          Use a well-draining{" "}
+          <a
+            href="https://www.amazon.in/s?k=potting+mix+for+plants&tag=theurbansprou-21"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="font-medium text-brand-green hover:text-brand-green-dark"
+          >
+            potting mix
+          </a>{" "}
+          suited to Indian conditions: roughly 50% cocopeat or coco
+          peat-based potting soil, 30% compost, and 20%{" "}
+          <a
+            href="https://www.amazon.in/s?k=perlite+for+plants&tag=theurbansprou-21"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="font-medium text-brand-green hover:text-brand-green-dark"
+          >
+            perlite
+          </a>{" "}
+          or coarse sand for drainage.
         </li>
         <li>
           Fill the base of the new pot with mix, centre the plant so it sits at the same depth as

@@ -26,6 +26,7 @@ export default function Article() {
       title="Dealing with pigeons and birds on your balcony garden"
       description="Pigeons are one of the most common, least talked-about balcony gardening problems in Indian cities. Here's what actually keeps them off, without harming them."
       readTime="8 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -68,7 +69,16 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Deterrents that actually work</h2>
       <h3 className="text-lg font-semibold text-brand-green-dark">Anti-roosting spikes</h3>
       <p>
-        Plastic or stainless steel spike strips, mounted along the railing or any flat ledge
+        Plastic or stainless steel{" "}
+        <a
+          href="https://www.amazon.in/s?k=anti+pigeon+spikes&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          spike
+        </a>{" "}
+        strips, mounted along the railing or any flat ledge
         pigeons use as a perch, are the single most effective deterrent available and are widely
         sold in India specifically for this purpose. They don&apos;t injure birds — they simply
         make the surface uncomfortable to land on, so pigeons move somewhere easier. Cover the full
@@ -76,7 +86,16 @@ export default function Article() {
       </p>
       <h3 className="text-lg font-semibold text-brand-green-dark">Netting</h3>
       <p>
-        Fine bird netting stretched across the open face of the balcony is the most complete
+        Fine bird{" "}
+        <a
+          href="https://www.amazon.in/s?k=pigeon+net+balcony&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          netting
+        </a>{" "}
+        stretched across the open face of the balcony is the most complete
         solution where it&apos;s allowed, physically blocking pigeons from entering the space at
         all rather than just discouraging them from specific spots. It&apos;s more visible and more
         of a commitment than spikes, and many housing societies have specific rules about netting

@@ -29,6 +29,7 @@ export default function Article() {
       title="Soil and fertilizer basics for container vegetables"
       description="Vegetables are far hungrier than most houseplants. Get the mix and the feeding routine right and everything else in a kitchen garden gets easier."
       readTime="7 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -55,7 +56,19 @@ export default function Article() {
           access to your own.
         </li>
         <li>
-          <strong>25% compost or well-rotted cow dung manure (gobar khad)</strong> — the main
+          <strong>
+            25%{" "}
+            <a
+              href="https://www.amazon.in/dp/B07PRXV7MJ?tag=theurbansprou-21"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-medium text-brand-green hover:text-brand-green-dark"
+            >
+              compost
+            </a>{" "}
+            or well-rotted cow dung manure (gobar khad)
+          </strong>{" "}
+          — the main
           nutrient source. Cheap, widely available at nurseries, and works well for vegetables
           specifically.
         </li>

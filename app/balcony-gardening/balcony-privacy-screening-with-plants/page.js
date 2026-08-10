@@ -27,6 +27,7 @@ export default function Article() {
       title="Balcony privacy screening with plants"
       description="A trellis of climbers or a simple bamboo screen can do what a curtain can't outdoors — block a sightline while still letting light and air through."
       readTime="8 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -83,7 +84,16 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Bamboo and reed screens as a support or a standalone option</h2>
       <p>
-        A rolled bamboo or reed screen, tied to the railing or a freestanding frame, gives instant
+        A rolled{" "}
+        <a
+          href="https://www.amazon.in/s?k=bamboo+privacy+screen&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          bamboo
+        </a>{" "}
+        or reed screen, tied to the railing or a freestanding frame, gives instant
         privacy without waiting a season for a climber to fill in — genuinely useful if you need
         the screening now rather than a few months from now. It also works well paired with
         climbers rather than instead of them: the bamboo blocks the sightline immediately while a
@@ -104,7 +114,16 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Trellis installation that doesn&apos;t damage the structure</h2>
       <p>
-        A trellis needs to be sturdy enough to hold a mature, wind-exposed climber, but that
+        A{" "}
+        <a
+          href="https://www.amazon.in/s?k=garden+trellis&tag=theurbansprou-21"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          trellis
+        </a>{" "}
+        needs to be sturdy enough to hold a mature, wind-exposed climber, but that
         doesn&apos;t have to mean drilling into a shared wall or railing.
       </p>
       <ul className="list-disc space-y-2 pl-5">

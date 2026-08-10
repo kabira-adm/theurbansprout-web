@@ -29,6 +29,7 @@ export default function Article() {
       title="Growing tomatoes and chillies in balcony containers"
       description="Both are sun-lovers that do genuinely well in Indian heat — if you give them enough container depth and a bit of support as they grow."
       readTime="7 min"
+      hasAffiliateLinks
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "Article",
@@ -76,7 +77,16 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Supporting the plant as it grows</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          <strong>Stake tomatoes early, not after they flop.</strong> Push a bamboo stake or a
+          <strong>Stake tomatoes early, not after they flop.</strong> Push a{" "}
+          <a
+            href="https://www.amazon.in/s?k=tomato+plant+stakes&tag=theurbansprou-21"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="font-medium text-brand-green hover:text-brand-green-dark"
+          >
+            bamboo stake
+          </a>{" "}
+          or a
           tomato cage into the pot when you transplant the seedling, so roots aren&apos;t disturbed
           later. Tie the main stem loosely with soft cloth strips every 20–25 cm as it grows.
         </li>
