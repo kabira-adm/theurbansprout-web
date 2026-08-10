@@ -5,6 +5,20 @@ export const metadata = {
   title: "A Fertilizing Schedule for Balcony Plants",
   description:
     "How often to feed balcony plants after planting — growing season vs dormant season schedules, signs of over- and under-feeding, and organic vs synthetic options in India.",
+  alternates: { canonical: "/balcony-gardening/fertilizing-schedule-balcony-plants" },
+  openGraph: {
+    type: "article",
+    title: "A Fertilizing Schedule for Balcony Plants",
+    description:
+      "How often to feed balcony plants after planting — growing season vs dormant season schedules, signs of over- and under-feeding, and organic vs synthetic options in India.",
+    url: "/balcony-gardening/fertilizing-schedule-balcony-plants",
+  },
+  twitter: {
+    card: "summary",
+    title: "A Fertilizing Schedule for Balcony Plants",
+    description:
+      "How often to feed balcony plants after planting — growing season vs dormant season schedules, signs of over- and under-feeding, and organic vs synthetic options in India.",
+  },
 };
 
 export default function Article() {

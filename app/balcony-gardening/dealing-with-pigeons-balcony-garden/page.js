@@ -4,6 +4,20 @@ export const metadata = {
   title: "Dealing with Pigeons and Birds on Your Balcony Garden",
   description:
     "Pigeon deterrents that actually work on Indian balconies — spikes, netting, and reflective devices — plus which plants get damaged most, without harming the birds.",
+  alternates: { canonical: "/balcony-gardening/dealing-with-pigeons-balcony-garden" },
+  openGraph: {
+    type: "article",
+    title: "Dealing with Pigeons and Birds on Your Balcony Garden",
+    description:
+      "Pigeon deterrents that actually work on Indian balconies — spikes, netting, and reflective devices — plus which plants get damaged most, without harming the birds.",
+    url: "/balcony-gardening/dealing-with-pigeons-balcony-garden",
+  },
+  twitter: {
+    card: "summary",
+    title: "Dealing with Pigeons and Birds on Your Balcony Garden",
+    description:
+      "Pigeon deterrents that actually work on Indian balconies — spikes, netting, and reflective devices — plus which plants get damaged most, without harming the birds.",
+  },
 };
 
 export default function Article() {

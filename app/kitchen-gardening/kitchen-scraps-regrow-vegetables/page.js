@@ -5,6 +5,20 @@ export const metadata = {
   title: "Kitchen Scraps You Can Actually Regrow (and Ones You Can't)",
   description:
     "Which vegetable scraps genuinely regrow into usable plants in an Indian kitchen, which ones are a myth, and how to do it right.",
+  alternates: { canonical: "/kitchen-gardening/kitchen-scraps-regrow-vegetables" },
+  openGraph: {
+    type: "article",
+    title: "Kitchen Scraps You Can Actually Regrow (and Ones You Can't)",
+    description:
+      "Which vegetable scraps genuinely regrow into usable plants in an Indian kitchen, which ones are a myth, and how to do it right.",
+    url: "/kitchen-gardening/kitchen-scraps-regrow-vegetables",
+  },
+  twitter: {
+    card: "summary",
+    title: "Kitchen Scraps You Can Actually Regrow (and Ones You Can't)",
+    description:
+      "Which vegetable scraps genuinely regrow into usable plants in an Indian kitchen, which ones are a myth, and how to do it right.",
+  },
 };
 
 export default function Article() {

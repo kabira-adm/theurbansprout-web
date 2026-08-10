@@ -4,6 +4,20 @@ export const metadata = {
   title: "A Realistic Watering Schedule for Indian Summers and Monsoons",
   description:
     "Why a fixed watering schedule fails across Indian seasons, and the finger-test method that actually works year-round.",
+  alternates: { canonical: "/balcony-gardening/watering-schedule-indian-summers-monsoons" },
+  openGraph: {
+    type: "article",
+    title: "A Realistic Watering Schedule for Indian Summers and Monsoons",
+    description:
+      "Why a fixed watering schedule fails across Indian seasons, and the finger-test method that actually works year-round.",
+    url: "/balcony-gardening/watering-schedule-indian-summers-monsoons",
+  },
+  twitter: {
+    card: "summary",
+    title: "A Realistic Watering Schedule for Indian Summers and Monsoons",
+    description:
+      "Why a fixed watering schedule fails across Indian seasons, and the finger-test method that actually works year-round.",
+  },
 };
 
 export default function Article() {

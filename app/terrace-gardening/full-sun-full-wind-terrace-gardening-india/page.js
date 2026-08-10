@@ -5,6 +5,20 @@ export const metadata = {
   title: "Full Sun, Full Wind: Terrace Gardening in India",
   description:
     "How to manage the harsher sun and stronger wind terraces get compared to balconies, and which plants actually hold up to both.",
+  alternates: { canonical: "/terrace-gardening/full-sun-full-wind-terrace-gardening-india" },
+  openGraph: {
+    type: "article",
+    title: "Full Sun, Full Wind: Terrace Gardening in India",
+    description:
+      "How to manage the harsher sun and stronger wind terraces get compared to balconies, and which plants actually hold up to both.",
+    url: "/terrace-gardening/full-sun-full-wind-terrace-gardening-india",
+  },
+  twitter: {
+    card: "summary",
+    title: "Full Sun, Full Wind: Terrace Gardening in India",
+    description:
+      "How to manage the harsher sun and stronger wind terraces get compared to balconies, and which plants actually hold up to both.",
+  },
 };
 
 export default function Article() {

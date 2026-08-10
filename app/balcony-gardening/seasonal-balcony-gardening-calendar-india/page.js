@@ -4,6 +4,20 @@ export const metadata = {
   title: "A Seasonal Balcony Gardening Calendar for India",
   description:
     "What to plant, prune, and watch for through summer, monsoon, and winter — a scannable season-by-season reference for Indian balcony gardens.",
+  alternates: { canonical: "/balcony-gardening/seasonal-balcony-gardening-calendar-india" },
+  openGraph: {
+    type: "article",
+    title: "A Seasonal Balcony Gardening Calendar for India",
+    description:
+      "What to plant, prune, and watch for through summer, monsoon, and winter — a scannable season-by-season reference for Indian balcony gardens.",
+    url: "/balcony-gardening/seasonal-balcony-gardening-calendar-india",
+  },
+  twitter: {
+    card: "summary",
+    title: "A Seasonal Balcony Gardening Calendar for India",
+    description:
+      "What to plant, prune, and watch for through summer, monsoon, and winter — a scannable season-by-season reference for Indian balcony gardens.",
+  },
 };
 
 export default function Article() {

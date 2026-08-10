@@ -4,6 +4,20 @@ export const metadata = {
   title: "Flowering Plants for Indian Balconies",
   description:
     "Which flowering plants actually bloom well on a balcony rather than a full-sun terrace, what to expect through their bloom season, and the basics of deadheading.",
+  alternates: { canonical: "/balcony-gardening/flowering-plants-for-indian-balconies" },
+  openGraph: {
+    type: "article",
+    title: "Flowering Plants for Indian Balconies",
+    description:
+      "Which flowering plants actually bloom well on a balcony rather than a full-sun terrace, what to expect through their bloom season, and the basics of deadheading.",
+    url: "/balcony-gardening/flowering-plants-for-indian-balconies",
+  },
+  twitter: {
+    card: "summary",
+    title: "Flowering Plants for Indian Balconies",
+    description:
+      "Which flowering plants actually bloom well on a balcony rather than a full-sun terrace, what to expect through their bloom season, and the basics of deadheading.",
+  },
 };
 
 export default function Article() {

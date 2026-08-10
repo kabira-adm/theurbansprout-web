@@ -4,6 +4,20 @@ export const metadata = {
   title: "A ₹2,000 Starter Balcony Garden",
   description:
     "A realistic budget breakdown for starting a balcony garden from zero — where to spend, where to save, and what not to buy first.",
+  alternates: { canonical: "/balcony-gardening/budget-balcony-garden-starter-guide" },
+  openGraph: {
+    type: "article",
+    title: "A ₹2,000 Starter Balcony Garden",
+    description:
+      "A realistic budget breakdown for starting a balcony garden from zero — where to spend, where to save, and what not to buy first.",
+    url: "/balcony-gardening/budget-balcony-garden-starter-guide",
+  },
+  twitter: {
+    card: "summary",
+    title: "A ₹2,000 Starter Balcony Garden",
+    description:
+      "A realistic budget breakdown for starting a balcony garden from zero — where to spend, where to save, and what not to buy first.",
+  },
 };
 
 export default function Article() {

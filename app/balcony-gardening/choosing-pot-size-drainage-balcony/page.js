@@ -4,6 +4,20 @@ export const metadata = {
   title: "Choosing the Right Pot Size and Drainage for Balcony Containers",
   description:
     "How to size containers correctly and get drainage right, so plants thrive and your balcony floor stays undamaged.",
+  alternates: { canonical: "/balcony-gardening/choosing-pot-size-drainage-balcony" },
+  openGraph: {
+    type: "article",
+    title: "Choosing the Right Pot Size and Drainage for Balcony Containers",
+    description:
+      "How to size containers correctly and get drainage right, so plants thrive and your balcony floor stays undamaged.",
+    url: "/balcony-gardening/choosing-pot-size-drainage-balcony",
+  },
+  twitter: {
+    card: "summary",
+    title: "Choosing the Right Pot Size and Drainage for Balcony Containers",
+    description:
+      "How to size containers correctly and get drainage right, so plants thrive and your balcony floor stays undamaged.",
+  },
 };
 
 export default function Article() {

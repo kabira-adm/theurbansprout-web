@@ -5,6 +5,20 @@ export const metadata = {
   title: "Raised Beds vs Containers for Terrace Gardening in India",
   description:
     "Weigh up raised beds against containers for an Indian terrace garden — cost, weight, watering, and which one actually fits your space.",
+  alternates: { canonical: "/terrace-gardening/raised-beds-vs-containers-terrace-gardening-india" },
+  openGraph: {
+    type: "article",
+    title: "Raised Beds vs Containers for Terrace Gardening in India",
+    description:
+      "Weigh up raised beds against containers for an Indian terrace garden — cost, weight, watering, and which one actually fits your space.",
+    url: "/terrace-gardening/raised-beds-vs-containers-terrace-gardening-india",
+  },
+  twitter: {
+    card: "summary",
+    title: "Raised Beds vs Containers for Terrace Gardening in India",
+    description:
+      "Weigh up raised beds against containers for an Indian terrace garden — cost, weight, watering, and which one actually fits your space.",
+  },
 };
 
 export default function Article() {

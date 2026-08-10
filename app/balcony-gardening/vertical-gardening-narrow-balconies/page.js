@@ -4,6 +4,20 @@ export const metadata = {
   title: "Vertical Gardening for Narrow Balconies",
   description:
     "Wall planters, tiered shelving, hanging systems, and railing planters for balconies too narrow for floor pots — including what's safe to mount on a rented balcony.",
+  alternates: { canonical: "/balcony-gardening/vertical-gardening-narrow-balconies" },
+  openGraph: {
+    type: "article",
+    title: "Vertical Gardening for Narrow Balconies",
+    description:
+      "Wall planters, tiered shelving, hanging systems, and railing planters for balconies too narrow for floor pots — including what's safe to mount on a rented balcony.",
+    url: "/balcony-gardening/vertical-gardening-narrow-balconies",
+  },
+  twitter: {
+    card: "summary",
+    title: "Vertical Gardening for Narrow Balconies",
+    description:
+      "Wall planters, tiered shelving, hanging systems, and railing planters for balconies too narrow for floor pots — including what's safe to mount on a rented balcony.",
+  },
 };
 
 export default function Article() {

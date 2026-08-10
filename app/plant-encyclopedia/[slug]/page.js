@@ -12,9 +12,24 @@ export async function generateMetadata({ params }) {
   if (!plant) {
     return { title: "Plant not found" };
   }
+  const title = `${plant.commonName} — Care Profile`;
+  const description = `${plant.commonName} (${plant.scientificName}): light, watering, difficulty, mature size, and pet-safety for Indian apartments.`;
+  const canonical = `/plant-encyclopedia/${slug}`;
   return {
-    title: `${plant.commonName} — Care Profile`,
-    description: `${plant.commonName} (${plant.scientificName}): light, watering, difficulty, mature size, and pet-safety for Indian apartments.`,
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      type: "article",
+      title,
+      description,
+      url: canonical,
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+    },
   };
 }
 

@@ -5,6 +5,20 @@ export const metadata = {
   title: "Soil and Fertilizer Basics for Container Vegetables",
   description:
     "A simple, India-specific potting mix and feeding routine for growing vegetables and herbs in containers.",
+  alternates: { canonical: "/kitchen-gardening/soil-and-fertilizer-basics-container-vegetables" },
+  openGraph: {
+    type: "article",
+    title: "Soil and Fertilizer Basics for Container Vegetables",
+    description:
+      "A simple, India-specific potting mix and feeding routine for growing vegetables and herbs in containers.",
+    url: "/kitchen-gardening/soil-and-fertilizer-basics-container-vegetables",
+  },
+  twitter: {
+    card: "summary",
+    title: "Soil and Fertilizer Basics for Container Vegetables",
+    description:
+      "A simple, India-specific potting mix and feeding routine for growing vegetables and herbs in containers.",
+  },
 };
 
 export default function Article() {

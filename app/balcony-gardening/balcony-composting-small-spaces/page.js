@@ -4,6 +4,20 @@ export const metadata = {
   title: "Balcony Composting in Small Spaces",
   description:
     "Compact composting methods for balconies with no floor space to spare — Bokashi bins, small tumblers, and what kitchen waste is actually safe to compost there.",
+  alternates: { canonical: "/balcony-gardening/balcony-composting-small-spaces" },
+  openGraph: {
+    type: "article",
+    title: "Balcony Composting in Small Spaces",
+    description:
+      "Compact composting methods for balconies with no floor space to spare — Bokashi bins, small tumblers, and what kitchen waste is actually safe to compost there.",
+    url: "/balcony-gardening/balcony-composting-small-spaces",
+  },
+  twitter: {
+    card: "summary",
+    title: "Balcony Composting in Small Spaces",
+    description:
+      "Compact composting methods for balconies with no floor space to spare — Bokashi bins, small tumblers, and what kitchen waste is actually safe to compost there.",
+  },
 };
 
 export default function Article() {

@@ -4,6 +4,20 @@ export const metadata = {
   title: "Wind and Railing Safety for High-Floor Balconies",
   description:
     "How to garden safely on a high-floor balcony — anchoring pots, choosing wind-safe plants, and avoiding falling-pot risk.",
+  alternates: { canonical: "/balcony-gardening/wind-railing-safety-high-floor-balconies" },
+  openGraph: {
+    type: "article",
+    title: "Wind and Railing Safety for High-Floor Balconies",
+    description:
+      "How to garden safely on a high-floor balcony — anchoring pots, choosing wind-safe plants, and avoiding falling-pot risk.",
+    url: "/balcony-gardening/wind-railing-safety-high-floor-balconies",
+  },
+  twitter: {
+    card: "summary",
+    title: "Wind and Railing Safety for High-Floor Balconies",
+    description:
+      "How to garden safely on a high-floor balcony — anchoring pots, choosing wind-safe plants, and avoiding falling-pot risk.",
+  },
 };
 
 export default function Article() {

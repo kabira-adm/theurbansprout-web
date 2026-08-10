@@ -5,6 +5,20 @@ export const metadata = {
   title: "Fixing the Most Common Balcony Gardening Mistakes",
   description:
     "The recurring mistakes that kill balcony plants in Indian homes, and the specific fix for each one.",
+  alternates: { canonical: "/balcony-gardening/common-balcony-gardening-mistakes" },
+  openGraph: {
+    type: "article",
+    title: "Fixing the Most Common Balcony Gardening Mistakes",
+    description:
+      "The recurring mistakes that kill balcony plants in Indian homes, and the specific fix for each one.",
+    url: "/balcony-gardening/common-balcony-gardening-mistakes",
+  },
+  twitter: {
+    card: "summary",
+    title: "Fixing the Most Common Balcony Gardening Mistakes",
+    description:
+      "The recurring mistakes that kill balcony plants in Indian homes, and the specific fix for each one.",
+  },
 };
 
 export default function Article() {

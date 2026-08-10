@@ -5,6 +5,20 @@ export const metadata = {
   title: "High-Rise Balcony Challenges",
   description:
     "Heat reflection off surrounding glass buildings and lower humidity at height change how plants behave on a high-rise balcony — a different problem from wind or full-sun exposure.",
+  alternates: { canonical: "/balcony-gardening/high-rise-balcony-challenges" },
+  openGraph: {
+    type: "article",
+    title: "High-Rise Balcony Challenges",
+    description:
+      "Heat reflection off surrounding glass buildings and lower humidity at height change how plants behave on a high-rise balcony — a different problem from wind or full-sun exposure.",
+    url: "/balcony-gardening/high-rise-balcony-challenges",
+  },
+  twitter: {
+    card: "summary",
+    title: "High-Rise Balcony Challenges",
+    description:
+      "Heat reflection off surrounding glass buildings and lower humidity at height change how plants behave on a high-rise balcony — a different problem from wind or full-sun exposure.",
+  },
 };
 
 export default function Article() {

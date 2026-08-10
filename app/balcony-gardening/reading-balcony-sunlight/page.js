@@ -4,6 +4,20 @@ export const metadata = {
   title: "Reading Your Balcony's Sunlight Before You Buy a Single Plant",
   description:
     "A simple method to measure how much sun your balcony actually gets, so you stop buying plants that don't match your light.",
+  alternates: { canonical: "/balcony-gardening/reading-balcony-sunlight" },
+  openGraph: {
+    type: "article",
+    title: "Reading Your Balcony's Sunlight Before You Buy a Single Plant",
+    description:
+      "A simple method to measure how much sun your balcony actually gets, so you stop buying plants that don't match your light.",
+    url: "/balcony-gardening/reading-balcony-sunlight",
+  },
+  twitter: {
+    card: "summary",
+    title: "Reading Your Balcony's Sunlight Before You Buy a Single Plant",
+    description:
+      "A simple method to measure how much sun your balcony actually gets, so you stop buying plants that don't match your light.",
+  },
 };
 
 export default function Article() {

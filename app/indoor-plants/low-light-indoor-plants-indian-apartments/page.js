@@ -5,6 +5,20 @@ export const metadata = {
   title: "Best Low-Light Indoor Plants for Indian Apartments",
   description:
     "Which plants actually survive a north-facing room or a flat boxed in by neighbouring towers, and how to place them.",
+  alternates: { canonical: "/indoor-plants/low-light-indoor-plants-indian-apartments" },
+  openGraph: {
+    type: "article",
+    title: "Best Low-Light Indoor Plants for Indian Apartments",
+    description:
+      "Which plants actually survive a north-facing room or a flat boxed in by neighbouring towers, and how to place them.",
+    url: "/indoor-plants/low-light-indoor-plants-indian-apartments",
+  },
+  twitter: {
+    card: "summary",
+    title: "Best Low-Light Indoor Plants for Indian Apartments",
+    description:
+      "Which plants actually survive a north-facing room or a flat boxed in by neighbouring towers, and how to place them.",
+  },
 };
 
 export default function Article() {

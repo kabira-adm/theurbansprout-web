@@ -5,6 +5,20 @@ export const metadata = {
   title: "Repotting Indoor Plants: When and How",
   description:
     "The specific signs that mean it's time to repot, the best season for it in India, and a step-by-step process.",
+  alternates: { canonical: "/indoor-plants/repotting-indoor-plants-when-how" },
+  openGraph: {
+    type: "article",
+    title: "Repotting Indoor Plants: When and How",
+    description:
+      "The specific signs that mean it's time to repot, the best season for it in India, and a step-by-step process.",
+    url: "/indoor-plants/repotting-indoor-plants-when-how",
+  },
+  twitter: {
+    card: "summary",
+    title: "Repotting Indoor Plants: When and How",
+    description:
+      "The specific signs that mean it's time to repot, the best season for it in India, and a step-by-step process.",
+  },
 };
 
 export default function Article() {

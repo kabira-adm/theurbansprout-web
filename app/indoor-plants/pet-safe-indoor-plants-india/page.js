@@ -5,6 +5,20 @@ export const metadata = {
   title: "Pet-Safe Indoor Plants for Indian Homes",
   description:
     "Which popular indoor plants are actually risky for cats and dogs, and non-toxic alternatives that still work indoors.",
+  alternates: { canonical: "/indoor-plants/pet-safe-indoor-plants-india" },
+  openGraph: {
+    type: "article",
+    title: "Pet-Safe Indoor Plants for Indian Homes",
+    description:
+      "Which popular indoor plants are actually risky for cats and dogs, and non-toxic alternatives that still work indoors.",
+    url: "/indoor-plants/pet-safe-indoor-plants-india",
+  },
+  twitter: {
+    card: "summary",
+    title: "Pet-Safe Indoor Plants for Indian Homes",
+    description:
+      "Which popular indoor plants are actually risky for cats and dogs, and non-toxic alternatives that still work indoors.",
+  },
 };
 
 export default function Article() {

@@ -5,6 +5,20 @@ export const metadata = {
   title: "Growing Tomatoes and Chillies in Balcony Containers",
   description:
     "Container sizes, sunlight needs, and support tricks for growing tomatoes and chillies on an Indian apartment balcony.",
+  alternates: { canonical: "/kitchen-gardening/growing-tomatoes-chillies-balcony-containers" },
+  openGraph: {
+    type: "article",
+    title: "Growing Tomatoes and Chillies in Balcony Containers",
+    description:
+      "Container sizes, sunlight needs, and support tricks for growing tomatoes and chillies on an Indian apartment balcony.",
+    url: "/kitchen-gardening/growing-tomatoes-chillies-balcony-containers",
+  },
+  twitter: {
+    card: "summary",
+    title: "Growing Tomatoes and Chillies in Balcony Containers",
+    description:
+      "Container sizes, sunlight needs, and support tricks for growing tomatoes and chillies on an Indian apartment balcony.",
+  },
 };
 
 export default function Article() {

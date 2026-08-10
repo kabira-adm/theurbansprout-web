@@ -5,6 +5,20 @@ export const metadata = {
   title: "How to Stop Overwatering Indoor Plants (the #1 Killer)",
   description:
     "Why indoor plants in Indian apartments almost always die from too much water, and the checks that fix it.",
+  alternates: { canonical: "/indoor-plants/stop-overwatering-indoor-plants" },
+  openGraph: {
+    type: "article",
+    title: "How to Stop Overwatering Indoor Plants (the #1 Killer)",
+    description:
+      "Why indoor plants in Indian apartments almost always die from too much water, and the checks that fix it.",
+    url: "/indoor-plants/stop-overwatering-indoor-plants",
+  },
+  twitter: {
+    card: "summary",
+    title: "How to Stop Overwatering Indoor Plants (the #1 Killer)",
+    description:
+      "Why indoor plants in Indian apartments almost always die from too much water, and the checks that fix it.",
+  },
 };
 
 export default function Article() {

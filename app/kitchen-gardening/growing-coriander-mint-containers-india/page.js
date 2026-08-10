@@ -5,6 +5,20 @@ export const metadata = {
   title: "Growing Coriander and Mint in Containers (India Edition)",
   description:
     "How to grow coriander and mint from kitchen seed and cuttings in small containers, tuned for Indian heat, tap water, and balcony space.",
+  alternates: { canonical: "/kitchen-gardening/growing-coriander-mint-containers-india" },
+  openGraph: {
+    type: "article",
+    title: "Growing Coriander and Mint in Containers (India Edition)",
+    description:
+      "How to grow coriander and mint from kitchen seed and cuttings in small containers, tuned for Indian heat, tap water, and balcony space.",
+    url: "/kitchen-gardening/growing-coriander-mint-containers-india",
+  },
+  twitter: {
+    card: "summary",
+    title: "Growing Coriander and Mint in Containers (India Edition)",
+    description:
+      "How to grow coriander and mint from kitchen seed and cuttings in small containers, tuned for Indian heat, tap water, and balcony space.",
+  },
 };
 
 export default function Article() {

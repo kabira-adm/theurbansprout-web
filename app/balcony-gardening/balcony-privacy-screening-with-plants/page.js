@@ -5,6 +5,20 @@ export const metadata = {
   title: "Balcony Privacy Screening with Plants",
   description:
     "Climbers, bamboo screens, and trellis setups that add privacy on a balcony facing neighbours or a busy street, without damaging the structure or blocking your own light.",
+  alternates: { canonical: "/balcony-gardening/balcony-privacy-screening-with-plants" },
+  openGraph: {
+    type: "article",
+    title: "Balcony Privacy Screening with Plants",
+    description:
+      "Climbers, bamboo screens, and trellis setups that add privacy on a balcony facing neighbours or a busy street, without damaging the structure or blocking your own light.",
+    url: "/balcony-gardening/balcony-privacy-screening-with-plants",
+  },
+  twitter: {
+    card: "summary",
+    title: "Balcony Privacy Screening with Plants",
+    description:
+      "Climbers, bamboo screens, and trellis setups that add privacy on a balcony facing neighbours or a busy street, without damaging the structure or blocking your own light.",
+  },
 };
 
 export default function Article() {

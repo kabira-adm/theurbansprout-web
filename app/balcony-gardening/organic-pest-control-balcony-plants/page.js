@@ -4,6 +4,20 @@ export const metadata = {
   title: "Organic Pest Control for Open-Air Balconies",
   description:
     "Identifying and treating the most common balcony pests — aphids, mealybugs, spider mites — with neem oil, soap sprays, and companion planting, no chemicals needed.",
+  alternates: { canonical: "/balcony-gardening/organic-pest-control-balcony-plants" },
+  openGraph: {
+    type: "article",
+    title: "Organic Pest Control for Open-Air Balconies",
+    description:
+      "Identifying and treating the most common balcony pests — aphids, mealybugs, spider mites — with neem oil, soap sprays, and companion planting, no chemicals needed.",
+    url: "/balcony-gardening/organic-pest-control-balcony-plants",
+  },
+  twitter: {
+    card: "summary",
+    title: "Organic Pest Control for Open-Air Balconies",
+    description:
+      "Identifying and treating the most common balcony pests — aphids, mealybugs, spider mites — with neem oil, soap sprays, and companion planting, no chemicals needed.",
+  },
 };
 
 export default function Article() {

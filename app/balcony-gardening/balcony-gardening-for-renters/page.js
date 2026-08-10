@@ -4,6 +4,20 @@ export const metadata = {
   title: "Balcony Gardening for Renters",
   description:
     "Deposit-safe, fully portable balcony setups for renters — freestanding furniture instead of wall mounts, what landlords actually object to, and plants that survive a move.",
+  alternates: { canonical: "/balcony-gardening/balcony-gardening-for-renters" },
+  openGraph: {
+    type: "article",
+    title: "Balcony Gardening for Renters",
+    description:
+      "Deposit-safe, fully portable balcony setups for renters — freestanding furniture instead of wall mounts, what landlords actually object to, and plants that survive a move.",
+    url: "/balcony-gardening/balcony-gardening-for-renters",
+  },
+  twitter: {
+    card: "summary",
+    title: "Balcony Gardening for Renters",
+    description:
+      "Deposit-safe, fully portable balcony setups for renters — freestanding furniture instead of wall mounts, what landlords actually object to, and plants that survive a move.",
+  },
 };
 
 export default function Article() {

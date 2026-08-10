@@ -5,6 +5,20 @@ export const metadata = {
   title: "Is Your Terrace Ready? Load, Waterproofing, and Layout",
   description:
     "Check structural load, waterproofing, and drainage layout before you put a single pot on your terrace — the three things most terrace gardens skip.",
+  alternates: { canonical: "/terrace-gardening/is-your-terrace-ready-load-waterproofing-layout" },
+  openGraph: {
+    type: "article",
+    title: "Is Your Terrace Ready? Load, Waterproofing, and Layout",
+    description:
+      "Check structural load, waterproofing, and drainage layout before you put a single pot on your terrace — the three things most terrace gardens skip.",
+    url: "/terrace-gardening/is-your-terrace-ready-load-waterproofing-layout",
+  },
+  twitter: {
+    card: "summary",
+    title: "Is Your Terrace Ready? Load, Waterproofing, and Layout",
+    description:
+      "Check structural load, waterproofing, and drainage layout before you put a single pot on your terrace — the three things most terrace gardens skip.",
+  },
 };
 
 export default function Article() {

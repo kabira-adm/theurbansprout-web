@@ -5,6 +5,20 @@ export const metadata = {
   title: "Small Balcony vs. Large Balcony: Different Strategies",
   description:
     "Layout philosophy across the full balcony size range — zoning and plant density when you have real space, and prioritization when you genuinely don't.",
+  alternates: { canonical: "/balcony-gardening/small-vs-large-balcony-strategies" },
+  openGraph: {
+    type: "article",
+    title: "Small Balcony vs. Large Balcony: Different Strategies",
+    description:
+      "Layout philosophy across the full balcony size range — zoning and plant density when you have real space, and prioritization when you genuinely don't.",
+    url: "/balcony-gardening/small-vs-large-balcony-strategies",
+  },
+  twitter: {
+    card: "summary",
+    title: "Small Balcony vs. Large Balcony: Different Strategies",
+    description:
+      "Layout philosophy across the full balcony size range — zoning and plant density when you have real space, and prioritization when you genuinely don't.",
+  },
 };
 
 export default function Article() {

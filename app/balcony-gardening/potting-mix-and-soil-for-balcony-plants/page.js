@@ -4,6 +4,20 @@ export const metadata = {
   title: "Choosing Potting Mix and Soil for Balcony Plants",
   description:
     "What actually goes into a good potting mix, a simple all-purpose ratio, and how needs differ for succulents, leafy ornamentals, and flowering plants.",
+  alternates: { canonical: "/balcony-gardening/potting-mix-and-soil-for-balcony-plants" },
+  openGraph: {
+    type: "article",
+    title: "Choosing Potting Mix and Soil for Balcony Plants",
+    description:
+      "What actually goes into a good potting mix, a simple all-purpose ratio, and how needs differ for succulents, leafy ornamentals, and flowering plants.",
+    url: "/balcony-gardening/potting-mix-and-soil-for-balcony-plants",
+  },
+  twitter: {
+    card: "summary",
+    title: "Choosing Potting Mix and Soil for Balcony Plants",
+    description:
+      "What actually goes into a good potting mix, a simple all-purpose ratio, and how needs differ for succulents, leafy ornamentals, and flowering plants.",
+  },
 };
 
 export default function Article() {
