@@ -24,6 +24,13 @@ export default function sitemap() {
     "reading-balcony-sunlight",
     "watering-schedule-indian-summers-monsoons",
     "wind-railing-safety-high-floor-balconies",
+    "potting-mix-and-soil-for-balcony-plants",
+    "vertical-gardening-narrow-balconies",
+    "budget-balcony-garden-starter-guide",
+    "balcony-composting-small-spaces",
+    "organic-pest-control-balcony-plants",
+    "dealing-with-pigeons-balcony-garden",
+    "seasonal-balcony-gardening-calendar-india",
   ].map((slug) => `${BASE_URL}/balcony-gardening/${slug}`);
 
   const indoorArticles = [
