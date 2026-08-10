@@ -26,6 +26,7 @@ export default function Footer() {
               <li><Link href="/indoor-plants" className="hover:text-brand-green">Indoor Plants</Link></li>
               <li><Link href="/kitchen-gardening" className="hover:text-brand-green">Kitchen Gardening</Link></li>
               <li><Link href="/plant-encyclopedia" className="hover:text-brand-green">Plant Encyclopedia</Link></li>
+              <li><Link href="/terrace-gardening" className="hover:text-brand-green">Terrace Gardening</Link></li>
               <li><Link href="/tools/watering-scheduler" className="hover:text-brand-green">Watering Scheduler</Link></li>
             </ul>
           </div>
