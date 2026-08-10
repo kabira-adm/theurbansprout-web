@@ -59,6 +59,36 @@ const moreGuides = [
     description: "What to plant, prune, and watch for through summer, monsoon, and winter, season by season.",
     href: "/balcony-gardening/seasonal-balcony-gardening-calendar-india",
   },
+  {
+    title: "Flowering plants for Indian balconies",
+    description: "Which flowers actually bloom well in balcony sun and shade, bloom-season expectations, and deadheading basics.",
+    href: "/balcony-gardening/flowering-plants-for-indian-balconies",
+  },
+  {
+    title: "Balcony gardening for renters",
+    description: "Fully portable, deposit-safe setups — nothing drilled into walls or railings, and plants that survive a move.",
+    href: "/balcony-gardening/balcony-gardening-for-renters",
+  },
+  {
+    title: "A fertilizing schedule for balcony plants",
+    description: "How often to feed through growing and dormant seasons, and the signs of over- and under-feeding.",
+    href: "/balcony-gardening/fertilizing-schedule-balcony-plants",
+  },
+  {
+    title: "Balcony privacy screening with plants",
+    description: "Climbers, bamboo screens, and trellis setups for balconies facing neighbours or a busy street.",
+    href: "/balcony-gardening/balcony-privacy-screening-with-plants",
+  },
+  {
+    title: "Small balcony vs. large balcony: different strategies",
+    description: "Layout philosophy across the size range — zoning when you have space, prioritization when you don't.",
+    href: "/balcony-gardening/small-vs-large-balcony-strategies",
+  },
+  {
+    title: "High-rise balcony challenges",
+    description: "Heat reflection off glass buildings and lower humidity at height — the microclimate wind advice doesn't cover.",
+    href: "/balcony-gardening/high-rise-balcony-challenges",
+  },
 ];
 
 const starterPlants = [

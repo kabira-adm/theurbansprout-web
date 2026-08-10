@@ -32,6 +32,12 @@ export default function sitemap() {
     "organic-pest-control-balcony-plants",
     "dealing-with-pigeons-balcony-garden",
     "seasonal-balcony-gardening-calendar-india",
+    "flowering-plants-for-indian-balconies",
+    "balcony-gardening-for-renters",
+    "fertilizing-schedule-balcony-plants",
+    "balcony-privacy-screening-with-plants",
+    "small-vs-large-balcony-strategies",
+    "high-rise-balcony-challenges",
   ].map((slug) => `${BASE_URL}/balcony-gardening/${slug}`);
 
   const indoorArticles = [
