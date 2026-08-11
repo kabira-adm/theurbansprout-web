@@ -102,7 +102,7 @@ export default async function PlantProfile({ params }) {
               <dd className="col-span-2 text-sm font-medium text-brand-green-dark">
                 {plant.petSafe
                   ? "Non-toxic to cats and dogs."
-                  : "Toxic or irritant to cats and dogs if chewed — keep out of reach."}
+                  : "Toxic or irritant to cats and dogs if chewed. Keep out of reach."}
               </dd>
             </div>
           </dl>

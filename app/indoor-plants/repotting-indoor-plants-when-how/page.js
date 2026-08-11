@@ -48,19 +48,19 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Signs it&apos;s actually time</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          <strong>Roots visible at the drainage hole or circling the surface</strong> — the clearest
+          <strong>Roots visible at the drainage hole or circling the surface.</strong> This is the clearest
           sign the plant has outgrown the pot.
         </li>
         <li>
-          <strong>Water runs straight through without being absorbed</strong> — usually means the
+          <strong>Water runs straight through without being absorbed.</strong> This usually means the
           roots have replaced most of the soil, leaving little to hold moisture.
         </li>
         <li>
-          <strong>The plant looks top-heavy or tips over easily</strong> — the root mass and
+          <strong>The plant looks top-heavy or tips over easily.</strong> The root mass and
           foliage have outgrown the base weight of the pot.
         </li>
         <li>
-          <strong>Growth has stalled despite correct light and water</strong> — often means roots
+          <strong>Growth has stalled despite correct light and water.</strong> This often means roots
           are pot-bound and have nowhere left to expand.
         </li>
       </ul>
@@ -89,7 +89,7 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Step by step</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          Choose a new pot only 4–6 cm wider in diameter than the current one — oversizing invites
+          Choose a new pot only 4–6 cm wider in diameter than the current one. Oversizing invites
           overwatering, since the extra soil holds moisture the roots aren&apos;t using yet.
         </li>
         <li>
@@ -97,8 +97,8 @@ export default function Article() {
           roots are less likely to tear.
         </li>
         <li>
-          Gently loosen the root ball with your fingers, especially if roots are tightly circling —
-          this encourages them to grow outward into the new soil instead of continuing to spiral.
+          Gently loosen the root ball with your fingers, especially if roots are tightly circling.
+          This encourages them to grow outward into the new soil instead of continuing to spiral.
         </li>
         <li>
           Use a well-draining{" "}
@@ -124,7 +124,7 @@ export default function Article() {
         </li>
         <li>
           Fill the base of the new pot with mix, centre the plant so it sits at the same depth as
-          before, then backfill around the sides and firm gently — don&apos;t pack it tight.
+          before, then backfill around the sides and firm gently. Don&apos;t pack it tight.
         </li>
         <li>
           Water thoroughly right after repotting to settle the soil around the roots, then hold off

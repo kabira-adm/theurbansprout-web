@@ -27,7 +27,7 @@ export default function Article() {
       hub="Kitchen Gardening"
       hubHref="/kitchen-gardening"
       title="Organic pest control for kitchen garden vegetables (safe to eat)"
-      description="A pest problem on an ornamental plant is a cosmetic issue. The same problem on a tomato or a bunch of coriander you're about to eat changes what you're willing to spray on it — here's what actually works without that trade-off."
+      description="A pest problem on an ornamental plant is a cosmetic issue. The same problem on a tomato or a bunch of coriander you're about to eat changes what you're willing to spray on it. Here's what actually works without that trade-off."
       readTime="8 min"
       hasAffiliateLinks
       jsonLd={{
@@ -57,7 +57,7 @@ export default function Article() {
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">
-        Neem oil — the one product worth actually keeping around
+        Neem oil: the one product worth actually keeping around
       </h2>
       <p>
         If you only keep one pest treatment on hand for a kitchen garden, make it{" "}
@@ -76,7 +76,7 @@ export default function Article() {
         morning or evening, never in harsh midday sun, since neem oil can scorch leaves in direct
         heat. It breaks down within a few days and is considered safe with a short pre-harvest
         interval, but as a habit, avoid spraying anything you&apos;re planning to pick within the next
-        two to three days — rinse harvested produce well regardless.
+        two to three days, and rinse harvested produce well regardless.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">
@@ -86,7 +86,7 @@ export default function Article() {
         <li>
           <strong>Aphids on chilli and tomato tips.</strong> Small clusters of pale green or black
           insects on new growth. A strong jet of water knocks most of them off; neem oil handles
-          what&apos;s left. Check for ants moving up and down the stem too — they farm aphids for the
+          what&apos;s left. Check for ants moving up and down the stem too. They farm aphids for the
           sugary residue and protect them, so an ant trail is often the first sign of an aphid
           problem before you spot the aphids themselves.
         </li>
@@ -102,19 +102,19 @@ export default function Article() {
             Yellow sticky traps
           </a>{" "}
           placed just above the canopy catch adults
-          effectively and cheaply — a piece of cardboard coated in petroleum jelly works nearly as
+          effectively and cheaply. A piece of cardboard coated in petroleum jelly works nearly as
           well as a bought trap. Combine with a neem oil spray for anything already established.
         </li>
         <li>
           <strong>Caterpillars on coriander and methi leaves.</strong> Look for ragged holes and
-          small dark droppings on the leaves — the caterpillars themselves are often the same
+          small dark droppings on the leaves. The caterpillars themselves are often the same
           green as the leaf and easy to miss until the damage is obvious. Handpicking in the early
           morning, when they&apos;re most active and visible, is genuinely the most effective method
           for a small container garden.
         </li>
         <li>
           <strong>Fruit borer on tomato and chilli.</strong> A small entry hole near the stem end
-          of the fruit is the giveaway — by the time you see it, the fruit itself is usually a
+          of the fruit is the giveaway. By the time you see it, the fruit itself is usually a
           loss. Prevention matters more than cure here: remove and discard any affected fruit
           immediately so the larvae inside don&apos;t complete their cycle in your container, and keep
           an eye on flowering stages, when moths tend to lay eggs.
@@ -133,7 +133,7 @@ export default function Article() {
           Marigold
         </Link>{" "}
         planted at the edge of a container or between pots is a genuinely useful companion for
-        tomatoes and chillies — it&apos;s believed to repel several common pests and, at minimum, gives
+        tomatoes and chillies. It&apos;s believed to repel several common pests and, at minimum, gives
         you an early-warning plant that often shows aphid damage before your vegetables do.{" "}
         <Link
           href="/plant-encyclopedia/tulsi-holy-basil"
@@ -143,7 +143,7 @@ export default function Article() {
         </Link>{" "}
         nearby is another common pairing for the same reason. Working a small amount of neem cake
         into the topsoil when you pot up a new vegetable also acts as a slow-release deterrent
-        against soil-dwelling pests, and it doubles as a mild fertilizer — see our{" "}
+        against soil-dwelling pests, and it doubles as a mild fertilizer. See our{" "}
         <Link
           href="/kitchen-gardening/soil-and-fertilizer-basics-container-vegetables"
           className="font-medium text-brand-green hover:text-brand-green-dark"
@@ -157,12 +157,12 @@ export default function Article() {
         What to leave off a kitchen garden entirely
       </h2>
       <p>
-        Skip systemic chemical pesticides on anything you&apos;re growing to eat within weeks — they&apos;re
+        Skip systemic chemical pesticides on anything you&apos;re growing to eat within weeks. They&apos;re
         formulated for crops with long pre-harvest intervals and industrial spraying schedules,
         neither of which describes a balcony tomato plant you check every other day. Be equally
         wary of unlabeled &quot;ayurvedic&quot; or &quot;herbal&quot; pest sprays sold without an ingredient list; safe
         and unregulated aren&apos;t the same thing. And whatever you do use, stop spraying it in the
-        days right before you plan to harvest — the whole point of going organic on a kitchen
+        days right before you plan to harvest. The whole point of going organic on a kitchen
         garden is being able to pick and eat without a second thought.
       </p>
 

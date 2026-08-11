@@ -22,7 +22,7 @@ const guides = [
 const starterPlants = [
   {
     name: "Snake Plant (Sansevieria)",
-    note: "Handles low light and a missed watering or two without complaint — the easiest first plant.",
+    note: "Handles low light and a missed watering or two without complaint, the easiest first plant.",
   },
   {
     name: "ZZ Plant (Zamioculcas)",
@@ -34,7 +34,7 @@ const starterPlants = [
   },
   {
     name: "Peace Lily",
-    note: "Droops visibly when thirsty and perks back up within hours of watering — hard to kill by accident.",
+    note: "Droops visibly when thirsty and perks back up within hours of watering, so it's hard to kill by accident.",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function IndoorPlants() {
             Indoors is a different problem than a balcony.
           </h1>
           <p className="mt-5 text-lg leading-8 text-brand-green-dark/75">
-            No direct sun, no rain, no natural airflow — indoor plants live entirely on the light
+            No direct sun, no rain, no natural airflow: indoor plants live entirely on the light
             and water you give them. Most indoor plant deaths in Indian apartments come down to
             one habit: watering out of guilt or routine instead of checking what the plant
             actually needs. Fix that first, then work out light and placement room by room.
@@ -65,7 +65,7 @@ export default function IndoorPlants() {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-16">
-        <h2 className="text-xl font-semibold text-brand-green-dark">Start here — the core guides</h2>
+        <h2 className="text-xl font-semibold text-brand-green-dark">Start here: the core guides</h2>
         <p className="mt-2 text-brand-green-dark/70">
           Read these in order if you&apos;re starting from scratch:
         </p>

@@ -26,7 +26,7 @@ const guides = [
 const starterPlants = [
   {
     name: "Coriander (Dhania)",
-    note: "Sows from kitchen seed in days and is ready to harvest in three to four weeks — the fastest win for a new grower.",
+    note: "Sows from kitchen seed in days and is ready to harvest in three to four weeks, the fastest win for a new grower.",
   },
   {
     name: "Mint (Pudina)",
@@ -38,7 +38,7 @@ const starterPlants = [
   },
   {
     name: "Curry Leaf (Kadi Patta)",
-    note: "A slow-growing but near-permanent plant for a sunny corner — once established, it survives most neglect.",
+    note: "A slow-growing but near-permanent plant for a sunny corner. Once established, it survives most neglect.",
   },
 ];
 
@@ -63,14 +63,14 @@ export default function KitchenGardening() {
             A kitchen garden is just a handful of containers doing one job well: fresh herbs and a
             few vegetables within reach of your kitchen. In Indian apartments that usually means a
             sunny balcony ledge or a window grille, hard tap water, and containers small enough to
-            move when the summer sun gets brutal. Start with something fast and forgiving —
-            coriander or mint — before you commit a whole balcony to tomatoes.
+            move when the summer sun gets brutal. Start with something fast and forgiving,
+            like coriander or mint, before you commit a whole balcony to tomatoes.
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-16">
-        <h2 className="text-xl font-semibold text-brand-green-dark">Start here — the core guides</h2>
+        <h2 className="text-xl font-semibold text-brand-green-dark">Start here: the core guides</h2>
         <p className="mt-2 text-brand-green-dark/70">
           Read these in order if you&apos;re starting from scratch:
         </p>

@@ -53,11 +53,11 @@ export default function TerraceGardening() {
             Terrace Gardening
           </p>
           <h1 className="mt-3 text-3xl font-semibold text-brand-green-dark sm:text-4xl">
-            Your terrace can carry more than potted plants — if you plan it first.
+            Your terrace can carry more than potted plants, if you plan it first.
           </h1>
           <p className="mt-5 text-lg leading-8 text-brand-green-dark/75">
             A terrace is the biggest growing space most Indian homes ever get, and also the one
-            most people undersell — a few loose pots, no real plan. Terrace gardening comes with
+            most people undersell, with a few loose pots and no real plan. Terrace gardening comes with
             questions a balcony never asks: how much weight the slab can safely take, whether the
             waterproofing can survive daily watering, and how to lay everything out so it doesn&apos;t
             turn into a flooded, wind-battered mess. Get those basics right first, then build up
@@ -67,7 +67,7 @@ export default function TerraceGardening() {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-16">
-        <h2 className="text-xl font-semibold text-brand-green-dark">Start here — the core guides</h2>
+        <h2 className="text-xl font-semibold text-brand-green-dark">Start here: the core guides</h2>
         <p className="mt-2 text-brand-green-dark/70">
           Read these in order if you&apos;re starting from scratch:
         </p>

@@ -42,7 +42,7 @@ export default function Article() {
       <p>
         Dig soil straight out of the ground and dump it in a pot, and it compacts hard, almost
         like clay, and drains badly. It works fine outdoors because roots can spread out and worms
-        keep it aerated — neither of which happens inside a container. Container vegetables need a
+        keep it aerated, neither of which happens inside a container. Container vegetables need a
         mix built specifically for pots, and they need feeding on a schedule, because a pot only
         has so much nutrient stored in it, unlike open garden soil.
       </p>
@@ -51,7 +51,7 @@ export default function Article() {
       <p>A reliable, easy-to-source ratio for Indian balconies:</p>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          <strong>50% garden soil or red soil</strong> — the base structure. Ask your local
+          <strong>50% garden soil or red soil:</strong> the base structure. Ask your local
           nursery for &quot;red soil&quot; or &quot;garden mitti&quot; if you don&apos;t have
           access to your own.
         </li>
@@ -66,14 +66,14 @@ export default function Article() {
             >
               compost
             </a>{" "}
-            or well-rotted cow dung manure (gobar khad)
+            or well-rotted cow dung manure (gobar khad):
           </strong>{" "}
-          — the main
+          the main
           nutrient source. Cheap, widely available at nurseries, and works well for vegetables
           specifically.
         </li>
         <li>
-          <strong>25% coco peat, sand, or a mix of both</strong> — for drainage and aeration. Coco
+          <strong>25% coco peat, sand, or a mix of both:</strong> for drainage and aeration. Coco
           peat also holds moisture well, which matters on hot balconies where pots dry out fast.
         </li>
       </ul>
@@ -102,7 +102,7 @@ export default function Article() {
         </li>
         <li>
           <strong>Leafy herbs need less feeding than fruiting vegetables.</strong> Coriander and
-          mint do fine on compost alone and can be overfed into weak, floppy growth — save the
+          mint do fine on compost alone and can be overfed into weak, floppy growth. Save the
           stronger feeds for tomatoes, chillies, and other fruiting plants.
         </li>
         <li>
@@ -119,7 +119,7 @@ export default function Article() {
         Two habits help: let tap water stand uncovered for a day before using it, and flush each
         container thoroughly with extra water every few weeks so the mineral buildup washes
         through the drainage hole rather than sitting and accumulating. A white crust forming on
-        the soil surface is the tell — scrape it off and top up with fresh mix rather than trying
+        the soil surface is the tell. Scrape it off and top up with fresh mix rather than trying
         to water it away.
       </p>
 

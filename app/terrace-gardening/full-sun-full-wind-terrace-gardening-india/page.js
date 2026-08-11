@@ -27,7 +27,7 @@ export default function Article() {
       hub="Terrace Gardening"
       hubHref="/terrace-gardening"
       title="Full sun, full wind: terrace gardening in India"
-      description="A terrace usually has no overhang, no neighbouring wall, and nothing breaking the wind — which means more light than a balcony gets, but also more stress on every plant you put up there."
+      description="A terrace usually has no overhang, no neighbouring wall, and nothing breaking the wind, which means more light than a balcony gets, but also more stress on every plant you put up there."
       readTime="9 min"
       hasAffiliateLinks
       jsonLd={{
@@ -44,7 +44,7 @@ export default function Article() {
         parapet or a neighbouring building close enough to cut the wind. Terraces usually have none
         of that working in their favour. It&apos;s the most open growing space in most Indian homes,
         which is genuinely good news if you want to grow sun-loving plants that never quite thrive
-        on a shadier balcony — but it also means unfiltered summer sun for most of the day and wind
+        on a shadier balcony, but it also means unfiltered summer sun for most of the day and wind
         speeds a balcony rarely has to deal with. Terrace gardening works well once you plan around
         both of these honestly, rather than assuming &quot;more open&quot; simply means &quot;better&quot; and finding
         out otherwise a few weeks in, when the first batch of seedlings has scorched or a top-heavy
@@ -54,7 +54,7 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Managing full-day sun exposure</h2>
       <p>
         Start by actually tracking how many hours of direct sun each part of your terrace gets,
-        rather than assuming. On an open terrace that&apos;s often 8–10 hours in peak summer — more than
+        rather than assuming. On an open terrace that&apos;s often 8–10 hours in peak summer, more than
         most vegetables and flowering plants actually need, and enough to scorch leaves on plants
         that would have been perfectly fine on a partly shaded balcony one floor down. It&apos;s easy to
         assume more sun is automatically better, but past a certain point it just stresses the
@@ -71,8 +71,8 @@ export default function Article() {
         >
           shade net
         </a>{" "}
-        rigged over the more vulnerable plants — young seedlings, leafy greens,
-        anything you know scorches easily — through the harshest afternoon stretch, roughly noon to
+        rigged over the more vulnerable plants, such as young seedlings, leafy greens, and
+        anything you know scorches easily, through the harshest afternoon stretch, roughly noon to
         3 p.m. in peak summer, cuts that damage significantly without meaningfully reducing the
         light the plant needs to grow, fruit, or flower. Something in the 40–50% shade range is
         usually enough; you&apos;re not trying to block the sun, just take the edge off it during the
@@ -84,7 +84,7 @@ export default function Article() {
         Timing your watering matters more here than it does on a balcony. Watering under full
         afternoon sun wastes a large share of it to evaporation before it even reaches the roots,
         and wet leaves under harsh direct light can scald in a way they simply don&apos;t in gentler
-        morning sun. Water early — ideally before 8 a.m. — so plants go into the hottest part of the
+        morning sun. Water early, ideally before 8 a.m., so plants go into the hottest part of the
         day already hydrated, with the whole day ahead of them to use that moisture before it
         matters again. And mulch everything: a layer of dry leaves, straw, or coco peat over the
         soil surface slows evaporation dramatically on an open terrace, where bare soil can visibly
@@ -95,30 +95,30 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Managing wind at height</h2>
       <p>
         Wind speed increases with height, and it doesn&apos;t take a particularly tall building for the
-        difference to be noticeable — even a fourth- or fifth-floor terrace can see meaningfully
+        difference to be noticeable. Even a fourth- or fifth-floor terrace can see meaningfully
         stronger, steadier wind than a ground-floor courtyard. An open terrace with no walls or
         overhangs to break that wind can rock pots, snap tender stems, and dry soil out far faster
         than the same plant would experience on a sheltered balcony. It&apos;s easy to underestimate
         until the first strong evening gust knocks over a pot you thought was perfectly stable.
       </p>
       <p>
-        Use heavier, wider-based containers for anything tall or top-heavy — a narrow pot holding a
+        Use heavier, wider-based containers for anything tall or top-heavy. A narrow pot holding a
         tall, leafy plant is the single most common way terrace plants end up on their side. Go for
         a wide, stable base over a narrow, elegant one, and favour terracotta or concrete over thin
         plastic wherever wind is a real, ongoing concern; the extra weight at the base is doing real
         work, not just adding bulk. Stake anything that needs it early, at planting time, rather than
-        waiting until a plant is already leaning — staking after the fact means disturbing an
+        waiting until a plant is already leaning. Staking after the fact means disturbing an
         established root system, which sets the plant back more than the wind exposure would have
         on its own.
       </p>
       <p>
-        A windbreak helps more than most people expect. A row of sturdy, wind-tolerant shrubs —
-        bougainvillea and hibiscus both work well here — planted along the most exposed edge of the
+        A windbreak helps more than most people expect. A row of sturdy, wind-tolerant shrubs,
+        such as bougainvillea and hibiscus, planted along the most exposed edge of the
         terrace shelters everything behind it, cutting wind speed noticeably for the plants planted
         in its lee, and it doubles as a genuinely attractive flowering display in its own right
         rather than feeling like a purely functional add-on. Where a full windbreak row isn&apos;t
         practical, even grouping smaller pots close together instead of spacing them out across the
-        terrace makes a real difference — clustered containers shelter each other from direct wind
+        terrace makes a real difference. Clustered containers shelter each other from direct wind
         far better than the same number of pots spread singly across an open space, simply because
         each one is blocking some of the wind for its neighbours.
       </p>
@@ -127,8 +127,8 @@ export default function Article() {
         assuming a setup that survived one storm will survive all of them. Soil that&apos;s dried out
         loses a surprising amount of its holding weight, which is exactly when a pot that seemed
         rock solid a month ago can suddenly go over in a gust that wouldn&apos;t have moved it when the
-        soil was fresh and damp. A quick check before a forecast storm — watering thirsty pots and
-        pulling anything genuinely precarious back from the exposed edge — takes a few minutes and
+        soil was fresh and damp. A quick check before a forecast storm, watering thirsty pots and
+        pulling anything genuinely precarious back from the exposed edge, takes a few minutes and
         avoids losing a plant you&apos;ve been growing for months.
       </p>
 
@@ -160,7 +160,7 @@ export default function Article() {
         <li>
           <strong>Marigold and other short, sturdy annuals</strong> stay low enough to the ground to
           avoid the worst of the wind entirely while still taking full sun without any complaint,
-          which makes them a genuinely reliable filler between larger, sturdier plants — and a good,
+          which makes them a genuinely reliable filler between larger, sturdier plants, and a good,
           fast-growing way to test how a new part of the terrace performs before committing anything
           bigger to that spot.
         </li>

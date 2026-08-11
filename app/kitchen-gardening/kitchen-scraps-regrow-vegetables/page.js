@@ -40,7 +40,7 @@ export default function Article() {
     >
       <p>
         Regrowing from scraps costs nothing and puts vegetables you were about to bin to work
-        instead — a genuinely good place to start a kitchen garden. But not every viral &quot;grow
+        instead, a genuinely good place to start a kitchen garden. But not every viral &quot;grow
         it from scraps&quot; video actually leads anywhere edible. Some of it is closer to a
         science-fair project than a food source. Here&apos;s an honest split, based on the
         vegetables that actually show up in Indian kitchens.
@@ -55,7 +55,7 @@ export default function Article() {
         </li>
         <li>
           <strong>Coriander and mint stems.</strong> If you buy bunches with intact stems, the same
-          water-rooting method used for mint cuttings works — see our{" "}
+          water-rooting method used for mint cuttings works. See our{" "}
           <Link
             href="/kitchen-gardening/growing-coriander-mint-containers-india"
             className="font-medium text-brand-green hover:text-brand-green-dark"
@@ -66,13 +66,13 @@ export default function Article() {
         </li>
         <li>
           <strong>Curry leaf sprigs with a bit of stem.</strong> Occasionally root in water, though
-          success is inconsistent — a nursery-bought sapling is a more reliable way to start a
+          success is inconsistent. A nursery-bought sapling is a more reliable way to start a
           curry leaf plant.
         </li>
         <li>
           <strong>Fenugreek (methi) seeds.</strong> Not technically a scrap, but the whole
           fenugreek seeds sitting in your spice box germinate readily when soaked overnight and
-          sown shallow. A genuinely fast, easy win — ready to harvest as microgreens in under two
+          sown shallow. A genuinely fast, easy win, ready to harvest as microgreens in under two
           weeks.
         </li>
         <li>
@@ -87,7 +87,7 @@ export default function Article() {
         <li>
           <strong>Onion bulb bottoms.</strong> They&apos;ll sprout green shoots, but those shoots
           are thin and the original bulb doesn&apos;t regenerate into a proper new onion in a
-          container setup — you get green onion-like tops, not a fresh bulb.
+          container setup. You get green onion-like tops, not a fresh bulb.
         </li>
         <li>
           <strong>Garlic cloves.</strong> A sprouted clove planted in soil will grow greens you can
@@ -95,13 +95,13 @@ export default function Article() {
           more space than most balconies have to spare for one bulb&apos;s worth of garlic.
         </li>
         <li>
-          <strong>Ginger knobs.</strong> This does work and is popular online, but it&apos;s slow —
-          8 to 10 months to a usable harvest — and needs a wide, shallow container kept
+          <strong>Ginger knobs.</strong> This does work and is popular online, but it&apos;s slow,
+          taking 8 to 10 months to a usable harvest, and needs a wide, shallow container kept
           consistently warm and moist. Fine as a patient side project, not a quick win.
         </li>
       </ul>
 
-      <h2 className="text-xl font-semibold text-brand-green-dark">Doesn&apos;t really work — skip these</h2>
+      <h2 className="text-xl font-semibold text-brand-green-dark">Doesn&apos;t really work: skip these</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Tomato slices or seeds squeezed from a store tomato.</strong> They can
@@ -111,13 +111,13 @@ export default function Article() {
         <li>
           <strong>Regrowing a full carrot or beetroot from the top.</strong> The cut top will
           sprout leafy greens in water, which look promising, but the root itself does not
-          regenerate into a new carrot or beet — you only get greens, not another vegetable.
+          regenerate into a new carrot or beet. You only get greens, not another vegetable.
         </li>
       </ul>
 
       <p>
-        If your scrap is regrowing something you can actually eat within a week or two — spring
-        onion, herbs, methi — it&apos;s worth the counter space. If it only regrows leaves, or takes
+        If your scrap is regrowing something you can actually eat within a week or two, like spring
+        onion, herbs, or methi, it&apos;s worth the counter space. If it only regrows leaves, or takes
         months for a small return, it&apos;s usually more useful chopped into the compost. Either way,
         once a scrap has rooted, get it into proper soil sooner rather than later. Roots left
         sitting in water for weeks tend to come out weaker than ones moved to potting mix early.

@@ -27,7 +27,7 @@ export default function Article() {
       hub="Kitchen Gardening"
       hubHref="/kitchen-gardening"
       title="Growing coriander and mint in containers (India edition)"
-      description="Coriander and mint are the two herbs every Indian kitchen goes through fastest — and the two easiest to grow yourself, starting from what's already in your kitchen."
+      description="Coriander and mint are the two herbs every Indian kitchen goes through fastest, and the two easiest to grow yourself, starting from what's already in your kitchen."
       readTime="6 min"
       jsonLd={{
         "@context": "https://schema.org",
@@ -46,7 +46,7 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Coriander (dhania): starting from kitchen seed</h2>
       <p>
-        The whole dried coriander seeds sitting in your spice box will germinate just fine — no
+        The whole dried coriander seeds sitting in your spice box will germinate just fine, so there&apos;s no
         need to buy packet seed.
       </p>
       <ul className="list-disc space-y-2 pl-5">
@@ -79,7 +79,7 @@ export default function Article() {
       <p>
         Coriander bolts (flowers and turns bitter) fast once temperatures cross about 30°C, so
         across most of India it does best from October to February. Sow it in peak summer and
-        expect a much shorter window before it bolts on you — treat it as a quick, repeat-sown
+        expect a much shorter window before it bolts on you. Treat it as a quick, repeat-sown
         crop rather than something you keep going year-round.
       </p>
 
@@ -101,7 +101,7 @@ export default function Article() {
         </li>
         <li>
           <strong>Give mint its own pot.</strong> Its roots spread aggressively underground and
-          will crowd out anything sharing the container — don&apos;t mix it with coriander or
+          will crowd out anything sharing the container, so don&apos;t mix it with coriander or
           other herbs.
         </li>
         <li>

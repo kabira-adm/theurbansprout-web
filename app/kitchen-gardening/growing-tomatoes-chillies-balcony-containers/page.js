@@ -27,7 +27,7 @@ export default function Article() {
       hub="Kitchen Gardening"
       hubHref="/kitchen-gardening"
       title="Growing tomatoes and chillies in balcony containers"
-      description="Both are sun-lovers that do genuinely well in Indian heat — if you give them enough container depth and a bit of support as they grow."
+      description="Both are sun-lovers that do genuinely well in Indian heat, if you give them enough container depth and a bit of support as they grow."
       readTime="7 min"
       hasAffiliateLinks
       jsonLd={{
@@ -46,7 +46,7 @@ export default function Article() {
         starts fruiting. Fix those and both crops are realistic even on a fairly modest balcony.
       </p>
 
-      <h2 className="text-xl font-semibold text-brand-green-dark">Container size — the most common mistake</h2>
+      <h2 className="text-xl font-semibold text-brand-green-dark">Container size: the most common mistake</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Tomatoes need at least 12–14 inches of depth and width.</strong> A tomato plant
@@ -54,13 +54,13 @@ export default function Article() {
           plant with few fruit, no matter how well you feed it.
         </li>
         <li>
-          <strong>Chillies are more forgiving — 10 inches is workable.</strong> They still do
+          <strong>Chillies are more forgiving: 10 inches is workable.</strong> They still do
           better in a bigger pot, but you can start a chilli plant in a smaller container than a
           tomato and get a reasonable harvest.
         </li>
         <li>
           <strong>Always use a container with drainage holes.</strong> Both plants are prone to
-          root rot in waterlogged soil — this matters even more for tomatoes, whose stems can
+          root rot in waterlogged soil, which matters even more for tomatoes, whose stems can
           develop fungal issues if the base stays wet.
         </li>
       </ul>
@@ -92,7 +92,7 @@ export default function Article() {
         </li>
         <li>
           <strong>Pinch off suckers on tomatoes.</strong> The small shoots that grow in the angle
-          between the main stem and a branch drain energy from fruiting if left unchecked — pinch
+          between the main stem and a branch drain energy from fruiting if left unchecked. Pinch
           them out weekly on indeterminate (vine-type) varieties.
         </li>
         <li>

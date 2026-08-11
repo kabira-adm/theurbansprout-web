@@ -60,7 +60,7 @@ export default function Article() {
         </li>
         <li>
           <strong>Watering on a fixed schedule.</strong> &quot;Every Sunday&quot; ignores season,
-          light, and how much the plant is actually using — the same mistake that kills balcony
+          light, and how much the plant is actually using. It&apos;s the same mistake that kills balcony
           plants, just slower indoors.
         </li>
       </ul>
@@ -70,7 +70,7 @@ export default function Article() {
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Finger test.</strong> Push a finger 2–3 cm into the soil. If it&apos;s still
-          moist, wait — check again in two or three days rather than watering anyway. A{" "}
+          moist, wait, then check again in two or three days rather than watering anyway. A{" "}
           <a
             href="https://www.amazon.in/s?k=soil+moisture+meter&tag=theurbansprou-21"
             target="_blank"
@@ -101,7 +101,7 @@ export default function Article() {
       <p>
         Hard tap water, common across much of urban India, leaves a chalky white crust on soil and
         pot rims over time and can slowly wear on root health. Where you can, let tap water stand
-        in an open container for 24 hours before using it — chlorine dissipates and any sediment
+        in an open container for 24 hours before using it. Chlorine dissipates and any sediment
         settles to the bottom. It won&apos;t fix hardness itself, but it&apos;s a small habit that
         cuts down on buildup. See a persistent white crust forming? Scrape the top layer off and
         top up with fresh potting mix rather than trying to flush it out with more water.

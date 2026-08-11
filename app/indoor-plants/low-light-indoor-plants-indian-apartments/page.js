@@ -27,7 +27,7 @@ export default function Article() {
       hub="Indoor Plants"
       hubHref="/indoor-plants"
       title="Best low-light indoor plants for Indian apartments"
-      description="Tall neighbouring buildings, deep floor plans, and north-facing rooms mean most Indian apartments have less usable light than people assume. These plants don't just tolerate that — they're built for it."
+      description="Tall neighbouring buildings, deep floor plans, and north-facing rooms mean most Indian apartments have less usable light than people assume. These plants don't just tolerate that. They're built for it."
       readTime="6 min"
       jsonLd={{
         "@context": "https://schema.org",
@@ -51,25 +51,25 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Plants that genuinely handle low light</h2>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          <strong>Snake Plant (Sansevieria)</strong> — the most forgiving option available in
+          <strong>Snake Plant (Sansevieria):</strong> the most forgiving option available in
           India. Survives corners, corridors, and bathrooms with a small window. Its main failure
           mode isn&apos;t light, it&apos;s overwatering.
         </li>
         <li>
-          <strong>ZZ Plant (Zamioculcas zamiifolia)</strong> — stores water in underground
+          <strong>ZZ Plant (Zamioculcas zamiifolia):</strong> stores water in underground
           rhizomes, so it copes with both low light and irregular care. Slow growing, which is a
           feature indoors, not a flaw.
         </li>
         <li>
-          <strong>Pothos (Money Plant)</strong> — grows in water or soil, tolerates deep shade,
+          <strong>Pothos (Money Plant):</strong> grows in water or soil, tolerates deep shade,
           and is easy to propagate if you want more for other rooms.
         </li>
         <li>
-          <strong>Peace Lily</strong> — one of the few low-light plants that also flowers indoors,
+          <strong>Peace Lily:</strong> one of the few low-light plants that also flowers indoors,
           and it wilts visibly when thirsty, which makes watering timing obvious.
         </li>
         <li>
-          <strong>Spider Plant</strong> — handles low light and hard tap water better than most,
+          <strong>Spider Plant:</strong> handles low light and hard tap water better than most,
           and produces plantlets you can pot separately.
         </li>
       </ul>
@@ -78,7 +78,7 @@ export default function Article() {
       <p>
         Even a shade-tolerant plant wants some indirect daylight. A spot within 2–3 metres of a
         window, or in the light path of a balcony door, works for all five plants above. A room
-        with no window at all — an interior study, a windowless bathroom — needs at least a few
+        with no window at all, such as an interior study or a windowless bathroom, needs at least a few
         hours of a warm-white LED grow bulb daily. Nothing on this list survives permanent
         darkness indefinitely, however tough its reputation.
       </p>
