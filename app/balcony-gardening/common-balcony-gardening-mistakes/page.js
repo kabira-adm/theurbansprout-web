@@ -46,7 +46,7 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">1. Watering on a fixed schedule instead of checking the soil</h2>
       <p>
         &quot;Every two days&quot; ignores the season completely, and it&apos;s the top cause of
-        root rot. Use the finger test instead — water when the soil is dry 2 inches down, not on a
+        root rot. Use the finger test instead: water when the soil is dry 2 inches down, not on a
         calendar.{" "}
         <Link href="/balcony-gardening/watering-schedule-indian-summers-monsoons" className="font-medium text-brand-green hover:text-brand-green-dark">
           Full watering guide →
@@ -89,8 +89,8 @@ export default function Article() {
       </p>
 
       <p>
-        Pot, light, water, anchoring, fertilizer, in roughly that order — it covers most of what
-        goes wrong on a balcony before it has the chance to.
+        Pot, light, water, anchoring, fertilizer, in roughly that order. Checking them covers most
+        of what goes wrong on a balcony before it has the chance to.
       </p>
     </ArticleLayout>
   );

@@ -25,7 +25,7 @@ export default function Article() {
   return (
     <ArticleLayout
       title="Balcony privacy screening with plants"
-      description="A trellis of climbers or a simple bamboo screen can do what a curtain can't outdoors — block a sightline while still letting light and air through."
+      description="A trellis of climbers or a simple bamboo screen can do what a curtain can't outdoors: block a sightline while still letting light and air through."
       readTime="8 min"
       hasAffiliateLinks
       jsonLd={{
@@ -42,7 +42,7 @@ export default function Article() {
         the same complex is a common layout in dense Indian cities, and it comes with an obvious
         problem: very little privacy. Curtains and blinds work indoors but look and feel wrong on
         an open balcony, and a solid partition often isn&apos;t allowed or simply blocks too much light
-        and air along with the view. Plants solve this in a way few other options do — a well-grown
+        and air along with the view. Plants solve this in a way few other options do. A well-grown
         screen of climbers or a simple bamboo panel breaks a direct sightline while staying green,
         breathable, and, unlike a wall, still lets you feel like you&apos;re outdoors.
       </p>
@@ -50,33 +50,33 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Fast-growing climbers suited to Indian conditions</h2>
       <p>
         Climbers are the most effective screening option because they cover a large vertical area
-        from a small footprint at the base — a single pot can eventually screen several feet of
+        from a small footprint at the base. A single pot can eventually screen several feet of
         railing or trellis once established.
       </p>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          <strong>Money plant (pothos)</strong> — the fastest, most forgiving climbing screen
+          <strong>Money plant (pothos):</strong> the fastest, most forgiving climbing screen
           available, tolerant of both sun and shade, and dense enough to genuinely block a
           sightline once it&apos;s had a season to fill in. Not flowering, but reliably green
           year-round.
         </li>
         <li>
-          <strong>Morning glory (Ipomoea)</strong> — grows fast from seed, flowers daily through
+          <strong>Morning glory (Ipomoea):</strong> grows fast from seed, flowers daily through
           its growing season, and dies back in winter in most of India, which suits anyone happy to
           replant annually rather than maintain a permanent screen.
         </li>
         <li>
-          <strong>Clock vine (Thunbergia)</strong> — a fast, twining climber with continuous yellow
+          <strong>Clock vine (Thunbergia):</strong> a fast, twining climber with continuous yellow
           or blue flowers through the warmer months, dense enough to screen effectively once it&apos;s
           covered its support.
         </li>
         <li>
-          <strong>Passion flower vine</strong> — vigorous, quick to cover a trellis, and produces
-          striking flowers and, in the right conditions, edible fruit — a screening plant that
-          earns its space beyond privacy alone.
+          <strong>Passion flower vine:</strong> vigorous and quick to cover a trellis, and produces
+          striking flowers and, in the right conditions, edible fruit, making it a screening plant
+          that earns its space beyond privacy alone.
         </li>
         <li>
-          <strong>Dwarf bougainvillea</strong> — slower to establish than the options above but far
+          <strong>Dwarf bougainvillea:</strong> slower to establish than the options above but far
           more permanent and floriferous once it does, and well suited to a balcony that wants a
           long-term rather than fast-turnaround screen.
         </li>
@@ -94,7 +94,7 @@ export default function Article() {
           bamboo
         </a>{" "}
         or reed screen, tied to the railing or a freestanding frame, gives instant
-        privacy without waiting a season for a climber to fill in — genuinely useful if you need
+        privacy without waiting a season for a climber to fill in, which is genuinely useful if you need
         the screening now rather than a few months from now. It also works well paired with
         climbers rather than instead of them: the bamboo blocks the sightline immediately while a
         climber grows up through or alongside it, and eventually the greenery does most of the
@@ -102,7 +102,7 @@ export default function Article() {
       </p>
       <p>
         Bamboo screens are lightweight and typically tied on rather than drilled in, which makes
-        them a genuinely rental-friendly option — worth pairing with the freestanding,{" "}
+        them a genuinely rental-friendly option. It&apos;s worth pairing with the freestanding,{" "}
         <Link
           href="/balcony-gardening/balcony-gardening-for-renters"
           className="font-medium text-brand-green hover:text-brand-green-dark"
@@ -129,7 +129,7 @@ export default function Article() {
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Freestanding A-frame or panel trellises</strong>, weighted at the base or set
-          into a large, heavy pot, support most climbers without touching the structure at all —
+          into a large, heavy pot, support most climbers without touching the structure at all,
           the same freestanding-first approach that works well for renters generally.
         </li>
         <li>
@@ -145,21 +145,21 @@ export default function Article() {
         <li>
           Wherever you do need to anchor something to the balcony itself, use the lightest fixing
           that will genuinely hold the mature plant&apos;s weight, not the sturdiest one available by
-          default — a heavy bracket rated for far more than a climbing vine actually weighs is
+          default. A heavy bracket rated for far more than a climbing vine actually weighs is
           often unnecessary damage to the structure for no real benefit.
         </li>
       </ul>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Balancing privacy with your own light</h2>
       <p>
-        The most common mistake with privacy screening is overdoing it — a dense screen tall enough
+        The most common mistake with privacy screening is overdoing it: a dense screen tall enough
         to block every sightline can also block a meaningful share of the light your own plants,
         and your balcony generally, actually need. A few practical ways to avoid that:
       </p>
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Screen only where the sightline actually is.</strong> A full-height screen across
-          the entire balcony blocks more light than necessary — often just the section directly
+          the entire balcony blocks more light than necessary, when often just the section directly
           facing the problem window or street needs covering.
         </li>
         <li>
@@ -192,8 +192,8 @@ export default function Article() {
         without dying back the way an annual climber does.
       </p>
       <p>
-        Combining a fast and a slow climber on the same support is a reasonable way to manage this
-        — the fast grower gives usable privacy within weeks while the slower, more permanent one is
+        Combining a fast and a slow climber on the same support is a reasonable way to manage this.
+        The fast grower gives usable privacy within weeks while the slower, more permanent one is
         still filling in behind it, and by the time the annual dies back or needs replacing, the
         permanent climber has usually grown enough to hold the screen on its own.
       </p>
@@ -204,8 +204,8 @@ export default function Article() {
         overlooked opportunity is a common mistake. Flowering climbers like clock vine and passion
         flower vine screen effectively while also functioning as one of the balcony&apos;s main
         ornamental features, rather than a purely functional add-on tolerated for its privacy value.
-        Where space allows, planning the screen as part of the balcony&apos;s overall layout — rather
-        than as an afterthought bolted onto whichever edge faces the problem — tends to produce a
+        Where space allows, planning the screen as part of the balcony&apos;s overall layout, rather
+        than as an afterthought bolted onto whichever edge faces the problem, tends to produce a
         result that looks deliberate rather than defensive.
       </p>
 

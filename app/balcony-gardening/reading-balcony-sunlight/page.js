@@ -45,9 +45,9 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">The three light categories that matter</h2>
       <ul className="list-disc space-y-2 pl-5">
-        <li><span className="font-medium text-brand-green-dark">Full sun</span> — 6+ hours of direct sun. Typical for south- or west-facing balconies in most Indian cities.</li>
-        <li><span className="font-medium text-brand-green-dark">Partial sun</span> — 3–6 hours of direct sun, often morning-only or filtered through a neighbouring structure.</li>
-        <li><span className="font-medium text-brand-green-dark">Low light / shade</span> — under 3 hours of direct sun. Common on north-facing balconies or ones shadowed by taller buildings.</li>
+        <li><span className="font-medium text-brand-green-dark">Full sun:</span> 6+ hours of direct sun. Typical for south- or west-facing balconies in most Indian cities.</li>
+        <li><span className="font-medium text-brand-green-dark">Partial sun:</span> 3–6 hours of direct sun, often morning-only or filtered through a neighbouring structure.</li>
+        <li><span className="font-medium text-brand-green-dark">Low light / shade:</span> under 3 hours of direct sun. Common on north-facing balconies or ones shadowed by taller buildings.</li>
       </ul>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">A one-day sunlight audit</h2>
@@ -60,7 +60,7 @@ export default function Article() {
       </ul>
       <p>
         Add up the direct-sun hours. Do it once on a clear day, and if you have the patience,
-        repeat the check a few weeks later — the sun&apos;s angle drifts across the seasons, so a
+        repeat the check a few weeks later. The sun&apos;s angle drifts across the seasons, so a
         balcony that&apos;s full sun in May can slide to partial sun by December without anything
         about the balcony itself changing.
       </p>
@@ -76,7 +76,7 @@ export default function Article() {
         Once you know your category, plant selection stops being a gamble. Full-sun spots suit
         marigold, hibiscus, and most vegetables. Partial-sun spots work well for curry leaf, aloe
         vera, and many herbs. Low-light balconies do best with money plant (pothos), ZZ plant, and
-        peace lily — plants built to hold on in shade, not just limp along in it.
+        peace lily, plants built to hold on in shade rather than just limp along in it.
       </p>
 
       <p>

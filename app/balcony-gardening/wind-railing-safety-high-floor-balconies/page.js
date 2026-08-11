@@ -24,7 +24,7 @@ export default function Article() {
   return (
     <ArticleLayout
       title="Wind and railing safety for high-floor balconies"
-      description="On a high floor, wind isn't just a plant-health issue — a fallen pot is a real safety risk. Here's how to garden without creating one."
+      description="On a high floor, wind isn't just a plant-health issue. A fallen pot is a real safety risk, and here's how to garden without creating one."
       readTime="5 min"
       jsonLd={{
         "@context": "https://schema.org",
@@ -45,7 +45,7 @@ export default function Article() {
       <p>
         Pots balanced on a narrow railing ledge, with nothing actually holding them there, are the
         most common cause of falls. It&apos;s rarely a storm that does it, usually just one sudden
-        gust. If you want railing-mounted planters, use ones made for the job — they clip or bolt
+        gust. If you want railing-mounted planters, use ones made for the job: they clip or bolt
         onto the railing from both sides instead of just resting on top and hoping for the best.
       </p>
 
@@ -58,7 +58,7 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Plants that handle wind poorly</h2>
       <p>
-        A tall, top-heavy plant in a narrow pot catches wind the way a sail does — think a young
+        A tall, top-heavy plant in a narrow pot catches wind the way a sail does. Think of a young
         tree, or anything with a single tall stem and most of its leaf mass up top. On an exposed
         high floor, lean toward bushier, lower-profile plants instead. If you do keep something
         tall, stake it against a wall rather than the railing.

@@ -54,7 +54,7 @@ export default function Article() {
         Heat and wind pull moisture out of a container fast, especially a small one sitting on hot
         tile. Most potted plants need water daily through peak summer, ideally early in the
         morning so there&apos;s moisture in reserve before the afternoon heat lands. Skip watering
-        in harsh afternoon sun — a large share of it evaporates before it ever reaches the roots.
+        in harsh afternoon sun, since a large share of it evaporates before it ever reaches the roots.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Monsoon (roughly June to September)</h2>
@@ -64,7 +64,7 @@ export default function Article() {
         matter more than anything else here:
       </p>
       <ul className="list-disc space-y-2 pl-5">
-        <li>Move pots under an overhang if heavy, continuous rain is expected — a few hours of rain is fine, days of standing water is not</li>
+        <li>Move pots under an overhang if heavy, continuous rain is expected. A few hours of rain is fine, but days of standing water is not</li>
         <li>Double-check that drainage holes aren&apos;t blocked; this is the season they get tested the most</li>
       </ul>
       <p>
@@ -73,7 +73,7 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Winter (roughly November to February)</h2>
       <p>
-        Growth slows, so watering should too — most plants are fine every 3–4 days through this
+        Growth slows, so watering should too. Most plants are fine every 3–4 days through this
         stretch. Overwatering in winter is a quiet mistake, mostly because the summer habit sticks
         around long after the plant&apos;s actual needs have dropped.
       </p>

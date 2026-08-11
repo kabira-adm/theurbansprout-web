@@ -61,7 +61,7 @@ export default function Article() {
       <p>
         Every ingredient you add to a mix is there to help with one of three things: structure and
         drainage, moisture retention, or nutrition. Most potting problems trace back to a mix that
-        overdoes one of these at the expense of the others — usually retaining too much water and
+        overdoes one of these at the expense of the others, usually retaining too much water and
         not draining enough.
       </p>
       <ul className="list-disc space-y-2 pl-5">
@@ -77,13 +77,13 @@ export default function Article() {
             </a>{" "}
             (coco peat / coir pith)
           </strong>{" "}
-          — the backbone of most Indian potting
+          is the backbone of most Indian potting
           mixes. It&apos;s a byproduct of coconut husk processing, holds moisture well without
           waterlogging, and has a naturally loose texture that keeps the mix from compacting. Buy
           it as a compressed brick and soak it in water for 15–20 minutes to expand it before use.
         </li>
         <li>
-          <strong>Compost or well-rotted manure</strong> — the nutrient source. Compost also adds
+          <strong>Compost or well-rotted manure</strong> is the nutrient source. Compost also adds
           a small amount of structure and beneficial microbial life that a purely mineral mix
           lacks.{" "}
           <a
@@ -108,14 +108,14 @@ export default function Article() {
             </a>
             , sand, or coarse grit
           </strong>{" "}
-          — pure drainage and aeration, with no
+          provide pure drainage and aeration, with no
           nutrient value at all. These create physical air pockets in the mix that plain cocopeat
           and compost, both quite fine-textured on their own, can&apos;t provide by themselves.
         </li>
       </ul>
       <p>
-        Garden soil or red soil can still play a supporting role — mainly for weight and structure
-        in mixes for larger or top-heavy plants — but it should never be the majority ingredient in
+        Garden soil or red soil can still play a supporting role, mainly for weight and structure
+        in mixes for larger or top-heavy plants, but it should never be the majority ingredient in
         a container mix the way it can be assumed to be by someone starting out.
       </p>
 
@@ -123,8 +123,8 @@ export default function Article() {
         A simple all-purpose ratio to start from
       </h2>
       <p>
-        For general balcony planting — a mix of ornamentals, a few flowering plants, nothing too
-        specialised — this ratio is a reliable default:
+        For general balcony planting, a mix of ornamentals and a few flowering plants, nothing too
+        specialised, this ratio is a reliable default:
       </p>
       <ul className="list-disc space-y-2 pl-5">
         <li>40% cocopeat</li>
@@ -135,7 +135,7 @@ export default function Article() {
       <p>
         Mix the ingredients dry in a large tub or directly on a tarp before filling pots, so
         everything is distributed evenly rather than sitting in clumps. This ratio is genuinely a
-        starting point, not a rulebook — treat it as the base you adjust once you know what a
+        starting point, not a rulebook. Treat it as the base you adjust once you know what a
         specific plant wants.
       </p>
 
@@ -147,13 +147,13 @@ export default function Article() {
         reasons succulents rot on Indian balconies, especially through the monsoon. Cut the compost
         back and load up on drainage instead: roughly 40% cocopeat, 40% coarse sand or perlite, and
         20% compost. Some growers skip cocopeat almost entirely for cacti and lean on sand and grit
-        instead — worth trying if you&apos;re losing succulents to rot on the mix above.
+        instead, which is worth trying if you&apos;re losing succulents to rot on the mix above.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Leafy ornamentals want more moisture retention, not less</h2>
       <p>
         Money plant, philodendrons, ferns, and most other leafy foliage plants are the opposite
-        case — they&apos;re used to consistently moist conditions and dry out faster than they&apos;d
+        case: they&apos;re used to consistently moist conditions and dry out faster than they&apos;d
         like on a hot, breezy balcony. For these, push the cocopeat up to around 50% and drop
         perlite or sand down to 15%, keeping compost around 30–35%. The mix should feel noticeably
         more moisture-retentive to the touch than the all-purpose version, without ever staying
@@ -175,7 +175,7 @@ export default function Article() {
       <p>
         Bagged potting mix from a nursery is a reasonable option if you only need a small quantity
         or want to skip the process entirely, but check the label or ask what&apos;s actually in
-        it — some cheaper bagged mixes lean almost entirely on garden soil with a token amount of
+        it. Some cheaper bagged mixes lean almost entirely on garden soil with a token amount of
         compost, which won&apos;t behave like a proper container mix. For anyone with more than a
         handful of pots, buying cocopeat bricks, compost, and sand separately and mixing your own
         works out significantly cheaper per litre, and lets you tune the ratio per plant the way a
@@ -184,35 +184,35 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Signs your mix needs adjusting</h2>
       <p>
-        You don&apos;t need to get the ratio perfect on the first attempt — the mix itself will
+        You don&apos;t need to get the ratio perfect on the first attempt. The mix itself will
         tell you fairly quickly if something&apos;s off, as long as you know what to look for.
       </p>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          <strong>Water sits on top instead of soaking in, or takes a long time to drain</strong> —
-          the mix is too dense. Work in more perlite or coarse sand next time you repot, and avoid
+          <strong>Water sits on top instead of soaking in, or takes a long time to drain.</strong>{" "}
+          This means the mix is too dense. Work in more perlite or coarse sand next time you repot, and avoid
           pressing the mix down firmly when filling a pot.
         </li>
         <li>
-          <strong>Soil dries out within a day, even for moisture-loving plants</strong> — not
+          <strong>Soil dries out within a day, even for moisture-loving plants.</strong> Not
           enough cocopeat or compost relative to drainage material. Increase the moisture-retentive
           share of the mix.
         </li>
         <li>
-          <strong>A white, crusty layer forms on the surface</strong> — usually mineral buildup
+          <strong>A white, crusty layer forms on the surface.</strong> This is usually mineral buildup
           from hard tap water rather than a mix problem itself, though it&apos;s worth scraping off
           and topping up with fresh mix regardless.
         </li>
         <li>
-          <strong>The mix has visibly shrunk and pulled away from the pot&apos;s edges</strong> —
-          organic matter like compost and cocopeat breaks down and compacts over time, which is
+          <strong>The mix has visibly shrunk and pulled away from the pot&apos;s edges.</strong>{" "}
+          Organic matter like compost and cocopeat breaks down and compacts over time, which is
           normal, but it means the mix needs refreshing rather than continuing to sit as is.
         </li>
       </ul>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Refreshing mix in pots you&apos;re not repotting</h2>
       <p>
-        Not every pot needs a full repot every year, but the mix inside it still ages — organic
+        Not every pot needs a full repot every year, but the mix inside it still ages: organic
         components break down, nutrients get used up or wash out through drainage, and the texture
         gradually compacts even without the plant outgrowing the pot. For plants you&apos;re happy
         to leave in place, scrape away the top 2–3 centimetres of old mix every 6–8 months and
@@ -223,7 +223,7 @@ export default function Article() {
       </p>
 
       <p>
-        None of this needs to be exact. Potting mix is forgiving territory — get reasonably close
+        None of this needs to be exact. Potting mix is forgiving territory, so get reasonably close
         to these ratios and most balcony plants will do fine. What matters far more is not
         defaulting to garden soil on its own, and adjusting the ratio toward drainage or retention
         based on what you&apos;re actually growing, rather than using one mix for everything on the

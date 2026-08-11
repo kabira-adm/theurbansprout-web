@@ -37,7 +37,7 @@ export default function Article() {
       }}
     >
       <p>
-        Composting has a reputation for needing space most balconies simply don&apos;t have — a
+        Composting has a reputation for needing space most balconies simply don&apos;t have: a
         big open heap, a large bin, room for it to sit undisturbed for months. That reputation is
         earned by open-ground composting, not by composting in general. A balcony can&apos;t host a
         heap, but it can comfortably host a sealed bin or a small tumbler, and the payoff is real:
@@ -48,7 +48,7 @@ export default function Article() {
       <h2 className="text-xl font-semibold text-brand-green-dark">Why balcony composting needs a different method</h2>
       <p>
         Open composting relies on volume and airflow that a balcony can&apos;t provide, and an open
-        heap in a small enclosed space quickly turns into a smell and pest problem — exactly what
+        heap in a small enclosed space quickly turns into a smell and pest problem, exactly what
         puts people off trying at all. The methods that actually work in a small space are sealed
         or semi-sealed systems that control smell and pests by design, not by luck. Two options
         cover almost every balcony situation.
@@ -64,23 +64,23 @@ export default function Article() {
         >
           Bokashi
         </a>{" "}
-        is a fermentation method rather than traditional composting — kitchen waste is
+        is a fermentation method rather than traditional composting. Kitchen waste is
         layered with a bran inoculated with effective microorganisms, packed down to limit air, and
         sealed in an airtight bucket. It ferments rather than rots, which means far less smell than
         open composting and, crucially, no fruit flies, since the bin stays sealed throughout.
       </p>
       <ul className="list-disc space-y-2 pl-5">
-        <li>Fits in a corner or under a counter — a standard bin is roughly the size of a small dustbin.</li>
+        <li>Fits in a corner or under a counter, since a standard bin is roughly the size of a small dustbin.</li>
         <li>
           Handles a wider range of waste than most methods, including small amounts of cooked food,
           dairy, and even meat scraps, which most other home composting methods can&apos;t process.
         </li>
         <li>
           Takes about 2 weeks to ferment, after which the fermented waste still needs burying in
-          soil or a second bin for 2–4 weeks to fully break down — it isn&apos;t finished compost on
-          its own, it&apos;s a pre-treatment step.
+          soil or a second bin for 2–4 weeks to fully break down. It isn&apos;t finished compost on
+          its own, just a pre-treatment step.
         </li>
-        <li>Needs bokashi bran, bought or made, restocked regularly — the one recurring cost involved.</li>
+        <li>Needs bokashi bran, bought or made, restocked regularly. That&apos;s the one recurring cost involved.</li>
       </ul>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Small compost tumblers</h2>
@@ -104,7 +104,7 @@ export default function Article() {
           Needs a bit more floor or railing-adjacent space than a Bokashi bin, but stays fully
           enclosed, which keeps smell and pests down the same way.
         </li>
-        <li>Turning it regularly is the only ongoing effort — a couple of minutes every 2–3 days.</li>
+        <li>Turning it regularly is the only ongoing effort: a couple of minutes every 2–3 days.</li>
         <li>
           Produces finished, ready-to-use compost directly, unlike Bokashi&apos;s two-stage
           process.
@@ -123,7 +123,7 @@ export default function Article() {
         </li>
         <li>
           <strong>Bokashi only, in small amounts:</strong> dairy scraps, small quantities of meat
-          or fish waste, cooked food with oil — all of which a tumbler or open method will struggle
+          or fish waste, cooked food with oil, all of which a tumbler or open method will struggle
           with and which attract pests fast if composted the ordinary way.
         </li>
         <li>
@@ -138,15 +138,15 @@ export default function Article() {
       <p>
         Fruit flies and roaches are the two realistic pest risks with balcony composting, and both
         are almost entirely preventable with the right habits rather than a different method.
-        Always bury fresh waste under existing material or a layer of dry brown matter — shredded
-        cardboard, dry leaves, coco peat — rather than leaving it exposed on top. Keep the lid
+        Always bury fresh waste under existing material or a layer of dry brown matter, such as
+        shredded cardboard, dry leaves, or coco peat, rather than leaving it exposed on top. Keep the lid
         properly sealed between additions, and if fruit flies do show up, it&apos;s almost always a
         sign the bin has too much wet waste and not enough dry material mixed in.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">How much space these methods actually need</h2>
       <p>
-        A Bokashi bin footprint is close to a standard kitchen dustbin — it fits under a counter,
+        A Bokashi bin footprint is close to a standard kitchen dustbin. It fits under a counter,
         in a corner behind other pots, or on a small shelf, and needs no dedicated floor space at
         all. A compact tumbler needs a bit more, typically a square foot or so of floor or a stable
         railing-adjacent spot for its stand, comparable to one medium pot. Neither needs anything
@@ -156,7 +156,7 @@ export default function Article() {
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Using the finished compost</h2>
       <p>
-        Finished compost — dark, crumbly, and earthy-smelling rather than sour — can be mixed
+        Finished compost is dark, crumbly, and earthy-smelling rather than sour, and can be mixed
         directly into potting mix at roughly 20–25% of the total volume, or used as a monthly
         top-dressing scratched gently into the surface of existing pots. Bokashi&apos;s pre-compost,
         once buried in a spare pot of soil for a few weeks, becomes usable the same way. Either
@@ -183,16 +183,16 @@ export default function Article() {
         Bokashi ferments in 2 weeks, then needs another 2–4 weeks buried in soil to finish breaking
         down, putting it at a similar total timeline despite the different process. A basic pit or
         drum setup is the slowest and least predictable, often taking 2–3 months depending on how
-        well it&apos;s managed. None of these are fast in the way a kitchen appliance is instant —
-        composting is closer to a background habit than a quick task, which is exactly why
+        well it&apos;s managed. None of these are fast in the way a kitchen appliance is instant.
+        Composting is closer to a background habit than a quick task, which is exactly why
         consistency matters more than intensity.
       </p>
 
       <p>
-        Composting on a balcony rewards consistency over scale — a small bin, fed a little most
+        Composting on a balcony rewards consistency over scale. A small bin, fed a little most
         days and managed properly, will outperform an ambitious setup that gets neglected. Start
-        with whichever method matches your kitchen waste — Bokashi if you cook a lot of non-veg or
-        dairy-heavy food, a tumbler if your waste is mostly plant-based — and expect it to take a
+        with whichever method matches your kitchen waste: Bokashi if you cook a lot of non-veg or
+        dairy-heavy food, a tumbler if your waste is mostly plant-based. Either way, expect it to take a
         few weeks of habit-building before it feels routine.
       </p>
     </ArticleLayout>

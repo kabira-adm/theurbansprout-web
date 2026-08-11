@@ -36,7 +36,7 @@ const moreGuides = [
   },
   {
     title: "A ₹2,000 starter balcony garden",
-    description: "A realistic budget breakdown for starting from zero — what to buy, what to skip, and where to shop.",
+    description: "A realistic budget breakdown for starting from zero: what to buy, what to skip, and where to shop.",
     href: "/balcony-gardening/budget-balcony-garden-starter-guide",
   },
   {
@@ -51,7 +51,7 @@ const moreGuides = [
   },
   {
     title: "Dealing with pigeons and birds on your balcony garden",
-    description: "Deterrents that actually work — spikes, netting, reflective devices — without harming the birds.",
+    description: "Deterrents that actually work, from spikes and netting to reflective devices, without harming the birds.",
     href: "/balcony-gardening/dealing-with-pigeons-balcony-garden",
   },
   {
@@ -66,7 +66,7 @@ const moreGuides = [
   },
   {
     title: "Balcony gardening for renters",
-    description: "Fully portable, deposit-safe setups — nothing drilled into walls or railings, and plants that survive a move.",
+    description: "Fully portable, deposit-safe setups with nothing drilled into walls or railings, and plants that survive a move.",
     href: "/balcony-gardening/balcony-gardening-for-renters",
   },
   {
@@ -81,12 +81,12 @@ const moreGuides = [
   },
   {
     title: "Small balcony vs. large balcony: different strategies",
-    description: "Layout philosophy across the size range — zoning when you have space, prioritization when you don't.",
+    description: "Layout philosophy across the size range: zoning when you have space, prioritization when you don't.",
     href: "/balcony-gardening/small-vs-large-balcony-strategies",
   },
   {
     title: "High-rise balcony challenges",
-    description: "Heat reflection off glass buildings and lower humidity at height — the microclimate wind advice doesn't cover.",
+    description: "Heat reflection off glass buildings and lower humidity at height: the microclimate that wind advice doesn't cover.",
     href: "/balcony-gardening/high-rise-balcony-challenges",
   },
 ];
@@ -94,7 +94,7 @@ const moreGuides = [
 const starterPlants = [
   {
     name: "Money Plant (Pothos)",
-    note: "Tolerates low light and irregular watering — the most forgiving starting point.",
+    note: "Tolerates low light and irregular watering, making it the most forgiving starting point.",
   },
   {
     name: "Curry Leaf Plant",
@@ -136,7 +136,7 @@ export default function BalconyGardening() {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-16">
-        <h2 className="text-xl font-semibold text-brand-green-dark">Start here — the core guides</h2>
+        <h2 className="text-xl font-semibold text-brand-green-dark">Start here: the core guides</h2>
         <p className="mt-2 text-brand-green-dark/70">
           Read these in order if you&apos;re starting from scratch:
         </p>

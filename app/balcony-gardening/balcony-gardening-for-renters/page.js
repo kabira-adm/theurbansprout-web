@@ -24,7 +24,7 @@ export default function Article() {
   return (
     <ArticleLayout
       title="Balcony gardening for renters"
-      description="You don't need to own the balcony to garden it well. Here's how to build a setup that's genuinely yours — and moves with you when the lease ends."
+      description="You don't need to own the balcony to garden it well. Here's how to build a setup that's genuinely yours, and moves with you when the lease ends."
       readTime="8 min"
       jsonLd={{
         "@context": "https://schema.org",
@@ -37,7 +37,7 @@ export default function Article() {
     >
       <p>
         Most Indian city dwellers rent, and most gardening advice quietly assumes you own the
-        walls you&apos;re drilling into. That mismatch stops a lot of renters from starting at all —
+        walls you&apos;re drilling into. That mismatch stops a lot of renters from starting at all,
         which is a shame, because a genuinely good balcony garden doesn&apos;t need a single screw in
         the wall. The trick is designing around portability from day one rather than building
         something permanent and hoping the landlord doesn&apos;t mind, or worse, discovering they do
@@ -54,12 +54,12 @@ export default function Article() {
       <ul className="list-disc space-y-2 pl-5">
         <li>
           <strong>Freestanding tiered plant stands</strong> do the job of a wall planter without
-          touching the wall — a three- or four-tier stand against the back wall holds a similar
+          touching the wall. A three- or four-tier stand against the back wall holds a similar
           number of pots to a mounted grid system, with zero installation and zero holes to patch
           later.
         </li>
         <li>
-          <strong>Rolling plant caddies</strong> — small platforms on castors that a pot sits on —
+          <strong>Rolling plant caddies</strong>, small platforms on castors that a pot sits on,
           make even heavy pots easy to reposition, and turn moving day into wheeling a plant to the
           door rather than wrestling it.
         </li>
@@ -69,16 +69,16 @@ export default function Article() {
           time to go.
         </li>
         <li>
-          <strong>Over-the-railing hooks and clip-on planters</strong> — the kind that hang or clip
-          rather than bolt through the railing — get you railing-level growing space without a
+          <strong>Over-the-railing hooks and clip-on planters</strong>, the kind that hang or clip
+          rather than bolt through the railing, get you railing-level growing space without a
           single permanent fastener, and unclip in seconds.
         </li>
       </ul>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">What landlords actually object to</h2>
       <p>
-        It&apos;s worth being specific here, because &quot;landlords don&apos;t like plants&quot; isn&apos;t really true —
-        what they object to is usually one of a handful of concrete things, and knowing which ones
+        It&apos;s worth being specific here, because &quot;landlords don&apos;t like plants&quot; isn&apos;t really true.
+        What they object to is usually one of a handful of concrete things, and knowing which ones
         lets you avoid them without giving up on gardening altogether.
       </p>
       <ul className="list-disc space-y-2 pl-5">
@@ -89,8 +89,8 @@ export default function Article() {
         </li>
         <li>
           <strong>Water damage to the floor.</strong> Staining or, worse, water seeping into the
-          slab below from pots without saucers is a genuine structural concern, not just cosmetic —
-          use a saucer under every pot and empty it after watering rather than leaving it to
+          slab below from pots without saucers is a genuine structural concern, not just cosmetic.
+          Use a saucer under every pot and empty it after watering rather than leaving it to
           evaporate.
         </li>
         <li>
@@ -106,7 +106,7 @@ export default function Article() {
       </ul>
       <p>
         Where you&apos;re not sure, a quick conversation with the landlord or RWA before setting up
-        anything beyond a few floor pots is genuinely worth having — most are fine with a
+        anything beyond a few floor pots is genuinely worth having. Most are fine with a
         well-kept, freestanding setup, and knowing that upfront beats finding out otherwise at
         move-out.
       </p>
@@ -115,12 +115,12 @@ export default function Article() {
       <p>
         Renters move more often than owners, and a garden built entirely around plants that hate
         being disturbed is a garden you&apos;ll be rebuilding from scratch every year or two. Some
-        plants tolerate the stress of a move — a few days in a vehicle, a change in light at the
-        new place — far better than others.
+        plants tolerate the stress of a move, a few days in a vehicle and a change in light at the
+        new place, far better than others.
       </p>
       <ul className="list-disc space-y-2 pl-5">
         <li>
-          <strong>Money plant (pothos)</strong> is about as close to move-proof as a plant gets —
+          <strong>Money plant (pothos)</strong> is about as close to move-proof as a plant gets:
           it tolerates root disturbance, a few days of low light in transit, and settling into a
           new spot with barely a wobble.
         </li>
@@ -136,7 +136,7 @@ export default function Article() {
         </li>
         <li>
           <strong>Avoid moving mature flowering shrubs like hibiscus or bougainvillea in full
-          bloom</strong> if you can time it — the stress of transplant during active flowering sets
+          bloom</strong> if you can time it. The stress of transplant during active flowering sets
           them back further than moving during a quieter growth phase would.
         </li>
       </ul>
@@ -147,14 +147,14 @@ export default function Article() {
         at the new place regardless of what light it&apos;ll eventually get, so it can recover before
         being pushed straight back into full sun. If the move involves several hours in a closed
         vehicle, especially in summer, keep plants away from direct sun through a window and check
-        on them if the trip runs long — a hot car interior stresses a plant far more than the
+        on them if the trip runs long. A hot car interior stresses a plant far more than the
         journey&apos;s actual duration would suggest.
       </p>
 
       <h2 className="text-xl font-semibold text-brand-green-dark">Protecting your deposit from day one</h2>
       <p>
         Beyond avoiding damage as you go, it&apos;s worth documenting the balcony&apos;s condition
-        before you set anything up at all — a few photos of the bare floor, walls, and railing on
+        before you set anything up at all. A few photos of the bare floor, walls, and railing on
         move-in, dated and kept somewhere easy to find, gives you a clear before-state to point to
         if a deposit dispute ever comes up later. Do the same again when you eventually move out,
         with everything cleared away, before handing the keys back. It costs nothing and takes five
@@ -174,7 +174,7 @@ export default function Article() {
         freestanding tiered stand, four to six pots in a mix of sizes, a couple of railing clip-on
         planters if the railing suits them, and a small collection of the move-tolerant plants
         below. That&apos;s enough to make a real garden without a single item that isn&apos;t easy to carry
-        out the day you move, and it&apos;s a setup that scales naturally — add another tier or a second
+        out the day you move, and it&apos;s a setup that scales naturally: add another tier or a second
         stand later rather than needing to rethink the whole approach.
       </p>
 
@@ -184,8 +184,8 @@ export default function Article() {
         the whole garden yours in a way a wall-mounted one isn&apos;t. A tiered stand, a rolling caddy,
         and a few well-chosen pots are an investment that follows you to the next place rather than
         being abandoned or handed over with the flat. Treat the setup as something you&apos;re building
-        for yourself over years of renting, not something temporary just because the walls aren&apos;t
-        — a portable garden, kept up properly, can be just as established and rewarding as a
+        for yourself over years of renting, not something temporary just because the walls aren&apos;t.
+        A portable garden, kept up properly, can be just as established and rewarding as a
         permanent one.
       </p>
     </ArticleLayout>

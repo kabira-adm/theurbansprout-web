@@ -83,7 +83,7 @@ export default function Article() {
         </a>{" "}
         or a couple of bricks helps
         air move under the base and slows staining. For railing planters, always fit the matching
-        drip tray — runoff dripping straight onto the balcony below is one of the more common
+        drip tray. Runoff dripping straight onto the balcony below is one of the more common
         sources of society complaints in high-rises.
       </p>
 
