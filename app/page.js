@@ -4,7 +4,7 @@ import NewsletterForm from "@/components/NewsletterForm";
 const valueProps = [
   {
     title: "Made for small spaces",
-    body: "No backyards here. Every guide assumes a balcony, a window sill, or a few square feet — because that's what most Indian homes actually have.",
+    body: "No backyards here. Every guide assumes a balcony, a window sill, or a few square feet, because that's what most Indian homes actually have.",
   },
   {
     title: "Tested in Indian conditions",
@@ -12,7 +12,7 @@ const valueProps = [
   },
   {
     title: "No fluff, just steps",
-    body: "Clear, specific instructions — what to buy, how much water, when to repot — not vague inspiration.",
+    body: "Clear, specific instructions on what to buy, how much water, and when to repot. Not vague inspiration.",
   },
 ];
 
@@ -33,14 +33,14 @@ const hubs = [
   {
     title: "Kitchen Gardening",
     status: "live",
-    description: "Growing herbs and vegetables in containers — from coriander to tomatoes.",
+    description: "Growing herbs and vegetables in containers, from coriander to tomatoes.",
     href: "/kitchen-gardening",
   },
   {
     title: "Plant Encyclopedia",
     status: "live",
     description:
-      "A quick-reference lookup for 18 plants — light, watering, difficulty, and pet safety at a glance.",
+      "A quick-reference lookup for 18 plants: light, watering, difficulty, and pet safety at a glance.",
     href: "/plant-encyclopedia",
   },
   {
@@ -66,7 +66,7 @@ export default function Home() {
               Grow more than you think your balcony allows.
             </h1>
             <p className="mt-5 max-w-md text-lg leading-8 text-brand-green-dark/75">
-              Urban Sprout is a practical gardening guide for apartment dwellers across India —
+              Urban Sprout is a practical gardening guide for apartment dwellers across India,
               built around the space, climate, and water you actually have.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -118,7 +118,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-semibold text-brand-green-dark">Where to start</h2>
         <p className="mt-2 max-w-xl text-brand-green-dark/70">
-          Five ways into Urban Sprout, depending on what you need right now — a full guide, a
+          Five ways into Urban Sprout, depending on what you need right now: a full guide, a
           quick plant lookup, or somewhere to start from scratch.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

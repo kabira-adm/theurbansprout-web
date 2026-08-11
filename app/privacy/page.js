@@ -20,7 +20,7 @@ export default function Privacy() {
           <p className="mt-3">
             If you sign up for our newsletter, we collect the email address you provide. We don&apos;t
             require an account to read Urban Sprout, and we don&apos;t collect names, addresses, or
-            payment information — we don&apos;t sell anything on this site today.
+            payment information. We don&apos;t sell anything on this site today.
           </p>
         </section>
 

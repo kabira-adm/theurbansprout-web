@@ -20,7 +20,7 @@ const PLANT_TYPES = [
     value: "flowering",
     label: "Flowering plant",
     baseDays: 4,
-    note: "Flowering plants are actively pushing out buds and blooms and drink more steadily than foliage-only plants — letting the soil go bone dry can cause bud drop.",
+    note: "Flowering plants are actively pushing out buds and blooms and drink more steadily than foliage-only plants. Letting the soil go bone dry can cause bud drop.",
   },
   {
     value: "herb",
@@ -39,19 +39,19 @@ const PLANT_TYPES = [
 const POT_SIZES = [
   {
     value: "small",
-    label: "Small — under 6in",
+    label: "Small (under 6in)",
     multiplier: 0.7,
     note: "a pot under 6in holds very little soil and dries out fast, so lean toward the shorter end",
   },
   {
     value: "medium",
-    label: "Medium — 6 to 10in",
+    label: "Medium (6 to 10in)",
     multiplier: 1,
     note: null,
   },
   {
     value: "large",
-    label: "Large — 10in and above",
+    label: "Large (10in and above)",
     multiplier: 1.3,
     note: "a pot over 10in holds a lot more soil and moisture, so lean toward the longer end",
   },
@@ -68,7 +68,7 @@ const SEASONS = [
     value: "monsoon",
     label: "Monsoon",
     multiplier: 1.3,
-    note: "monsoon humidity — and rain doing part of the job for you — means soil stays damp much longer, so cut back on manual watering",
+    note: "monsoon humidity, and rain doing part of the job for you, means soil stays damp much longer, so cut back on manual watering",
   },
   {
     value: "winter",
@@ -81,13 +81,13 @@ const SEASONS = [
 const LOCATIONS = [
   {
     value: "fullsun",
-    label: "Balcony — full sun",
+    label: "Balcony, full sun",
     multiplier: 0.7,
     note: "full sun on a balcony speeds up evaporation",
   },
   {
     value: "partialshade",
-    label: "Balcony — partial shade",
+    label: "Balcony, partial shade",
     multiplier: 1,
     note: null,
   },
@@ -173,7 +173,7 @@ export default function WateringSchedulerPage() {
           <p className="mt-5 text-lg leading-8 text-brand-green-dark/75">
             Answer four quick questions about a plant and get a starting watering frequency,
             worked out from its type, pot size, the season, and where it sits. It&apos;s a
-            starting guideline, not a substitute for checking the soil — use it alongside the{" "}
+            starting guideline, not a substitute for checking the soil. Use it alongside the{" "}
             <Link
               href="/balcony-gardening/watering-schedule-indian-summers-monsoons"
               className="font-semibold text-brand-green hover:text-brand-green-dark"
@@ -272,7 +272,7 @@ export default function WateringSchedulerPage() {
                 </p>
               ) : null}
               <p className="mt-4 text-xs text-brand-green-dark/60">
-                Before watering on that day, push a finger about 2 inches into the soil — if
+                Before watering on that day, push a finger about 2 inches into the soil. If
                 it&apos;s still damp, wait. Read more in{" "}
                 <Link
                   href="/balcony-gardening/watering-schedule-indian-summers-monsoons"

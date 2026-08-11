@@ -22,7 +22,7 @@ export default function NewsletterForm() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Something went wrong");
       setState("success");
-      setMessage(data.message === "already subscribed" ? "You're already on the list." : "You're in — welcome!");
+      setMessage(data.message === "already subscribed" ? "You're already on the list." : "You're in, welcome!");
       setEmail("");
     } catch (err) {
       setState("error");

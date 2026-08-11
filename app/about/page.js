@@ -14,7 +14,7 @@ export default function About() {
       <div className="mt-8 space-y-6 text-brand-green-dark/80 leading-7">
         <p>
           Most gardening content is written for people with backyards. Urban Sprout is written
-          for the much larger group of Indian readers who don&apos;t have one — apartment
+          for the much larger group of Indian readers who don&apos;t have one: apartment
           dwellers working with a balcony, a window sill, or a few pots on a kitchen counter.
         </p>
         <p>
@@ -29,7 +29,7 @@ export default function About() {
           database.
         </p>
         <p>
-          Every guide is meant to be specific enough to act on today — not just inspiration, but
+          Every guide is meant to be specific enough to act on today, not just inspiration, but
           the actual steps.
         </p>
       </div>

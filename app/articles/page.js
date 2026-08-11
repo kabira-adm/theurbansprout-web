@@ -73,7 +73,7 @@ export default function Articles() {
           </h1>
           <p className="mt-5 text-lg leading-8 text-brand-green-dark/75">
             {totalCount} guides across all four pillars, grouped by topic. New guides are added
-            regularly — anything published in the last few days is marked{" "}
+            regularly. Anything published in the last few days is marked{" "}
             <span className="rounded-full bg-brand-green/10 px-2 py-0.5 text-xs font-semibold text-brand-green">
               New
             </span>
