@@ -76,7 +76,9 @@ export default function sitemap() {
     "money-plant-pothos", "snake-plant", "zz-plant", "peace-lily", "spider-plant",
     "areca-palm", "aloe-vera", "curry-leaf-plant", "tulsi-holy-basil", "marigold",
     "hibiscus", "jade-plant", "boston-fern", "calathea", "coriander", "mint",
-    "tomato", "green-chilli",
+    "tomato", "green-chilli", "lemon", "papaya", "fenugreek-methi", "spinach-palak",
+    "okra-bhindi", "bougainvillea", "jasmine-mogra", "rose", "rubber-plant",
+    "philodendron",
   ];
   const plantPages = plantSlugs.map((slug) => ({
     url: `${BASE_URL}/plant-encyclopedia/${slug}`,

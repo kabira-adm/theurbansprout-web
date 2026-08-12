@@ -44,7 +44,7 @@ const hubs = [
     title: "Plant Encyclopedia",
     status: "live",
     description:
-      "A quick-reference lookup for 18 plants: light, watering, difficulty, and pet safety at a glance.",
+      "A quick-reference lookup for 28 plants: light, watering, difficulty, and pet safety at a glance.",
     href: "/plant-encyclopedia",
   },
   {
