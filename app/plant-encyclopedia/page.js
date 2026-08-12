@@ -5,6 +5,7 @@ export const metadata = {
   title: "Plant Encyclopedia",
   description:
     "A quick-reference database of 18 plants for Indian apartments — light, watering frequency, difficulty, mature size, and pet safety at a glance.",
+  alternates: { canonical: "/plant-encyclopedia" },
 };
 
 export default function PlantEncyclopedia() {

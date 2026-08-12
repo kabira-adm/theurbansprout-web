@@ -56,6 +56,7 @@ export const metadata = {
   title: "All Articles",
   description:
     "Every Urban Sprout guide in one place — balcony, indoor, kitchen, and terrace gardening for Indian homes, newest first within each pillar.",
+  alternates: { canonical: "/articles" },
 };
 
 export default function Articles() {

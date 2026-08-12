@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Contact",
   description: "Get in touch with Urban Sprout.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function Contact() {

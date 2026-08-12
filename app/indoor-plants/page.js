@@ -42,6 +42,7 @@ export const metadata = {
   title: "Indoor Plants",
   description:
     "Low-light survivors, pet-safe picks, overwatering fixes, and repotting timelines for Indian apartment interiors.",
+  alternates: { canonical: "/indoor-plants" },
 };
 
 export default function IndoorPlants() {

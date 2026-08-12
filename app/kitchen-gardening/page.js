@@ -46,6 +46,7 @@ export const metadata = {
   title: "Kitchen Gardening",
   description:
     "Grow herbs and vegetables in containers on an Indian balcony or kitchen counter — coriander, mint, tomatoes, chillies, and regrowing from scraps.",
+  alternates: { canonical: "/kitchen-gardening" },
 };
 
 export default function KitchenGardening() {

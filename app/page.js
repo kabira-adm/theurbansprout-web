@@ -1,6 +1,10 @@
 import Link from "next/link";
 import NewsletterForm from "@/components/NewsletterForm";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 const valueProps = [
   {
     title: "Made for small spaces",

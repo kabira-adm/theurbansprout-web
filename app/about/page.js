@@ -2,6 +2,7 @@ export const metadata = {
   title: "About",
   description:
     "Why Urban Sprout exists: practical gardening guidance built for Indian apartment homes, one topic at a time.",
+  alternates: { canonical: "/about" },
 };
 
 export default function About() {

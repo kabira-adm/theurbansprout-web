@@ -114,6 +114,7 @@ export const metadata = {
   title: "Balcony Gardening",
   description:
     "Start here: containers, sunlight, watering, and the plants that actually survive Indian balconies.",
+  alternates: { canonical: "/balcony-gardening" },
 };
 
 export default function BalconyGardening() {

@@ -42,6 +42,7 @@ export const metadata = {
   title: "Terrace Gardening",
   description:
     "Turn a bare terrace into a productive garden — structural load, waterproofing, raised beds vs containers, and plants that handle full sun and wind.",
+  alternates: { canonical: "/terrace-gardening" },
 };
 
 export default function TerraceGardening() {
