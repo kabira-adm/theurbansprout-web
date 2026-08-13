@@ -1,56 +1,102 @@
 import Link from "next/link";
 
+// Dark, inverted footer, matching the design source exactly (the source's
+// own footer uses --color-accent-2-900 / --color-neutral-100/200, this is
+// the one other genuinely dark surface on the site besides the homepage
+// newsletter card). Restructured to the source's real 4-column shape
+// (brand, Guides, Tools, Elsewhere) using the site's real links, not the
+// mockup's placeholder ones. Privacy Policy is kept in the Elsewhere
+// column even though the mockup doesn't show a privacy page at all, since
+// it's a real page on this site that still needs to stay reachable.
+const GUIDE_LINKS = [
+  { href: "/balcony-gardening", label: "Balcony gardening" },
+  { href: "/indoor-plants", label: "Indoor plants" },
+  { href: "/kitchen-gardening", label: "Kitchen gardening" },
+  { href: "/terrace-gardening", label: "Terrace gardening" },
+];
+
+const TOOL_LINKS = [
+  { href: "/plant-encyclopedia", label: "Plant encyclopedia" },
+  { href: "/tools/watering-scheduler", label: "Watering scheduler" },
+  { href: "/articles", label: "Articles" },
+];
+
+const ELSEWHERE_LINKS = [
+  { href: "https://www.instagram.com/the.urbansprout.in/", label: "Instagram", external: true },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/privacy", label: "Privacy" },
+];
+
+function FooterLink({ href, label, external }) {
+  const className = "inline-flex min-h-11 items-center text-neutral-200/85 transition-colors hover:text-neutral-100";
+  if (external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {label}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={className}>
+      {label}
+    </Link>
+  );
+}
+
 export default function Footer() {
   return (
-    <footer className="border-t border-brand-sand bg-bg font-body">
-      <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="grid gap-10 sm:grid-cols-3">
-          <div>
-            <div className="flex items-center gap-2">
-              <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                <circle cx="14" cy="14" r="14" fill="#2E7D4F" />
-                <path d="M14 21V13C14 9.68629 16.6863 7 20 7" stroke="#FBF8F1" strokeWidth="2" strokeLinecap="round" />
-                <path d="M14 21V16C14 13.7909 12.2091 12 10 12" stroke="#FBF8F1" strokeWidth="2" strokeLinecap="round" />
-              </svg>
-              <span className="font-display text-lg text-ink">Urban Sprout</span>
-            </div>
-            <p className="mt-3 max-w-xs text-sm leading-6 text-ink/70">
-              Practical, tested gardening guidance for apartment balconies and small Indian homes.
-            </p>
+    <footer className="bg-accent-2-900 font-body text-neutral-200">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 py-12 sm:grid-cols-4">
+        <div className="col-span-2 sm:col-span-1">
+          <div className="flex items-center gap-2">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="14" fill="#2E7D4F" />
+              <path d="M14 21V13C14 9.68629 16.6863 7 20 7" stroke="#FBF8F1" strokeWidth="2" strokeLinecap="round" />
+              <path d="M14 21V16C14 13.7909 12.2091 12 10 12" stroke="#FBF8F1" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+            <span className="font-display text-lg text-neutral-100">Urban Sprout</span>
           </div>
-          <div>
-            <p className="text-sm font-semibold text-ink">Explore</p>
-            <ul className="mt-3 space-y-2 text-sm text-ink/70">
-              <li><Link href="/balcony-gardening" className="inline-flex min-h-11 items-center hover:text-primary">Balcony Gardening</Link></li>
-              <li><Link href="/about" className="inline-flex min-h-11 items-center hover:text-primary">About Urban Sprout</Link></li>
-              <li><Link href="/indoor-plants" className="inline-flex min-h-11 items-center hover:text-primary">Indoor Plants</Link></li>
-              <li><Link href="/kitchen-gardening" className="inline-flex min-h-11 items-center hover:text-primary">Kitchen Gardening</Link></li>
-              <li><Link href="/plant-encyclopedia" className="inline-flex min-h-11 items-center hover:text-primary">Plant Encyclopedia</Link></li>
-              <li><Link href="/terrace-gardening" className="inline-flex min-h-11 items-center hover:text-primary">Terrace Gardening</Link></li>
-              <li><Link href="/tools/watering-scheduler" className="inline-flex min-h-11 items-center hover:text-primary">Watering Scheduler</Link></li>
-            </ul>
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-ink">Stay in touch</p>
-            <p className="mt-3 text-sm text-ink/70">
-              One useful gardening tip a week, written for Indian balconies. No spam.
-            </p>
-            <Link
-              href="/#newsletter"
-              className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-primary hover:brightness-90"
-            >
-              Sign up on the homepage →
-            </Link>
-          </div>
+          <p className="mt-3 max-w-xs text-sm leading-6 text-neutral-200/70">
+            Practical, tested gardening guidance for apartment balconies and small Indian homes.
+          </p>
         </div>
-        <div className="mt-10 flex flex-col gap-3 border-t border-brand-sand pt-6 text-xs text-ink/60 sm:flex-row sm:items-center sm:justify-between">
-  <p>© {new Date().getFullYear()} Urban Sprout. All rights reserved.</p>
-  <div className="flex items-center gap-4">
-    <Link href="/privacy" className="inline-flex min-h-11 items-center hover:text-primary">Privacy Policy</Link>
-    <Link href="/contact" className="inline-flex min-h-11 items-center hover:text-primary">Contact</Link>
-  </div>
-  <p>Built for balconies, kitchens, and window sills across India.</p>
-</div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-neutral-200/55">Guides</p>
+          <ul className="mt-3 flex flex-col gap-1 text-sm">
+            {GUIDE_LINKS.map((link) => (
+              <li key={link.href}>
+                <FooterLink {...link} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-neutral-200/55">Tools</p>
+          <ul className="mt-3 flex flex-col gap-1 text-sm">
+            {TOOL_LINKS.map((link) => (
+              <li key={link.href}>
+                <FooterLink {...link} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-neutral-200/55">Elsewhere</p>
+          <ul className="mt-3 flex flex-col gap-1 text-sm">
+            {ELSEWHERE_LINKS.map((link) => (
+              <li key={link.href}>
+                <FooterLink {...link} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-neutral-100/15">
+        <div className="mx-auto max-w-6xl px-6 py-5 text-xs text-neutral-200/60">
+          © {new Date().getFullYear()} Urban Sprout. Built for balconies, kitchens, and window sills
+          across India.
+        </div>
       </div>
     </footer>
   );

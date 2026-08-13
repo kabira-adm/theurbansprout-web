@@ -20,6 +20,65 @@
   --v2-ink: #201e1d;
   --v2-accent-green: #7a8a5e;
   --v2-surface: #ebddc5;
+
+  /* Phase 8a: the rest of the design source's token system, read directly
+     from _ds/organic-.../styles.css rather than approximated. --v2-primary
+     and --v2-accent-green above are each a standalone reference color in
+     the source, not literally a step of the ramp below (they sit between
+     the 500 and 600 steps of their respective ramp), so they are kept as
+     their own tokens rather than folded into these ramps. --v2-primary-soft
+     above is identical to accent-100 below, this is the source's own
+     relationship, not a coincidence, so it is not duplicated as a ramp
+     step either. */
+  --v2-accent-100: #fff2eb;
+  --v2-accent-200: #ffe1d0;
+  --v2-accent-300: #ffc6a5;
+  --v2-accent-400: #f6a06b;
+  --v2-accent-500: #d67f48;
+  --v2-accent-600: #b2622d;
+  --v2-accent-700: #8c491a;
+  --v2-accent-800: #643312;
+  --v2-accent-900: #402310;
+
+  --v2-accent-2-100: #f0fae1;
+  --v2-accent-2-200: #e1eecc;
+  --v2-accent-2-300: #ccdbb2;
+  --v2-accent-2-400: #aebf92;
+  --v2-accent-2-500: #8fa073;
+  --v2-accent-2-600: #728157;
+  --v2-accent-2-700: #56633f;
+  --v2-accent-2-800: #3d472b;
+  --v2-accent-2-900: #272e1b;
+
+  --v2-neutral-100: #f9f4ed;
+  --v2-neutral-200: #eee7db;
+  --v2-neutral-300: #dcd3c4;
+  --v2-neutral-400: #c0b6a5;
+  --v2-neutral-500: #a19786;
+  --v2-neutral-600: #82796a;
+  --v2-neutral-700: #645c50;
+  --v2-neutral-800: #474238;
+  --v2-neutral-900: #2e2b25;
+
+  /* Spacing, radius, and shadow scale, kept as plain reference variables
+     (not wired into Tailwind's @theme utility generation) since Tailwind
+     already reserves rounded-sm/md/lg (13 existing uses in this codebase)
+     and would silently redefine them sitewide if --radius-* were added to
+     @theme. Use these via arbitrary-value syntax (e.g. rounded-[28px],
+     shadow-[var(--v2-shadow-md)]) where the source calls for them, the
+     same pattern Phase 6 already established for the 32px card radius. */
+  --v2-space-1: 4.4px;
+  --v2-space-2: 8.8px;
+  --v2-space-3: 13.2px;
+  --v2-space-4: 17.6px;
+  --v2-space-6: 26.4px;
+  --v2-space-8: 35.2px;
+  --v2-radius-sm: 8px;
+  --v2-radius-md: 16px;
+  --v2-radius-lg: 28px;
+  --v2-shadow-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
+  --v2-shadow-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
+  --v2-shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
 }
 
 @theme inline {
@@ -41,6 +100,41 @@
   --color-surface: var(--v2-surface);
   --font-body: var(--font-figtree);
   --font-display: var(--font-young-serif);
+
+  /* Phase 8a: full ramps, wired to Tailwind utilities (bg-accent-100,
+     text-accent-2-700, etc). "accent" and "accent-2" do not collide with
+     any of Tailwind's built-in color names, and this codebase has zero
+     existing uses of Tailwind's built-in neutral color scale (checked by
+     grep before adding this), so a full neutral ramp is safe to wire here
+     too. The radius and shadow scales are deliberately not wired here,
+     see the :root comment above. */
+  --color-accent-100: var(--v2-accent-100);
+  --color-accent-200: var(--v2-accent-200);
+  --color-accent-300: var(--v2-accent-300);
+  --color-accent-400: var(--v2-accent-400);
+  --color-accent-500: var(--v2-accent-500);
+  --color-accent-600: var(--v2-accent-600);
+  --color-accent-700: var(--v2-accent-700);
+  --color-accent-800: var(--v2-accent-800);
+  --color-accent-900: var(--v2-accent-900);
+  --color-accent-2-100: var(--v2-accent-2-100);
+  --color-accent-2-200: var(--v2-accent-2-200);
+  --color-accent-2-300: var(--v2-accent-2-300);
+  --color-accent-2-400: var(--v2-accent-2-400);
+  --color-accent-2-500: var(--v2-accent-2-500);
+  --color-accent-2-600: var(--v2-accent-2-600);
+  --color-accent-2-700: var(--v2-accent-2-700);
+  --color-accent-2-800: var(--v2-accent-2-800);
+  --color-accent-2-900: var(--v2-accent-2-900);
+  --color-neutral-100: var(--v2-neutral-100);
+  --color-neutral-200: var(--v2-neutral-200);
+  --color-neutral-300: var(--v2-neutral-300);
+  --color-neutral-400: var(--v2-neutral-400);
+  --color-neutral-500: var(--v2-neutral-500);
+  --color-neutral-600: var(--v2-neutral-600);
+  --color-neutral-700: var(--v2-neutral-700);
+  --color-neutral-800: var(--v2-neutral-800);
+  --color-neutral-900: var(--v2-neutral-900);
 }
 
 body {
