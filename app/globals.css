@@ -9,9 +9,10 @@
   --brand-terracotta: #C96F4A;
   --brand-sand: #EFE6D3;
 
-  /* v2 design tokens (header/footer shell). Legacy brand-* tokens above are
-     kept as-is so existing content pages render unchanged; these new tokens
-     are consumed only by Nav.js and Footer.js in this PR. */
+  /* v2 design tokens. Legacy brand-* tokens above are kept as-is so any
+     page not yet migrated to v2 keeps rendering unchanged. As of Phase 3,
+     these are used by Nav.js, Footer.js, the homepage, and the article
+     template. */
   --v2-bg: #F2E9D8;
   --v2-primary: #C1743F;
   --v2-primary-soft: #F6DDC9;
@@ -42,4 +43,19 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+/* Phase 3: restyles every article's h2 to the v2 display font and ink
+   token without editing the 31 existing article page.js files, each of
+   which hardcodes its own h2 className. This selector is more specific
+   than the single-class utility selectors it overrides (text-brand-green-dark,
+   font-semibold), so no !important is needed. font-weight is pinned to
+   400 rather than left at the inherited font-semibold's 600, since Young
+   Serif is only loaded at weight 400 in this project and a heavier
+   weight would be browser-synthesized, the same reasoning Phase 2
+   applied to the homepage hero heading. */
+.prose-article h2 {
+  font-family: var(--font-display);
+  color: var(--color-ink);
+  font-weight: 400;
 }
