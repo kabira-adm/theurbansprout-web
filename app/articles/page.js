@@ -17,6 +17,12 @@ const pillars = [
       { title: "Organic pest control for open-air balconies", href: "/balcony-gardening/organic-pest-control-balcony-plants" },
       { title: "Dealing with pigeons and birds on your balcony garden", href: "/balcony-gardening/dealing-with-pigeons-balcony-garden" },
       { title: "A seasonal balcony gardening calendar for India", href: "/balcony-gardening/seasonal-balcony-gardening-calendar-india" },
+      { title: "Balcony gardening for renters", href: "/balcony-gardening/balcony-gardening-for-renters" },
+      { title: "Balcony privacy screening with plants", href: "/balcony-gardening/balcony-privacy-screening-with-plants" },
+      { title: "A fertilizing schedule for balcony plants", href: "/balcony-gardening/fertilizing-schedule-balcony-plants" },
+      { title: "Flowering plants for Indian balconies", href: "/balcony-gardening/flowering-plants-for-indian-balconies" },
+      { title: "High-rise balcony challenges", href: "/balcony-gardening/high-rise-balcony-challenges" },
+      { title: "Small balcony vs. large balcony: different strategies", href: "/balcony-gardening/small-vs-large-balcony-strategies" },
     ],
   },
   {
@@ -55,7 +61,7 @@ const pillars = [
 export const metadata = {
   title: "All Articles",
   description:
-    "Every Urban Sprout guide in one place — balcony, indoor, kitchen, and terrace gardening for Indian homes, newest first within each pillar.",
+    "Every Urban Sprout guide in one place: balcony, indoor, kitchen, and terrace gardening for Indian homes, newest first within each pillar.",
   alternates: { canonical: "/articles" },
 };
 
@@ -64,18 +70,18 @@ export default function Articles() {
 
   return (
     <div>
-      <section className="border-b border-brand-sand bg-white/60">
+      <section className="border-b border-brand-sand bg-white/60 font-body">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <p className="text-sm font-semibold uppercase tracking-wide text-brand-terracotta">
+          <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Archive
           </p>
-          <h1 className="mt-3 text-3xl font-semibold text-brand-green-dark sm:text-4xl">
+          <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">
             All articles
           </h1>
-          <p className="mt-5 text-lg leading-8 text-brand-green-dark/75">
+          <p className="mt-5 text-lg leading-8 text-ink/75">
             {totalCount} guides across all four pillars, grouped by topic. New guides are added
             regularly. Anything published in the last few days is marked{" "}
-            <span className="rounded-full bg-brand-green/10 px-2 py-0.5 text-xs font-semibold text-brand-green">
+            <span className="rounded-full bg-accent-green/10 px-2 py-0.5 text-xs font-semibold text-accent-green">
               New
             </span>
             .
@@ -83,14 +89,14 @@ export default function Articles() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 py-16 space-y-14">
+      <section className="mx-auto max-w-3xl px-6 py-16 space-y-14 font-body">
         {pillars.map((pillar) => (
           <div key={pillar.href}>
             <div className="flex items-baseline justify-between">
-              <h2 className="text-xl font-semibold text-brand-green-dark">{pillar.name}</h2>
+              <h2 className="text-xl font-semibold text-ink">{pillar.name}</h2>
               <Link
                 href={pillar.href}
-                className="text-sm font-medium text-brand-green hover:text-brand-green-dark"
+                className="inline-flex min-h-11 items-center text-sm font-medium text-primary hover:text-ink"
               >
                 Pillar hub →
               </Link>
@@ -100,11 +106,11 @@ export default function Articles() {
                 <li key={article.href}>
                   <Link
                     href={article.href}
-                    className="flex items-center justify-between gap-3 rounded-lg border border-brand-sand bg-white px-4 py-3 text-sm font-medium text-brand-green-dark transition-colors hover:border-brand-green/40 hover:bg-brand-green/5"
+                    className="flex min-h-11 items-center justify-between gap-3 rounded-lg border border-ink/10 bg-surface px-4 py-3 text-sm font-medium text-ink transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
                   >
                     <span>{article.title}</span>
                     {article.isNew ? (
-                      <span className="shrink-0 rounded-full bg-brand-green/10 px-2 py-0.5 text-xs font-semibold text-brand-green">
+                      <span className="shrink-0 rounded-full bg-accent-green/10 px-2 py-0.5 text-xs font-semibold text-accent-green">
                         New
                       </span>
                     ) : null}

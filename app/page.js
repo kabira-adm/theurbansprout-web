@@ -201,9 +201,9 @@ export default function Home() {
       </section>
 
       {/* Hubs */}
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-2xl font-semibold text-brand-green-dark">Where to start</h2>
-        <p className="mt-2 max-w-xl text-brand-green-dark/70">
+      <section className="mx-auto max-w-6xl px-6 py-16 font-body">
+        <h2 className="font-display text-2xl text-ink">Where to start</h2>
+        <p className="mt-2 max-w-xl text-ink/70">
           Five ways into Urban Sprout, depending on what you need right now: a full guide, a
           quick plant lookup, or somewhere to start from scratch.
         </p>
@@ -211,29 +211,29 @@ export default function Home() {
           {hubs.map((hub) => (
             <div
               key={hub.title}
-              className={`rounded-2xl border p-6 ${
+              className={`rounded-[32px] border p-6 ${
                 hub.status === "live"
-                  ? "border-brand-green/30 bg-white"
+                  ? "border-primary/30 bg-surface"
                   : "border-brand-sand bg-brand-sand/30"
               }`}
             >
               <div className="flex items-center justify-between">
-                <h3 className="text-base font-semibold text-brand-green-dark">{hub.title}</h3>
+                <h3 className="text-base font-semibold text-ink">{hub.title}</h3>
                 <span
                   className={`rounded-full px-2 py-0.5 text-xs font-medium ${
                     hub.status === "live"
-                      ? "bg-brand-green/10 text-brand-green"
+                      ? "bg-accent-green/10 text-accent-green"
                       : "bg-brand-green-dark/10 text-brand-green-dark/60"
                   }`}
                 >
                   {hub.status === "live" ? "Live" : "Coming soon"}
                 </span>
               </div>
-              <p className="mt-3 text-sm leading-6 text-brand-green-dark/70">{hub.description}</p>
+              <p className="mt-3 text-sm leading-6 text-ink/70">{hub.description}</p>
               {hub.status === "live" ? (
                 <Link
                   href={hub.href}
-                  className="mt-4 inline-block text-sm font-semibold text-brand-green hover:text-brand-green-dark"
+                  className="mt-4 inline-flex min-h-11 items-center text-sm font-semibold text-primary hover:text-ink"
                 >
                   Explore {hub.title} →
                 </Link>
@@ -244,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="border-t border-brand-sand bg-brand-green-dark">
+      <section id="newsletter" className="border-t border-brand-sand bg-ink">
         <div className="mx-auto max-w-3xl px-6 py-16 text-center">
           <h2 className="text-2xl font-semibold text-white">One gardening tip a week</h2>
           <p className="mt-2 text-brand-cream/80">
