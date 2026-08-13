@@ -1,24 +1,93 @@
+import fs from "fs";
+import path from "path";
 import Link from "next/link";
 import NewsletterForm from "@/components/NewsletterForm";
+import { getAllPlants, CONTENT_LAST_UPDATED } from "@/lib/plants-data";
 
 export const metadata = {
   alternates: { canonical: "/" },
 };
 
+// Counted from the actual content at build time, not hardcoded, so this
+// stays correct as articles and plant entries get added. No new
+// article or plant page shows up on this stat line until it's in the
+// content itself.
+const ARTICLE_PILLARS = ["balcony-gardening", "indoor-plants", "kitchen-gardening", "terrace-gardening"];
+
+function countGuides() {
+  const appDir = path.join(process.cwd(), "app");
+  return ARTICLE_PILLARS.reduce((total, pillar) => {
+    const pillarDir = path.join(appDir, pillar);
+    const entries = fs.readdirSync(pillarDir, { withFileTypes: true });
+    const articleDirs = entries.filter(
+      (entry) => entry.isDirectory() && fs.existsSync(path.join(pillarDir, entry.name, "page.js"))
+    );
+    return total + articleDirs.length;
+  }, 0);
+}
+
+const stats = [
+  { value: String(getAllPlants().length), label: "Plants cataloged" },
+  { value: String(countGuides()), label: "Guides" },
+  { value: CONTENT_LAST_UPDATED, label: "Last updated" },
+];
+
 const valueProps = [
   {
     title: "Made for small spaces",
     body: "No backyards here. Every guide assumes a balcony, a window sill, or a few square feet, because that's what most Indian homes actually have.",
+    icon: "home",
   },
   {
     title: "Tested in Indian conditions",
     body: "Monsoon humidity, summer heat, hard tap water, city dust. Advice that accounts for the climate you're actually gardening in.",
+    icon: "sun",
   },
   {
     title: "No fluff, just steps",
     body: "Clear, specific instructions on what to buy, how much water, and when to repot. Not vague inspiration.",
+    icon: "list-checks",
   },
 ];
+
+const FeatureIcon = ({ name, className }) => {
+  const paths = {
+    home: (
+      <>
+        <path d="M3 11.5 12 4l9 7.5" />
+        <path d="M5.5 10v9a1 1 0 0 0 1 1H10v-6h4v6h3.5a1 1 0 0 0 1-1v-9" />
+      </>
+    ),
+    sun: (
+      <>
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+      </>
+    ),
+    "list-checks": (
+      <>
+        <path d="M4 6l1.5 1.5L8 5" />
+        <path d="M4 12l1.5 1.5L8 11" />
+        <path d="M4 18l1.5 1.5L8 17" />
+        <path d="M12 6h8M12 12h8M12 18h8" />
+      </>
+    ),
+  };
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      {paths[name]}
+    </svg>
+  );
+};
 
 const hubs = [
   {
@@ -60,29 +129,29 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 pb-16 pt-16 sm:pt-24">
+      <section className="mx-auto max-w-6xl px-6 pb-16 pt-16 font-body sm:pt-24">
         <div className="grid items-center gap-12 sm:grid-cols-2">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-terracotta">
+            <p className="text-sm font-semibold uppercase tracking-wide text-primary">
               For Indian apartment homes
             </p>
-            <h1 className="mt-3 text-4xl font-semibold leading-tight tracking-tight text-brand-green-dark sm:text-5xl">
+            <h1 className="mt-3 font-display text-5xl leading-tight text-ink sm:text-6xl">
               Grow more than you think your balcony allows.
             </h1>
-            <p className="mt-5 max-w-md text-lg leading-8 text-brand-green-dark/75">
+            <p className="mt-5 max-w-md text-lg leading-8 text-ink/75">
               Urban Sprout is a practical gardening guide for apartment dwellers across India,
               built around the space, climate, and water you actually have.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/balcony-gardening"
-                className="rounded-full bg-brand-green px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-green-dark"
+                className="flex min-h-11 items-center justify-center rounded-full bg-primary px-6 text-sm font-semibold text-white transition hover:brightness-90"
               >
                 Start with Balcony Gardening
               </Link>
               <Link
                 href="/about"
-                className="rounded-full border border-brand-green-dark/20 px-6 py-3 text-sm font-semibold text-brand-green-dark transition-colors hover:border-brand-green-dark/40"
+                className="flex min-h-11 items-center justify-center rounded-full border border-ink/20 px-6 text-sm font-semibold text-ink transition-colors hover:border-primary/40 hover:text-primary"
               >
                 About Urban Sprout
               </Link>
@@ -104,14 +173,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Stat line */}
+      <section className="border-y border-brand-sand bg-primary-soft/40 font-body">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-6 text-center">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <span className="text-lg font-semibold text-ink">{stat.value}</span>
+              <span className="ml-1.5 text-sm text-ink/60">{stat.label}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Value props */}
-      <section className="border-y border-brand-sand bg-white/60">
+      <section className="border-b border-brand-sand bg-white/60 font-body">
         <div className="mx-auto max-w-6xl px-6 py-16">
           <div className="grid gap-10 sm:grid-cols-3">
             {valueProps.map((item) => (
               <div key={item.title}>
-                <h3 className="text-lg font-semibold text-brand-green-dark">{item.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-brand-green-dark/70">{item.body}</p>
+                <FeatureIcon name={item.icon} className="h-8 w-8 text-accent-green" />
+                <h3 className="mt-3 text-lg font-semibold text-ink">{item.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-ink/70">{item.body}</p>
               </div>
             ))}
           </div>
