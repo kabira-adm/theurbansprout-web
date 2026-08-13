@@ -151,10 +151,12 @@ function calculate({ plantType, potSize, season, location }) {
 
 // Matches the SELECT_CLASSES convention Phase 4 established in
 // components/PlantGrid.js (border-ink/15, text-ink, focus:border-primary/40,
-// min-h-11), with mt-2 added since this page stacks a visible label above
-// each select rather than using a sr-only one.
+// min-h-11, rounded-full, bg-surface, as corrected in Phase 6), with
+// mt-2 added since this page stacks a visible label above each select
+// rather than using a sr-only one. No focus:outline-none, the global
+// :focus-visible rule in globals.css handles this now.
 const SELECT_CLASSES =
-  "mt-2 w-full min-h-11 rounded-lg border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink focus:border-primary/40 focus:outline-none";
+  "mt-2 w-full min-h-11 rounded-full border border-ink/15 bg-surface px-4 py-2.5 text-sm text-ink focus:border-primary/40";
 
 export default function WateringSchedulerPage() {
   const [plantType, setPlantType] = useState("leafy");
@@ -193,7 +195,7 @@ export default function WateringSchedulerPage() {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-16 font-body">
-        <div className="rounded-2xl border border-ink/10 bg-white p-6 sm:p-8">
+        <div className="rounded-[32px] border border-ink/10 bg-surface p-6 sm:p-8">
           <div className="grid gap-6 sm:grid-cols-2">
             <label className="block">
               <span className="text-sm font-semibold text-ink">Plant type</span>
@@ -265,7 +267,7 @@ export default function WateringSchedulerPage() {
           </button>
 
           {result ? (
-            <div className="mt-8 rounded-xl border border-primary/20 bg-primary-soft/30 p-6">
+            <div className="mt-8 rounded-[32px] border border-primary/20 bg-primary-soft/30 p-6">
               <p className="text-sm font-semibold uppercase tracking-wide text-primary">
                 Suggested frequency
               </p>

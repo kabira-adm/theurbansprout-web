@@ -27,7 +27,7 @@ function InstagramIcon(props) {
       height="18"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.8"
+      strokeWidth="2.75"
       aria-hidden="true"
       {...props}
     >

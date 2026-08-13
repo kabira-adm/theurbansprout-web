@@ -3,7 +3,7 @@
 // generate per-article variants of it.
 export default function AuthorBio() {
   return (
-    <div className="mt-12 rounded-xl bg-primary-soft/30 p-5 font-body">
+    <div className="mt-12 rounded-[32px] bg-primary-soft/30 p-5 font-body">
       <p className="text-xs font-semibold uppercase tracking-wide text-ink/50">Written by</p>
       <p className="mt-2 text-sm leading-6 text-ink/80">
         Written by Aftab, who gardens on a rooftop, a ground-level patch, and a balcony in

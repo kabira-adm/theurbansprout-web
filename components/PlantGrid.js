@@ -34,8 +34,12 @@ const DIFFICULTY_STYLES = {
 // inconsistently across browsers (Safari and Firefox in particular).
 // A plain min-height is the safe way to guarantee the 44px tap target
 // on form elements without touching their internal rendering.
+// rounded-full and bg-surface per the design system source: inputs go
+// fully pill, not rounded-lg, and sit on --color-surface, not white.
+// No focus:outline-none, the global :focus-visible rule in globals.css
+// handles this now.
 const SELECT_CLASSES =
-  "w-full min-h-11 rounded-lg border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink focus:border-primary/40 focus:outline-none";
+  "w-full min-h-11 rounded-full border border-ink/15 bg-surface px-4 py-2.5 text-sm text-ink focus:border-primary/40";
 
 export default function PlantGrid({ plants }) {
   const [category, setCategory] = useState("All");
@@ -138,7 +142,7 @@ export default function PlantGrid({ plants }) {
       </p>
 
       {filtered.length === 0 ? (
-        <div className="mt-6 rounded-xl border border-dashed border-ink/15 bg-white/60 px-5 py-12 text-center">
+        <div className="mt-6 rounded-[32px] border border-dashed border-ink/15 bg-surface/60 px-5 py-12 text-center">
           <p className="text-sm font-medium text-ink/70">
             No plants match your search and filters.
           </p>
@@ -152,7 +156,7 @@ export default function PlantGrid({ plants }) {
             <Link
               key={plant.slug}
               href={`/plant-encyclopedia/${plant.slug}`}
-              className="flex flex-col rounded-xl border border-ink/10 bg-white p-5 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
+              className="flex flex-col rounded-[32px] border border-ink/10 bg-surface p-5 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
             >
               <div className="flex items-start justify-between gap-2">
                 <div>

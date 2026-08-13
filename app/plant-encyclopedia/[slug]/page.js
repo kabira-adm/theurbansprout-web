@@ -87,7 +87,7 @@ export default async function PlantProfile({ params }) {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-12">
-        <div className="overflow-hidden rounded-xl border border-ink/10 bg-white">
+        <div className="overflow-hidden rounded-[32px] border border-ink/10 bg-surface">
           <dl className="divide-y divide-ink/10">
             {FACTS_ORDER.map((fact) => (
               <div key={fact.key} className="grid grid-cols-3 gap-4 px-5 py-4">
@@ -108,7 +108,7 @@ export default async function PlantProfile({ params }) {
           </dl>
         </div>
 
-        <div className="mt-6 rounded-xl border border-ink/10 bg-primary-soft/30 p-5">
+        <div className="mt-6 rounded-[32px] border border-ink/10 bg-primary-soft/30 p-5">
           <h2 className="text-sm font-semibold text-ink">Growing note</h2>
           <p className="mt-2 text-sm leading-6 text-ink/80">{plant.note}</p>
         </div>

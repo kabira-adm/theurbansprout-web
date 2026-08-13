@@ -10,14 +10,16 @@
   --brand-sand: #EFE6D3;
 
   /* v2 design tokens. Legacy brand-* tokens above are kept as-is so any
-     page not yet migrated to v2 keeps rendering unchanged. As of Phase 3,
-     these are used by Nav.js, Footer.js, the homepage, and the article
-     template. */
-  --v2-bg: #F2E9D8;
-  --v2-primary: #C1743F;
-  --v2-primary-soft: #F6DDC9;
-  --v2-ink: #2A2A28;
-  --v2-accent-green: #5C7A4A;
+     page not yet migrated to v2 keeps rendering unchanged. As of Phase 6,
+     these are the exact values from the design system source
+     (_ds/organic-.../styles.css), not approximated from screenshots like
+     the Phase 1 values they replace. */
+  --v2-bg: #f5ead8;
+  --v2-primary: #c67139;
+  --v2-primary-soft: #fff2eb;
+  --v2-ink: #201e1d;
+  --v2-accent-green: #7a8a5e;
+  --v2-surface: #ebddc5;
 }
 
 @theme inline {
@@ -36,6 +38,7 @@
   --color-primary-soft: var(--v2-primary-soft);
   --color-ink: var(--v2-ink);
   --color-accent-green: var(--v2-accent-green);
+  --color-surface: var(--v2-surface);
   --font-body: var(--font-figtree);
   --font-display: var(--font-young-serif);
 }
@@ -43,6 +46,24 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+/* Phase 6: sitewide focus-visible ring and selection color, added once
+   here rather than per-component. Components that previously suppressed
+   the native outline with focus:outline-none (components/PlantGrid.js,
+   app/tools/watering-scheduler/page.js, components/NewsletterForm.js)
+   had that removed in the same change, otherwise this rule never
+   reaches them and keyboard users get no focus indicator at all on
+   those fields. */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+::selection {
+  background: color-mix(in srgb, var(--color-primary) 30%, transparent);
 }
 
 /* Phase 3: restyles every article's h2 to the v2 display font and ink

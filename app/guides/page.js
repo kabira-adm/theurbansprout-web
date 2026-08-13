@@ -94,7 +94,7 @@ export default function GuidesIndex() {
             <Link
               key={pillar.href}
               href={pillar.href}
-              className="flex flex-col rounded-xl border border-ink/10 bg-white p-6 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
+              className="flex flex-col rounded-[32px] border border-ink/10 bg-surface p-6 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
             >
               <div className="flex items-start justify-between gap-3">
                 <h2 className="font-display text-xl text-ink">{pillar.title}</h2>
