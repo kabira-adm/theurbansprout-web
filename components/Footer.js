@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-brand-sand bg-brand-sand/40">
+    <footer className="border-t border-brand-sand bg-bg font-body">
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
@@ -12,42 +12,42 @@ export default function Footer() {
                 <path d="M14 21V13C14 9.68629 16.6863 7 20 7" stroke="#FBF8F1" strokeWidth="2" strokeLinecap="round" />
                 <path d="M14 21V16C14 13.7909 12.2091 12 10 12" stroke="#FBF8F1" strokeWidth="2" strokeLinecap="round" />
               </svg>
-              <span className="text-base font-semibold text-brand-green-dark">Urban Sprout</span>
+              <span className="font-display text-lg text-ink">Urban Sprout</span>
             </div>
-            <p className="mt-3 max-w-xs text-sm leading-6 text-brand-green-dark/70">
+            <p className="mt-3 max-w-xs text-sm leading-6 text-ink/70">
               Practical, tested gardening guidance for apartment balconies and small Indian homes.
             </p>
           </div>
           <div>
-            <p className="text-sm font-semibold text-brand-green-dark">Explore</p>
-            <ul className="mt-3 space-y-2 text-sm text-brand-green-dark/70">
-              <li><Link href="/balcony-gardening" className="hover:text-brand-green">Balcony Gardening</Link></li>
-              <li><Link href="/about" className="hover:text-brand-green">About Urban Sprout</Link></li>
-              <li><Link href="/indoor-plants" className="hover:text-brand-green">Indoor Plants</Link></li>
-              <li><Link href="/kitchen-gardening" className="hover:text-brand-green">Kitchen Gardening</Link></li>
-              <li><Link href="/plant-encyclopedia" className="hover:text-brand-green">Plant Encyclopedia</Link></li>
-              <li><Link href="/terrace-gardening" className="hover:text-brand-green">Terrace Gardening</Link></li>
-              <li><Link href="/tools/watering-scheduler" className="hover:text-brand-green">Watering Scheduler</Link></li>
+            <p className="text-sm font-semibold text-ink">Explore</p>
+            <ul className="mt-3 space-y-2 text-sm text-ink/70">
+              <li><Link href="/balcony-gardening" className="inline-flex min-h-11 items-center hover:text-primary">Balcony Gardening</Link></li>
+              <li><Link href="/about" className="inline-flex min-h-11 items-center hover:text-primary">About Urban Sprout</Link></li>
+              <li><Link href="/indoor-plants" className="inline-flex min-h-11 items-center hover:text-primary">Indoor Plants</Link></li>
+              <li><Link href="/kitchen-gardening" className="inline-flex min-h-11 items-center hover:text-primary">Kitchen Gardening</Link></li>
+              <li><Link href="/plant-encyclopedia" className="inline-flex min-h-11 items-center hover:text-primary">Plant Encyclopedia</Link></li>
+              <li><Link href="/terrace-gardening" className="inline-flex min-h-11 items-center hover:text-primary">Terrace Gardening</Link></li>
+              <li><Link href="/tools/watering-scheduler" className="inline-flex min-h-11 items-center hover:text-primary">Watering Scheduler</Link></li>
             </ul>
           </div>
           <div>
-            <p className="text-sm font-semibold text-brand-green-dark">Stay in touch</p>
-            <p className="mt-3 text-sm text-brand-green-dark/70">
+            <p className="text-sm font-semibold text-ink">Stay in touch</p>
+            <p className="mt-3 text-sm text-ink/70">
               One useful gardening tip a week, written for Indian balconies. No spam.
             </p>
             <Link
               href="/#newsletter"
-              className="mt-3 inline-block text-sm font-semibold text-brand-green hover:text-brand-green-dark"
+              className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-primary hover:brightness-90"
             >
               Sign up on the homepage →
             </Link>
           </div>
         </div>
-        <div className="mt-10 flex flex-col gap-3 border-t border-brand-sand pt-6 text-xs text-brand-green-dark/60 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-3 border-t border-brand-sand pt-6 text-xs text-ink/60 sm:flex-row sm:items-center sm:justify-between">
   <p>© {new Date().getFullYear()} Urban Sprout. All rights reserved.</p>
   <div className="flex items-center gap-4">
-    <Link href="/privacy" className="hover:text-brand-green">Privacy Policy</Link>
-    <Link href="/contact" className="hover:text-brand-green">Contact</Link>
+    <Link href="/privacy" className="inline-flex min-h-11 items-center hover:text-primary">Privacy Policy</Link>
+    <Link href="/contact" className="inline-flex min-h-11 items-center hover:text-primary">Contact</Link>
   </div>
   <p>Built for balconies, kitchens, and window sills across India.</p>
 </div>

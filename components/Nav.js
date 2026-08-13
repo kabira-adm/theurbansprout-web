@@ -12,9 +12,9 @@ const guideLinks = [
 ];
 
 const otherLinks = [
+  { href: "/plant-encyclopedia", label: "Plants" },
+  { href: "/tools/watering-scheduler", label: "Watering" },
   { href: "/articles", label: "Articles" },
-  { href: "/tools/watering-scheduler", label: "Watering Scheduler" },
-  { href: "/about", label: "About" },
 ];
 
 const INSTAGRAM_URL = "https://www.instagram.com/the.urbansprout.in/";
@@ -95,7 +95,7 @@ function GuidesDropdown() {
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-haspopup="true"
-        className="flex items-center gap-1 text-sm font-medium text-brand-green-dark/80 transition-colors hover:text-brand-green"
+        className="flex min-h-11 items-center gap-1 text-sm font-medium text-brand-green-dark/80 transition-colors hover:text-brand-green"
       >
         Guides
         <ChevronIcon open={open} />
@@ -152,7 +152,7 @@ export default function Nav() {
   }, [mobileOpen]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-brand-sand bg-brand-cream/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-brand-sand bg-bg/90 font-body backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <Link href="/" className="flex shrink-0 items-center gap-2">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
@@ -170,24 +170,16 @@ export default function Nav() {
               strokeLinecap="round"
             />
           </svg>
-          <span className="text-lg font-semibold tracking-tight text-brand-green-dark">
-            Urban Sprout
-          </span>
+          <span className="font-display text-xl text-ink">Urban Sprout</span>
         </Link>
 
         <nav className="hidden items-center gap-7 sm:flex">
-          <Link
-            href="/"
-            className="text-sm font-medium text-brand-green-dark/80 transition-colors hover:text-brand-green"
-          >
-            Home
-          </Link>
           <GuidesDropdown />
           {otherLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-brand-green-dark/80 transition-colors hover:text-brand-green"
+              className="flex min-h-11 items-center text-sm font-medium text-ink/80 transition-colors hover:text-primary"
             >
               {link.label}
             </Link>
@@ -197,7 +189,7 @@ export default function Nav() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="text-brand-green-dark/80 transition-colors hover:text-brand-green"
+            className="flex min-h-11 min-w-11 items-center justify-center text-brand-green-dark/80 transition-colors hover:text-brand-green"
           >
             <InstagramIcon />
           </a>
@@ -206,9 +198,9 @@ export default function Nav() {
         <div className="flex shrink-0 items-center gap-3">
           <Link
             href="/#newsletter"
-            className="rounded-full bg-brand-green px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-green-dark"
+            className="flex min-h-11 items-center justify-center rounded-full bg-primary px-5 text-sm font-semibold text-white transition hover:brightness-90"
           >
-            Get weekly tips
+            Weekly tip
           </Link>
           <button
             type="button"
@@ -216,7 +208,7 @@ export default function Nav() {
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav-panel"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-brand-sand text-brand-green-dark transition-colors hover:border-brand-green/40 sm:hidden"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-brand-sand text-ink transition-colors hover:border-primary/40 sm:hidden"
           >
             <MenuIcon open={mobileOpen} />
           </button>
@@ -224,25 +216,17 @@ export default function Nav() {
       </div>
 
       {mobileOpen ? (
-        <div id="mobile-nav-panel" className="border-t border-brand-sand bg-brand-cream sm:hidden">
+        <div id="mobile-nav-panel" className="border-t border-brand-sand bg-bg font-body sm:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4">
-            <Link
-              href="/"
-              onClick={() => setMobileOpen(false)}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-brand-green-dark transition-colors hover:bg-brand-green/5"
-            >
-              Home
-            </Link>
-
-            <p className="mt-3 px-3 text-xs font-semibold uppercase tracking-wide text-brand-green-dark/50">
+            <p className="mt-1 px-3 text-xs font-semibold uppercase tracking-wide text-ink/50">
               Guides
             </p>
             {guideLinks.map((link) => (
               <Link
-                key={link.href}
+                key={`guide-${link.href}`}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-brand-green-dark transition-colors hover:bg-brand-green/5"
+                className="flex min-h-11 items-center rounded-lg px-3 text-sm font-medium text-ink transition-colors hover:bg-primary/5"
               >
                 {link.label}
               </Link>
@@ -252,10 +236,10 @@ export default function Nav() {
 
             {otherLinks.map((link) => (
               <Link
-                key={link.href}
+                key={`other-${link.href}`}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-brand-green-dark transition-colors hover:bg-brand-green/5"
+                className="flex min-h-11 items-center rounded-lg px-3 text-sm font-medium text-ink transition-colors hover:bg-primary/5"
               >
                 {link.label}
               </Link>
@@ -265,7 +249,7 @@ export default function Nav() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
-              className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-brand-green-dark transition-colors hover:bg-brand-green/5"
+              className="flex min-h-11 items-center gap-2 rounded-lg px-3 text-sm font-medium text-brand-green-dark transition-colors hover:bg-brand-green/5"
             >
               <InstagramIcon aria-hidden="true" />
               Instagram

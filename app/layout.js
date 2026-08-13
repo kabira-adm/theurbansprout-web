@@ -1,6 +1,20 @@
+import { Figtree, Young_Serif } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+const figtree = Figtree({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-figtree",
+});
+
+const youngSerif = Young_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-young-serif",
+});
 
 const SITE_URL = "https://www.theurbansprout.in";
 const SITE_NAME = "Urban Sprout";
@@ -31,7 +45,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" className={`h-full antialiased ${figtree.variable} ${youngSerif.variable}`}>
       <body className="flex min-h-full flex-col bg-brand-cream text-brand-green-dark font-sans">
         <Nav />
         <main className="flex-1">{children}</main>

@@ -8,6 +8,15 @@
   --brand-cream: #FBF8F1;
   --brand-terracotta: #C96F4A;
   --brand-sand: #EFE6D3;
+
+  /* v2 design tokens (header/footer shell). Legacy brand-* tokens above are
+     kept as-is so existing content pages render unchanged; these new tokens
+     are consumed only by Nav.js and Footer.js in this PR. */
+  --v2-bg: #F2E9D8;
+  --v2-primary: #C1743F;
+  --v2-primary-soft: #F6DDC9;
+  --v2-ink: #2A2A28;
+  --v2-accent-green: #5C7A4A;
 }
 
 @theme inline {
@@ -19,6 +28,15 @@
   --color-brand-terracotta: var(--brand-terracotta);
   --color-brand-sand: var(--brand-sand);
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* v2 tokens */
+  --color-bg: var(--v2-bg);
+  --color-primary: var(--v2-primary);
+  --color-primary-soft: var(--v2-primary-soft);
+  --color-ink: var(--v2-ink);
+  --color-accent-green: var(--v2-accent-green);
+  --font-body: var(--font-figtree);
+  --font-display: var(--font-young-serif);
 }
 
 body {
