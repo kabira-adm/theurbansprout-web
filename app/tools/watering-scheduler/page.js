@@ -149,6 +149,13 @@ function calculate({ plantType, potSize, season, location }) {
   };
 }
 
+// Matches the SELECT_CLASSES convention Phase 4 established in
+// components/PlantGrid.js (border-ink/15, text-ink, focus:border-primary/40,
+// min-h-11), with mt-2 added since this page stacks a visible label above
+// each select rather than using a sr-only one.
+const SELECT_CLASSES =
+  "mt-2 w-full min-h-11 rounded-lg border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink focus:border-primary/40 focus:outline-none";
+
 export default function WateringSchedulerPage() {
   const [plantType, setPlantType] = useState("leafy");
   const [potSize, setPotSize] = useState("medium");
@@ -162,21 +169,21 @@ export default function WateringSchedulerPage() {
 
   return (
     <div>
-      <section className="border-b border-brand-sand bg-white/60">
+      <section className="border-b border-brand-sand bg-white/60 font-body">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <p className="text-sm font-semibold uppercase tracking-wide text-brand-terracotta">
+          <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Tools
           </p>
-          <h1 className="mt-3 text-3xl font-semibold text-brand-green-dark sm:text-4xl">
+          <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">
             Watering Scheduler
           </h1>
-          <p className="mt-5 text-lg leading-8 text-brand-green-dark/75">
+          <p className="mt-5 text-lg leading-8 text-ink/75">
             Answer four quick questions about a plant and get a starting watering frequency,
             worked out from its type, pot size, the season, and where it sits. It&apos;s a
             starting guideline, not a substitute for checking the soil. Use it alongside the{" "}
             <Link
               href="/balcony-gardening/watering-schedule-indian-summers-monsoons"
-              className="font-semibold text-brand-green hover:text-brand-green-dark"
+              className="font-semibold text-primary hover:text-ink"
             >
               finger test
             </Link>{" "}
@@ -185,15 +192,15 @@ export default function WateringSchedulerPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 py-16">
-        <div className="rounded-2xl border border-brand-sand bg-white p-6 sm:p-8">
+      <section className="mx-auto max-w-3xl px-6 py-16 font-body">
+        <div className="rounded-2xl border border-ink/10 bg-white p-6 sm:p-8">
           <div className="grid gap-6 sm:grid-cols-2">
             <label className="block">
-              <span className="text-sm font-semibold text-brand-green-dark">Plant type</span>
+              <span className="text-sm font-semibold text-ink">Plant type</span>
               <select
                 value={plantType}
                 onChange={(e) => setPlantType(e.target.value)}
-                className="mt-2 w-full rounded-lg border border-brand-sand bg-white px-4 py-2.5 text-sm text-brand-green-dark focus:border-brand-green/40 focus:outline-none"
+                className={SELECT_CLASSES}
               >
                 {PLANT_TYPES.map((option) => (
                   <option key={option.value} value={option.value}>
@@ -204,11 +211,11 @@ export default function WateringSchedulerPage() {
             </label>
 
             <label className="block">
-              <span className="text-sm font-semibold text-brand-green-dark">Pot size</span>
+              <span className="text-sm font-semibold text-ink">Pot size</span>
               <select
                 value={potSize}
                 onChange={(e) => setPotSize(e.target.value)}
-                className="mt-2 w-full rounded-lg border border-brand-sand bg-white px-4 py-2.5 text-sm text-brand-green-dark focus:border-brand-green/40 focus:outline-none"
+                className={SELECT_CLASSES}
               >
                 {POT_SIZES.map((option) => (
                   <option key={option.value} value={option.value}>
@@ -219,11 +226,11 @@ export default function WateringSchedulerPage() {
             </label>
 
             <label className="block">
-              <span className="text-sm font-semibold text-brand-green-dark">Season</span>
+              <span className="text-sm font-semibold text-ink">Season</span>
               <select
                 value={season}
                 onChange={(e) => setSeason(e.target.value)}
-                className="mt-2 w-full rounded-lg border border-brand-sand bg-white px-4 py-2.5 text-sm text-brand-green-dark focus:border-brand-green/40 focus:outline-none"
+                className={SELECT_CLASSES}
               >
                 {SEASONS.map((option) => (
                   <option key={option.value} value={option.value}>
@@ -234,11 +241,11 @@ export default function WateringSchedulerPage() {
             </label>
 
             <label className="block">
-              <span className="text-sm font-semibold text-brand-green-dark">Location</span>
+              <span className="text-sm font-semibold text-ink">Location</span>
               <select
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
-                className="mt-2 w-full rounded-lg border border-brand-sand bg-white px-4 py-2.5 text-sm text-brand-green-dark focus:border-brand-green/40 focus:outline-none"
+                className={SELECT_CLASSES}
               >
                 {LOCATIONS.map((option) => (
                   <option key={option.value} value={option.value}>
@@ -252,31 +259,31 @@ export default function WateringSchedulerPage() {
           <button
             type="button"
             onClick={handleCalculate}
-            className="mt-8 rounded-full bg-brand-green px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-green-dark"
+            className="mt-8 flex min-h-11 items-center justify-center rounded-full bg-primary px-6 text-sm font-semibold text-white transition hover:brightness-90"
           >
             Calculate watering frequency
           </button>
 
           {result ? (
-            <div className="mt-8 rounded-xl border border-brand-green/30 bg-brand-green/5 p-6">
-              <p className="text-sm font-semibold uppercase tracking-wide text-brand-terracotta">
+            <div className="mt-8 rounded-xl border border-primary/20 bg-primary-soft/30 p-6">
+              <p className="text-sm font-semibold uppercase tracking-wide text-primary">
                 Suggested frequency
               </p>
-              <p className="mt-2 text-2xl font-semibold text-brand-green-dark">
+              <p className="mt-2 font-display text-2xl text-ink">
                 {result.frequency}
               </p>
-              <p className="mt-4 text-sm leading-6 text-brand-green-dark/75">{result.plantNote}</p>
+              <p className="mt-4 text-sm leading-6 text-ink/75">{result.plantNote}</p>
               {result.modifierSentence ? (
-                <p className="mt-2 text-sm leading-6 text-brand-green-dark/75">
+                <p className="mt-2 text-sm leading-6 text-ink/75">
                   {result.modifierSentence}
                 </p>
               ) : null}
-              <p className="mt-4 text-xs text-brand-green-dark/60">
+              <p className="mt-4 text-xs text-ink/60">
                 Before watering on that day, push a finger about 2 inches into the soil. If
                 it&apos;s still damp, wait. Read more in{" "}
                 <Link
                   href="/balcony-gardening/watering-schedule-indian-summers-monsoons"
-                  className="font-semibold text-brand-green hover:text-brand-green-dark"
+                  className="font-semibold text-primary hover:text-ink"
                 >
                   A realistic watering schedule for Indian summers and monsoons
                 </Link>
@@ -284,7 +291,7 @@ export default function WateringSchedulerPage() {
               </p>
             </div>
           ) : (
-            <p className="mt-8 text-sm text-brand-green-dark/60">
+            <p className="mt-8 text-sm text-ink/60">
               Pick the options above and hit calculate to see a suggested frequency.
             </p>
           )}

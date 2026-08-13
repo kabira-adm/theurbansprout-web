@@ -112,6 +112,14 @@ function GuidesDropdown() {
               {link.label}
             </Link>
           ))}
+          <div className="my-1 border-t border-brand-sand" />
+          <Link
+            href="/guides"
+            onClick={() => setOpen(false)}
+            className="flex min-h-11 items-center rounded-lg px-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/5"
+          >
+            See all guides →
+          </Link>
         </div>
       ) : null}
     </div>
@@ -231,6 +239,13 @@ export default function Nav() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/guides"
+              onClick={() => setMobileOpen(false)}
+              className="flex min-h-11 items-center rounded-lg px-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/5"
+            >
+              See all guides →
+            </Link>
 
             <div className="my-2 border-t border-brand-sand" />
 
