@@ -12,26 +12,30 @@ const PET_SAFE_OPTIONS = [
   { value: "unsafe", label: "Not pet-safe" },
 ];
 
-const LIGHT_STYLES = {
-  "Low light": "bg-brand-green-dark/10 text-brand-green-dark",
-  "Partial sun": "bg-brand-terracotta/10 text-brand-terracotta",
-  "Full sun": "bg-brand-terracotta/20 text-brand-terracotta",
-};
+// Only four v2 tokens exist (primary, primary-soft, ink, accent-green),
+// narrower than the old three-way brand-color system this replaces.
+// Category and light badges collapse to one uniform style each, since
+// their text already distinguishes the values without needing a color
+// per option. Difficulty and pet-safe keep per-value color, since those
+// are the two things worth a glance-level distinction, and red on
+// Challenging / Not pet-safe is safety-relevant information, not a
+// brand color, so it stays red rather than folding into the palette.
+const CATEGORY_BADGE_CLASS = "bg-primary-soft text-ink";
+const LIGHT_BADGE_CLASS = "bg-accent-green/10 text-accent-green";
 
 const DIFFICULTY_STYLES = {
-  Easy: "bg-brand-green/10 text-brand-green",
-  Moderate: "bg-brand-terracotta/10 text-brand-terracotta",
+  Easy: "bg-accent-green/10 text-accent-green",
+  Moderate: "bg-primary-soft text-primary",
   Challenging: "bg-red-600/10 text-red-700",
 };
 
-const CATEGORY_STYLES = {
-  Indoor: "bg-brand-green-dark/10 text-brand-green-dark",
-  Balcony: "bg-brand-green/10 text-brand-green",
-  Kitchen: "bg-brand-terracotta/10 text-brand-terracotta",
-};
-
+// min-h-11 alone (not flex + items-center) since this class also applies
+// to a native <select>, and display:flex on a native select renders
+// inconsistently across browsers (Safari and Firefox in particular).
+// A plain min-height is the safe way to guarantee the 44px tap target
+// on form elements without touching their internal rendering.
 const SELECT_CLASSES =
-  "w-full rounded-lg border border-brand-sand bg-white px-4 py-2.5 text-sm text-brand-green-dark focus:border-brand-green/40 focus:outline-none";
+  "w-full min-h-11 rounded-lg border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink focus:border-primary/40 focus:outline-none";
 
 export default function PlantGrid({ plants }) {
   const [category, setCategory] = useState("All");
@@ -68,10 +72,10 @@ export default function PlantGrid({ plants }) {
             key={c}
             type="button"
             onClick={() => setCategory(c)}
-            className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
+            className={`flex min-h-11 items-center rounded-full border px-4 text-sm font-medium transition-colors ${
               category === c
-                ? "border-brand-green bg-brand-green text-white"
-                : "border-brand-sand bg-white text-brand-green-dark/70 hover:border-brand-green/40"
+                ? "border-primary bg-primary text-white"
+                : "border-ink/15 bg-white text-ink/70 hover:border-primary/40"
             }`}
           >
             {c}
@@ -129,16 +133,16 @@ export default function PlantGrid({ plants }) {
         </label>
       </div>
 
-      <p className="mt-4 text-xs font-medium text-brand-green-dark/50">
+      <p className="mt-4 text-xs font-medium text-ink/50">
         Showing {filtered.length} of {plants.length} plants
       </p>
 
       {filtered.length === 0 ? (
-        <div className="mt-6 rounded-xl border border-dashed border-brand-sand bg-white/60 px-5 py-12 text-center">
-          <p className="text-sm font-medium text-brand-green-dark/70">
+        <div className="mt-6 rounded-xl border border-dashed border-ink/15 bg-white/60 px-5 py-12 text-center">
+          <p className="text-sm font-medium text-ink/70">
             No plants match your search and filters.
           </p>
-          <p className="mt-1 text-xs text-brand-green-dark/50">
+          <p className="mt-1 text-xs text-ink/50">
             Try clearing a filter or searching a different name.
           </p>
         </div>
@@ -148,12 +152,12 @@ export default function PlantGrid({ plants }) {
             <Link
               key={plant.slug}
               href={`/plant-encyclopedia/${plant.slug}`}
-              className="flex flex-col rounded-xl border border-brand-sand bg-white p-5 transition-colors hover:border-brand-green/40 hover:bg-brand-green/5"
+              className="flex flex-col rounded-xl border border-ink/10 bg-white p-5 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
             >
               <div className="flex items-start justify-between gap-2">
                 <div>
-                  <h3 className="font-semibold text-brand-green-dark">{plant.commonName}</h3>
-                  <p className="mt-0.5 text-xs italic text-brand-green-dark/60">
+                  <h3 className="font-semibold text-ink">{plant.commonName}</h3>
+                  <p className="mt-0.5 text-xs italic text-ink/60">
                     {plant.scientificName}
                   </p>
                 </div>
@@ -162,7 +166,7 @@ export default function PlantGrid({ plants }) {
                   aria-label={plant.petSafe ? "Pet-safe" : "Not pet-safe"}
                   className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${
                     plant.petSafe
-                      ? "bg-brand-green/10 text-brand-green"
+                      ? "bg-accent-green/10 text-accent-green"
                       : "bg-red-600/10 text-red-700"
                   }`}
                 >
@@ -171,10 +175,10 @@ export default function PlantGrid({ plants }) {
               </div>
 
               <div className="mt-4 flex flex-wrap gap-1.5">
-                <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${CATEGORY_STYLES[plant.category]}`}>
+                <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${CATEGORY_BADGE_CLASS}`}>
                   {plant.category}
                 </span>
-                <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${LIGHT_STYLES[plant.light]}`}>
+                <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${LIGHT_BADGE_CLASS}`}>
                   {plant.light}
                 </span>
                 <span
@@ -184,7 +188,7 @@ export default function PlantGrid({ plants }) {
                 </span>
               </div>
 
-              <p className="mt-3 text-xs font-medium text-brand-green-dark/50">{plant.water}</p>
+              <p className="mt-3 text-xs font-medium text-ink/50">{plant.water}</p>
             </Link>
           ))}
         </div>

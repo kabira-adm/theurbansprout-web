@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   if (!plant) {
     return { title: "Plant not found" };
   }
-  const title = `${plant.commonName} — Care Profile`;
+  const title = `${plant.commonName}: Care Profile`;
   const description = `${plant.commonName} (${plant.scientificName}): light, watering, difficulty, mature size, and pet-safety for Indian apartments.`;
   const canonical = `/plant-encyclopedia/${slug}`;
   return {
@@ -61,45 +61,45 @@ export default async function PlantProfile({ params }) {
         <div className="mx-auto max-w-3xl px-6 py-16">
           <Link
             href="/plant-encyclopedia"
-            className="text-sm font-medium text-brand-green hover:text-brand-green-dark"
+            className="text-sm font-medium text-primary hover:text-ink"
           >
             ← Plant Encyclopedia
           </Link>
-          <p className="mt-4 text-sm font-semibold uppercase tracking-wide text-brand-terracotta">
+          <p className="mt-4 text-sm font-semibold uppercase tracking-wide text-primary">
             {plant.category}
           </p>
           <div className="mt-2 flex flex-wrap items-center gap-3">
-            <h1 className="text-3xl font-semibold leading-tight text-brand-green-dark sm:text-4xl">
+            <h1 className="font-display text-3xl leading-tight text-ink sm:text-4xl">
               {plant.commonName}
             </h1>
             <span
               className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
                 plant.petSafe
-                  ? "bg-brand-green/10 text-brand-green"
+                  ? "bg-accent-green/10 text-accent-green"
                   : "bg-red-600/10 text-red-700"
               }`}
             >
               {plant.petSafe ? "🐾 Pet-safe" : "⚠ Not pet-safe"}
             </span>
           </div>
-          <p className="mt-1 text-base italic text-brand-green-dark/60">{plant.scientificName}</p>
+          <p className="mt-1 text-base italic text-ink/60">{plant.scientificName}</p>
         </div>
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-12">
-        <div className="overflow-hidden rounded-xl border border-brand-sand bg-white">
-          <dl className="divide-y divide-brand-sand">
+        <div className="overflow-hidden rounded-xl border border-ink/10 bg-white">
+          <dl className="divide-y divide-ink/10">
             {FACTS_ORDER.map((fact) => (
               <div key={fact.key} className="grid grid-cols-3 gap-4 px-5 py-4">
-                <dt className="text-sm font-semibold text-brand-green-dark/60">{fact.label}</dt>
-                <dd className="col-span-2 text-sm font-medium text-brand-green-dark">
+                <dt className="text-sm font-semibold text-ink/60">{fact.label}</dt>
+                <dd className="col-span-2 text-sm font-medium text-ink">
                   {plant[fact.key]}
                 </dd>
               </div>
             ))}
             <div className="grid grid-cols-3 gap-4 px-5 py-4">
-              <dt className="text-sm font-semibold text-brand-green-dark/60">Pet safety</dt>
-              <dd className="col-span-2 text-sm font-medium text-brand-green-dark">
+              <dt className="text-sm font-semibold text-ink/60">Pet safety</dt>
+              <dd className="col-span-2 text-sm font-medium text-ink">
                 {plant.petSafe
                   ? "Non-toxic to cats and dogs."
                   : "Toxic or irritant to cats and dogs if chewed. Keep out of reach."}
@@ -108,16 +108,16 @@ export default async function PlantProfile({ params }) {
           </dl>
         </div>
 
-        <div className="mt-6 rounded-xl border border-brand-sand bg-brand-sand/30 p-5">
-          <h2 className="text-sm font-semibold text-brand-green-dark">Growing note</h2>
-          <p className="mt-2 text-sm leading-6 text-brand-green-dark/80">{plant.note}</p>
+        <div className="mt-6 rounded-xl border border-ink/10 bg-primary-soft/30 p-5">
+          <h2 className="text-sm font-semibold text-ink">Growing note</h2>
+          <p className="mt-2 text-sm leading-6 text-ink/80">{plant.note}</p>
         </div>
 
         {plant.guideHref ? (
           <div className="mt-6">
             <Link
               href={plant.guideHref}
-              className="inline-flex items-center gap-1 text-sm font-semibold text-brand-green hover:text-brand-green-dark"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-ink"
             >
               Read the full guide →
             </Link>
@@ -125,8 +125,8 @@ export default async function PlantProfile({ params }) {
         ) : null}
 
         {related.length > 0 ? (
-          <div className="mt-12 border-t border-brand-sand pt-8">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-brand-green-dark/60">
+          <div className="mt-12 border-t border-ink/10 pt-8">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-ink/60">
               More {plant.category} plants
             </h2>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
@@ -134,7 +134,7 @@ export default async function PlantProfile({ params }) {
                 <Link
                   key={r.slug}
                   href={`/plant-encyclopedia/${r.slug}`}
-                  className="rounded-lg border border-brand-sand bg-white px-4 py-3 text-sm font-medium text-brand-green-dark transition-colors hover:border-brand-green/40 hover:bg-brand-green/5"
+                  className="flex min-h-11 items-center rounded-lg border border-ink/10 bg-white px-4 py-3 text-sm font-medium text-ink transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
                 >
                   {r.commonName}
                 </Link>
