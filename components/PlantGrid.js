@@ -177,11 +177,14 @@ export default function PlantGrid({ plants }) {
         </div>
       ) : (
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {/* bg-neutral-100 (a warm off-white, not bg-surface's tan) so cards
+              read as light against the page's own bg-surface/bg background,
+              rather than blending into it. */}
           {filtered.map((plant) => (
             <Link
               key={plant.slug}
               href={`/plant-encyclopedia/${plant.slug}`}
-              className="flex flex-col rounded-[32px] border border-ink/10 bg-surface p-5 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
+              className="flex flex-col rounded-[32px] border border-ink/10 bg-neutral-100 p-5 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
             >
               <div className="flex items-start justify-between gap-2">
                 <div>
