@@ -41,22 +41,22 @@ const starterPlants = [
 export const metadata = {
   title: "Terrace Gardening",
   description:
-    "Turn a bare terrace into a productive garden — structural load, waterproofing, raised beds vs containers, and plants that handle full sun and wind.",
+    "Turn a bare terrace into a productive garden: structural load, waterproofing, raised beds vs containers, and plants that handle full sun and wind.",
   alternates: { canonical: "/terrace-gardening" },
 };
 
 export default function TerraceGardening() {
   return (
     <div>
-      <section className="border-b border-brand-sand bg-white/60">
+      <section className="border-b border-ink/10 bg-surface/50 font-body">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <p className="text-sm font-semibold uppercase tracking-wide text-brand-terracotta">
+          <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Terrace Gardening
           </p>
-          <h1 className="mt-3 text-3xl font-semibold text-brand-green-dark sm:text-4xl">
+          <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">
             Your terrace can carry more than potted plants, if you plan it first.
           </h1>
-          <p className="mt-5 text-lg leading-8 text-brand-green-dark/75">
+          <p className="mt-5 text-lg leading-8 text-ink/75">
             A terrace is the biggest growing space most Indian homes ever get, and also the one
             most people undersell, with a few loose pots and no real plan. Terrace gardening comes with
             questions a balcony never asks: how much weight the slab can safely take, whether the
@@ -67,9 +67,9 @@ export default function TerraceGardening() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 py-16">
-        <h2 className="text-xl font-semibold text-brand-green-dark">Start here: the core guides</h2>
-        <p className="mt-2 text-brand-green-dark/70">
+      <section className="mx-auto max-w-3xl px-6 py-16 font-body">
+        <h2 className="font-display text-2xl text-ink">Start here: the core guides</h2>
+        <p className="mt-2 text-ink/70">
           Read these in order if you&apos;re starting from scratch:
         </p>
         <ul className="mt-6 space-y-3">
@@ -77,9 +77,9 @@ export default function TerraceGardening() {
             <li key={guide.href}>
               <Link
                 href={guide.href}
-                className="flex items-center gap-3 rounded-lg border border-brand-sand bg-white px-4 py-3 text-sm font-medium text-brand-green-dark transition-colors hover:border-brand-green/40 hover:bg-brand-green/5"
+                className="flex min-h-11 items-center gap-3 rounded-lg border border-ink/10 bg-surface px-4 py-3 text-sm font-medium text-ink transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
               >
-                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-green/10 text-xs font-semibold text-brand-green">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-semibold text-white">
                   {i + 1}
                 </span>
                 {guide.title}
@@ -89,17 +89,17 @@ export default function TerraceGardening() {
         </ul>
       </section>
 
-      <section className="border-t border-brand-sand bg-brand-sand/30">
+      <section className="border-t border-ink/10 bg-surface/50 font-body">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <h2 className="text-xl font-semibold text-brand-green-dark">A few plants built for terrace conditions</h2>
-          <p className="mt-2 text-brand-green-dark/70">
+          <h2 className="font-display text-2xl text-ink">A few plants built for terrace conditions</h2>
+          <p className="mt-2 text-ink/70">
             Good first choices for the sun and wind a terrace actually gets:
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {starterPlants.map((plant) => (
-              <div key={plant.name} className="rounded-xl border border-brand-sand bg-white p-5">
-                <h3 className="font-semibold text-brand-green-dark">{plant.name}</h3>
-                <p className="mt-1 text-sm leading-6 text-brand-green-dark/70">{plant.note}</p>
+              <div key={plant.name} className="rounded-[32px] border border-ink/10 bg-bg p-6">
+                <h3 className="font-semibold text-ink">{plant.name}</h3>
+                <p className="mt-1 text-sm leading-6 text-ink/70">{plant.note}</p>
               </div>
             ))}
           </div>
