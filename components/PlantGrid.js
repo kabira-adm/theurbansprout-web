@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 
 const CATEGORIES = ["All", "Indoor", "Balcony", "Kitchen"];
@@ -47,6 +47,31 @@ export default function PlantGrid({ plants }) {
   const [light, setLight] = useState("All");
   const [difficulty, setDifficulty] = useState("All");
   const [petSafe, setPetSafe] = useState("All");
+
+  // Reads a starting filter from the URL query string (?category=, ?light=,
+  // ?petSafe=) so links elsewhere on the site, the homepage "shortcuts"
+  // cards, can deep-link into a pre-filtered view. Deliberately a
+  // post-mount effect, not a useState lazy initializer: this component is
+  // server-rendered first with the plain "All" defaults, and reading
+  // window.location during the initial render would make the client's
+  // first render disagree with that server-rendered HTML. Rendering the
+  // plain defaults first, then updating once the URL has been read, is
+  // the correct fix for that (same reasoning as components/ArticleTOC.js's
+  // identical disable), not a lint nitpick to route around. Doesn't touch
+  // the useMemo filter logic below, only seeds the same state setters it
+  // already had.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const urlCategory = params.get("category");
+    const urlLight = params.get("light");
+    const urlPetSafe = params.get("petSafe");
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (urlCategory && CATEGORIES.includes(urlCategory)) setCategory(urlCategory);
+    if (urlLight && LIGHT_OPTIONS.includes(urlLight)) setLight(urlLight);
+    if (urlPetSafe && PET_SAFE_OPTIONS.some((option) => option.value === urlPetSafe)) {
+      setPetSafe(urlPetSafe);
+    }
+  }, []);
 
   const filtered = useMemo(() => {
     const query = search.trim().toLowerCase();
