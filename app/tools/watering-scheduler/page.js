@@ -16,8 +16,34 @@ import {
 // mt-2 added since this page stacks a visible label above each select
 // rather than using a sr-only one. No focus:outline-none, the global
 // :focus-visible rule in globals.css handles this now.
+//
+// appearance-none + pr-9 added the same way PlantGrid.js's DROPDOWN_CLASSES
+// was: at appearance: auto (the default), the browser draws its own native
+// focus/dropdown chrome on top of the site's own focus-visible outline,
+// which is what made that outline look doubled and offset-less on a
+// <select> specifically. ChevronDownIcon below replaces the native arrow
+// this removes.
 const SELECT_CLASSES =
-  "mt-2 w-full min-h-11 rounded-full border border-ink/15 bg-surface px-4 py-2.5 text-sm text-ink focus:border-primary/40";
+  "w-full min-h-11 appearance-none rounded-full border border-ink/15 bg-surface pl-4 pr-9 py-2.5 text-sm text-ink focus:border-primary/40";
+
+function ChevronDownIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="16"
+      height="16"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-ink/40"
+    >
+      <path d="M6 9l6 6 6-6" />
+    </svg>
+  );
+}
 
 export default function WateringSchedulerPage() {
   const [plantType, setPlantType] = useState("leafy");
@@ -60,62 +86,74 @@ export default function WateringSchedulerPage() {
           <div className="grid gap-6 sm:grid-cols-2">
             <label className="block">
               <span className="text-sm font-semibold text-ink">Plant type</span>
-              <select
-                value={plantType}
-                onChange={(e) => setPlantType(e.target.value)}
-                className={SELECT_CLASSES}
-              >
-                {PLANT_TYPES.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
+              <div className="relative mt-2">
+                <select
+                  value={plantType}
+                  onChange={(e) => setPlantType(e.target.value)}
+                  className={SELECT_CLASSES}
+                >
+                  {PLANT_TYPES.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDownIcon />
+              </div>
             </label>
 
             <label className="block">
               <span className="text-sm font-semibold text-ink">Pot size</span>
-              <select
-                value={potSize}
-                onChange={(e) => setPotSize(e.target.value)}
-                className={SELECT_CLASSES}
-              >
-                {POT_SIZES.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
+              <div className="relative mt-2">
+                <select
+                  value={potSize}
+                  onChange={(e) => setPotSize(e.target.value)}
+                  className={SELECT_CLASSES}
+                >
+                  {POT_SIZES.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDownIcon />
+              </div>
             </label>
 
             <label className="block">
               <span className="text-sm font-semibold text-ink">Season</span>
-              <select
-                value={season}
-                onChange={(e) => setSeason(e.target.value)}
-                className={SELECT_CLASSES}
-              >
-                {SEASONS.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
+              <div className="relative mt-2">
+                <select
+                  value={season}
+                  onChange={(e) => setSeason(e.target.value)}
+                  className={SELECT_CLASSES}
+                >
+                  {SEASONS.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDownIcon />
+              </div>
             </label>
 
             <label className="block">
               <span className="text-sm font-semibold text-ink">Location</span>
-              <select
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
-                className={SELECT_CLASSES}
-              >
-                {LOCATIONS.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
+              <div className="relative mt-2">
+                <select
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                  className={SELECT_CLASSES}
+                >
+                  {LOCATIONS.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDownIcon />
+              </div>
             </label>
           </div>
 

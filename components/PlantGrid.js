@@ -41,6 +41,70 @@ const DIFFICULTY_STYLES = {
 const SELECT_CLASSES =
   "w-full min-h-11 rounded-full border border-ink/15 bg-surface px-4 py-2.5 text-sm text-ink focus:border-primary/40";
 
+// Real <select> elements only (not the text input above, which keeps
+// SELECT_CLASSES as-is): appearance-none strips each browser's own native
+// dropdown chrome, which otherwise draws its own focus/hover treatment on
+// top of ours and is what produced the odd double-outline on the pet-safe
+// filter when it was left at appearance: auto. ChevronDownIcon below
+// replaces the native arrow appearance-none removes, so there's still a
+// visible affordance that this is a dropdown, styled in the same
+// line-icon language as the rest of the site rather than a browser
+// default. pr-9 leaves room for that icon without touching SELECT_CLASSES'
+// shared px-4 (mixing px-4 with a later pr-9 override is a real risk:
+// Tailwind's generated stylesheet order, not className order, decides
+// which one wins).
+const DROPDOWN_CLASSES = `${SELECT_CLASSES} appearance-none pr-9`;
+
+function ChevronDownIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="16"
+      height="16"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-ink/40"
+    >
+      <path d="M6 9l6 6 6-6" />
+    </svg>
+  );
+}
+
+// Same paw silhouette as app/page.js's Icon "paw" path (the homepage's
+// "Safe around pets" shortcut card), reused here rather than imported so
+// this file keeps owning its own icon paths, matching the rest of the
+// codebase's per-file icon convention. crossedOut draws one diagonal
+// stroke through it for "not pet-safe", the same paw rather than a
+// disconnected warning-triangle emoji, so the safe/unsafe badges read as
+// two states of one icon instead of two unrelated symbols.
+function PawIcon({ crossedOut = false }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="12"
+      height="12"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="shrink-0"
+    >
+      <circle cx="6" cy="9" r="1.6" />
+      <circle cx="18" cy="9" r="1.6" />
+      <circle cx="9.5" cy="5" r="1.6" />
+      <circle cx="14.5" cy="5" r="1.6" />
+      <path d="M12 12c-3.5 0-6 2.2-6 5a3 3 0 0 0 3 3c1.3 0 2-.6 3-.6s1.7.6 3 .6a3 3 0 0 0 3-3c0-2.8-2.5-5-6-5Z" />
+      {crossedOut ? <path d="M3 3l18 18" /> : null}
+    </svg>
+  );
+}
+
 export default function PlantGrid({ plants }) {
   const [category, setCategory] = useState("All");
   const [search, setSearch] = useState("");
@@ -124,23 +188,24 @@ export default function PlantGrid({ plants }) {
           />
         </label>
 
-        <label className="block">
+        <label className="relative block">
           <span className="sr-only">Filter by light</span>
-          <select value={light} onChange={(e) => setLight(e.target.value)} className={SELECT_CLASSES}>
+          <select value={light} onChange={(e) => setLight(e.target.value)} className={DROPDOWN_CLASSES}>
             {LIGHT_OPTIONS.map((option) => (
               <option key={option} value={option}>
                 {option === "All" ? "Any light" : option}
               </option>
             ))}
           </select>
+          <ChevronDownIcon />
         </label>
 
-        <label className="block">
+        <label className="relative block">
           <span className="sr-only">Filter by difficulty</span>
           <select
             value={difficulty}
             onChange={(e) => setDifficulty(e.target.value)}
-            className={SELECT_CLASSES}
+            className={DROPDOWN_CLASSES}
           >
             {DIFFICULTY_OPTIONS.map((option) => (
               <option key={option} value={option}>
@@ -148,17 +213,19 @@ export default function PlantGrid({ plants }) {
               </option>
             ))}
           </select>
+          <ChevronDownIcon />
         </label>
 
-        <label className="block">
+        <label className="relative block">
           <span className="sr-only">Filter by pet safety</span>
-          <select value={petSafe} onChange={(e) => setPetSafe(e.target.value)} className={SELECT_CLASSES}>
+          <select value={petSafe} onChange={(e) => setPetSafe(e.target.value)} className={DROPDOWN_CLASSES}>
             {PET_SAFE_OPTIONS.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
               </option>
             ))}
           </select>
+          <ChevronDownIcon />
         </label>
       </div>
 
@@ -196,13 +263,14 @@ export default function PlantGrid({ plants }) {
                 <span
                   title={plant.petSafe ? "Pet-safe" : "Not pet-safe"}
                   aria-label={plant.petSafe ? "Pet-safe" : "Not pet-safe"}
-                  className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${
+                  className={`flex shrink-0 items-center gap-1 rounded-full px-2 py-0.5 text-xs font-semibold ${
                     plant.petSafe
                       ? "bg-accent-green/10 text-accent-green"
                       : "bg-red-600/10 text-red-700"
                   }`}
                 >
-                  {plant.petSafe ? "🐾 Safe" : "⚠ Not pet-safe"}
+                  <PawIcon crossedOut={!plant.petSafe} />
+                  {plant.petSafe ? "Safe" : "Not pet-safe"}
                 </span>
               </div>
 

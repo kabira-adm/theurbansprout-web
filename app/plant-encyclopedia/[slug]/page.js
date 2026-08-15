@@ -2,6 +2,34 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPlants, getPlantBySlug } from "@/lib/plants-data";
 
+// Same paw path as components/PlantGrid.js's PawIcon, kept as its own
+// local copy per this codebase's per-file icon convention. crossedOut
+// draws one diagonal stroke through the same paw for "not pet-safe"
+// instead of pairing it with an unrelated warning-triangle emoji.
+function PawIcon({ crossedOut = false }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="12"
+      height="12"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="shrink-0"
+    >
+      <circle cx="6" cy="9" r="1.6" />
+      <circle cx="18" cy="9" r="1.6" />
+      <circle cx="9.5" cy="5" r="1.6" />
+      <circle cx="14.5" cy="5" r="1.6" />
+      <path d="M12 12c-3.5 0-6 2.2-6 5a3 3 0 0 0 3 3c1.3 0 2-.6 3-.6s1.7.6 3 .6a3 3 0 0 0 3-3c0-2.8-2.5-5-6-5Z" />
+      {crossedOut ? <path d="M3 3l18 18" /> : null}
+    </svg>
+  );
+}
+
 export function generateStaticParams() {
   return getAllPlants().map((plant) => ({ slug: plant.slug }));
 }
@@ -73,13 +101,14 @@ export default async function PlantProfile({ params }) {
               {plant.commonName}
             </h1>
             <span
-              className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
+              className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold ${
                 plant.petSafe
                   ? "bg-accent-green/10 text-accent-green"
                   : "bg-red-600/10 text-red-700"
               }`}
             >
-              {plant.petSafe ? "🐾 Pet-safe" : "⚠ Not pet-safe"}
+              <PawIcon crossedOut={!plant.petSafe} />
+              {plant.petSafe ? "Pet-safe" : "Not pet-safe"}
             </span>
           </div>
           <p className="mt-1 text-base italic text-ink/60">{plant.scientificName}</p>
