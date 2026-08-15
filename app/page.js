@@ -216,11 +216,12 @@ export default function Home() {
               Written for Indian apartments
             </span>
             <h1 className="mt-4 font-display text-5xl leading-tight text-ink sm:text-6xl">
-              Your balcony holds more than you think.
+              Your balcony is not just where the laundry rack lives.
             </h1>
             <p className="mt-5 max-w-md text-lg leading-8 text-ink/75">
               Step-by-step gardening guides built around what you actually have: a few feet
-              of ledge, hard tap water, and a monsoon that drowns everything in June.
+              of ledge, hard tap water, and a monsoon that drowns everything in June
+              (yes, even the &quot;drought-tolerant&quot; one).
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
@@ -304,9 +305,9 @@ export default function Home() {
 
       {/* Where to start */}
       <section className="mx-auto max-w-6xl px-6 py-16 font-body">
-        <h2 className="font-display text-2xl text-ink sm:text-3xl">Where to start</h2>
+        <h2 className="font-display text-2xl text-ink sm:text-3xl">Where to dig in</h2>
         <p className="mt-2 max-w-xl text-ink/70">
-          Five ways into Urban Sprout, from a full pillar guide to a quick plant lookup.
+          Five doors into Urban Sprout, from a full pillar guide to a five-second plant lookup.
         </p>
 
         <Link
@@ -372,7 +373,7 @@ export default function Home() {
             Just tell me what will survive
           </h2>
           <p className="mt-2 max-w-xl text-ink/70">
-            Three starting points into the plant encyclopedia, already filtered.
+            No botany degree required. Three shortcuts into the plant encyclopedia, pre-filtered.
           </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
             {shortcuts.map((shortcut) => (
@@ -401,7 +402,7 @@ export default function Home() {
               <Icon name="drop" className="h-6 w-6" />
             </span>
             <h2 className="mt-4 font-display text-2xl text-ink">
-              Not sure how often to water?
+              Stop watering on vibes.
             </h2>
             <p className="mt-3 text-sm leading-6 text-ink/70">
               Answer four quick questions about a plant and get a starting frequency, worked
@@ -436,10 +437,10 @@ export default function Home() {
         />
         <div className="relative mx-auto max-w-3xl px-6 py-16 text-center">
           <h2 className="font-display text-2xl text-neutral-100 sm:text-3xl">
-            One gardening tip a week
+            One good tip a week, not fifty bad ones
           </h2>
           <p className="mt-2 text-neutral-200/75">
-            Short, seasonal, specific to Indian balconies. Unsubscribe anytime.
+            Short, seasonal, specific to Indian balconies. Unsubscribe anytime, no hard feelings.
           </p>
           <NewsletterForm />
         </div>

@@ -174,3 +174,22 @@ body {
   color: var(--color-ink);
   font-weight: 400;
 }
+
+/* Justify body copy across all 31 article pages from one place, same
+   reasoning as the h2 rule above: every article hardcodes its own <p> and
+   <li> tags with no shared className to hook into, so this selector is the
+   only way to apply it site-wide without a 31-file edit. Headings, the
+   intro/description text above .prose-article, and card/UI copy elsewhere
+   on the site are deliberately untouched; only long-form article body
+   copy reads better justified. text-align-last: left keeps each
+   paragraph's final line from being stretched full-width (the usual
+   justify problem). hyphens: auto softens the wider word-gaps justify can
+   produce in a ~672px column; the whole document is lang="en" (app/layout.js),
+   so the browser's hyphenation dictionary applies throughout.
+*/
+.prose-article p,
+.prose-article li {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}

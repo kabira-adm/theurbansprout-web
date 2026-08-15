@@ -13,8 +13,10 @@ export default function PlantEncyclopedia() {
 
   return (
     <div>
-      <section className="border-b border-brand-sand bg-white/60">
-        <div className="mx-auto max-w-6xl px-6 py-16">
+      <section className="relative overflow-hidden border-b border-brand-sand bg-white/60">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent-2-200/40 blur-3xl" />
+        <div aria-hidden="true" className="pointer-events-none absolute -bottom-24 left-1/4 h-56 w-56 rounded-full bg-accent-200/40 blur-3xl" />
+        <div className="relative mx-auto max-w-6xl px-6 py-16">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Reference
           </p>

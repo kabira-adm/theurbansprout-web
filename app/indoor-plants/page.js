@@ -48,13 +48,15 @@ export const metadata = {
 export default function IndoorPlants() {
   return (
     <div>
-      <section className="border-b border-ink/10 bg-surface/50 font-body">
-        <div className="mx-auto max-w-3xl px-6 py-16">
+      <section className="relative overflow-hidden border-b border-ink/10 bg-surface/50 font-body">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-24 h-64 w-64 rounded-full bg-accent-2-200/40 blur-3xl" />
+        <div aria-hidden="true" className="pointer-events-none absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-accent-200/40 blur-3xl" />
+        <div className="relative mx-auto max-w-3xl px-6 py-16">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Indoor Plants
           </p>
           <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">
-            Indoors is a different problem than a balcony.
+            Indoors, there&apos;s no monsoon around to bail you out.
           </h1>
           <p className="mt-5 text-lg leading-8 text-ink/75">
             No direct sun, no rain, no natural airflow: indoor plants live entirely on the light

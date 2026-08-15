@@ -136,12 +136,14 @@ function countFor(pillar) {
 export default function GuidesIndex() {
   return (
     <div>
-      <section className="border-b border-ink/10 bg-surface/50 font-body">
-        <div className="mx-auto max-w-6xl px-6 py-16">
+      <section className="relative overflow-hidden border-b border-ink/10 bg-surface/50 font-body">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent-200/40 blur-3xl" />
+        <div aria-hidden="true" className="pointer-events-none absolute -bottom-24 left-1/3 h-56 w-56 rounded-full bg-accent-2-200/40 blur-3xl" />
+        <div className="relative mx-auto max-w-6xl px-6 py-16">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">Guides</p>
           <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">All guides</h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-ink/75">
-            Five ways into Urban Sprout, from a full pillar guide to a quick plant lookup.
+            Every path into Urban Sprout, from a full pillar guide to a two-second plant lookup.
           </p>
         </div>
       </section>

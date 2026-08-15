@@ -120,13 +120,15 @@ export const metadata = {
 export default function BalconyGardening() {
   return (
     <div>
-      <section className="border-b border-ink/10 bg-surface/50 font-body">
-        <div className="mx-auto max-w-3xl px-6 py-16">
+      <section className="relative overflow-hidden border-b border-ink/10 bg-surface/50 font-body">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-24 h-64 w-64 rounded-full bg-accent-200/40 blur-3xl" />
+        <div aria-hidden="true" className="pointer-events-none absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-accent-2-200/40 blur-3xl" />
+        <div className="relative mx-auto max-w-3xl px-6 py-16">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Balcony Gardening
           </p>
           <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">
-            Everything starts with knowing your balcony.
+            Your balcony has opinions about sun, wind, and water. Learn to read them.
           </h1>
           <p className="mt-5 text-lg leading-8 text-ink/75">
             Before choosing plants, figure out three things: how much direct sun the space gets,
@@ -169,7 +171,7 @@ export default function BalconyGardening() {
               <Link
                 key={guide.href}
                 href={guide.href}
-                className="rounded-[32px] border border-ink/10 bg-bg p-6 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
+                className="rounded-[32px] border border-ink/10 bg-neutral-100 p-6 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
               >
                 <h3 className="font-semibold text-ink">{guide.title}</h3>
                 <p className="mt-1 text-sm leading-6 text-ink/70">{guide.description}</p>

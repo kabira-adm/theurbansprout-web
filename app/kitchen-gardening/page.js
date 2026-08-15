@@ -52,8 +52,10 @@ export const metadata = {
 export default function KitchenGardening() {
   return (
     <div>
-      <section className="border-b border-ink/10 bg-surface/50 font-body">
-        <div className="mx-auto max-w-3xl px-6 py-16">
+      <section className="relative overflow-hidden border-b border-ink/10 bg-surface/50 font-body">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-24 h-64 w-64 rounded-full bg-accent-2-200/40 blur-3xl" />
+        <div aria-hidden="true" className="pointer-events-none absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-accent-200/40 blur-3xl" />
+        <div className="relative mx-auto max-w-3xl px-6 py-16">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Kitchen Gardening
           </p>
