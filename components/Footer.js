@@ -19,6 +19,7 @@ const TOOL_LINKS = [
   { href: "/plant-encyclopedia", label: "Plant encyclopedia" },
   { href: "/tools/watering-scheduler", label: "Watering scheduler" },
   { href: "/articles", label: "Articles" },
+  { href: "/search", label: "Search" },
 ];
 
 const ELSEWHERE_LINKS = [

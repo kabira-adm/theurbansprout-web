@@ -68,6 +68,31 @@ function isActive(pathname, prefixes) {
   return prefixes.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
 }
 
+// Icon-only utility action, styled like InstagramIcon's button below rather
+// than added to NAV_LINKS: the design source's own nav item set is exactly
+// Guides / Plants / Watering / Articles (see the NAV_LINKS comment above),
+// so search sits alongside Instagram as a second icon-only action instead
+// of changing that set.
+function SearchIcon(props) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="18"
+      height="18"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <circle cx="11" cy="11" r="7" />
+      <path d="M21 21l-4.3-4.3" />
+    </svg>
+  );
+}
+
 function InstagramIcon(props) {
   return (
     <svg
@@ -162,6 +187,17 @@ export default function Nav() {
               </Link>
             );
           })}
+          <Link
+            href="/search"
+            aria-label="Search articles"
+            className={`flex min-h-11 min-w-11 items-center justify-center rounded-full transition-colors ${
+              isActive(pathname, ["/search"])
+                ? "bg-accent-2-200 text-accent-2-900"
+                : "text-ink/80 hover:bg-surface hover:text-ink"
+            }`}
+          >
+            <SearchIcon />
+          </Link>
           <a
             href={INSTAGRAM_URL}
             target="_blank"
@@ -212,6 +248,18 @@ export default function Nav() {
                 </Link>
               );
             })}
+            <Link
+              href="/search"
+              onClick={() => setMobileOpen(false)}
+              className={`flex min-h-11 items-center gap-3 rounded-lg px-3 text-sm font-medium transition-colors ${
+                isActive(pathname, ["/search"])
+                  ? "bg-accent-2-200 text-accent-2-900"
+                  : "text-ink hover:bg-primary/5"
+              }`}
+            >
+              <SearchIcon />
+              Search
+            </Link>
             <a
               href={INSTAGRAM_URL}
               target="_blank"
