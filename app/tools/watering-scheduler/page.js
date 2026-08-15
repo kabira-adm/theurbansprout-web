@@ -12,10 +12,19 @@ import {
 
 // Matches the SELECT_CLASSES convention Phase 4 established in
 // components/PlantGrid.js (border-ink/15, text-ink, focus:border-primary/40,
-// min-h-11, rounded-full, bg-surface, as corrected in Phase 6), with
-// mt-2 added since this page stacks a visible label above each select
-// rather than using a sr-only one. No focus:outline-none, the global
-// :focus-visible rule in globals.css handles this now.
+// min-h-11, rounded-full, as corrected in Phase 6), with mt-2 added since
+// this page stacks a visible label above each select rather than using a
+// sr-only one. No focus:outline-none, the global :focus-visible rule in
+// globals.css handles this now.
+//
+// bg-neutral-100, not PlantGrid's bg-surface: PlantGrid's selects sit
+// directly on the page background, where bg-surface reads as a distinct
+// tan field. Here they sit inside a bg-surface card (below), so bg-surface
+// fields were nearly invisible against it, just a border away from
+// disappearing into the card. bg-neutral-100 is the same lighter "distinct
+// surface" token components/PlantGrid.js's plant cards and
+// app/balcony-gardening/page.js's guide cards already use for exactly
+// this: standing out from a bg-surface/bg background.
 //
 // appearance-none + pr-9 added the same way PlantGrid.js's DROPDOWN_CLASSES
 // was: at appearance: auto (the default), the browser draws its own native
@@ -24,7 +33,7 @@ import {
 // <select> specifically. ChevronDownIcon below replaces the native arrow
 // this removes.
 const SELECT_CLASSES =
-  "w-full min-h-11 appearance-none rounded-full border border-ink/15 bg-surface pl-4 pr-9 py-2.5 text-sm text-ink focus:border-primary/40";
+  "w-full min-h-11 appearance-none rounded-full border border-ink/15 bg-neutral-100 pl-4 pr-9 py-2.5 text-sm text-ink focus:border-primary/40";
 
 function ChevronDownIcon() {
   return (
