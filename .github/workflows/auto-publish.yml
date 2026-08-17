@@ -88,11 +88,19 @@ jobs:
                  `ArticleLayout` so the ASCI disclosure renders whenever affiliate links are present.
                - Full metadata: canonical, openGraph, twitter, matching the sitewide pattern
                - A licensed stock photo as the featured image
+               - Wire the new article into `app/<pillar>/page.js` (hub listing), `app/sitemap.js`,
+                 and `lib/articles-data.js`, matching how every existing article is wired in. The
+                 `lib/articles-data.js` entry MUST include a `description` field: a one-line blurb
+                 reused verbatim from the article's own SEO meta description, never invented
+                 separately and never left blank. This field feeds the card shown on `/articles`,
+                 an entry without it renders with an empty blurb there.
             5. Run every check before touching git, and do not proceed past a failure:
                - Word count strictly 1200-1400 (full articles)
                - Zero em-dash characters anywhere in the new file
                - Every internal link target resolves to a real, existing route
                - `hasAffiliateLinks` set correctly and disclosure renders when affiliate links exist
+               - The new `lib/articles-data.js` entry has a non-empty `description` field, and it
+                 matches the article's own meta description
                - Local build/lint passes clean
                - No path collision with an existing route
             6. Commit and push directly to `main` using plain git commands. No PR, no review gate, that's a
