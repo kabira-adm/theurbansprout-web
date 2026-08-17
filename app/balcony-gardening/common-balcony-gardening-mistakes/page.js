@@ -92,6 +92,17 @@ export default function Article() {
         Pot, light, water, anchoring, fertilizer, in roughly that order. Checking them covers most
         of what goes wrong on a balcony before it has the chance to.
       </p>
+
+      <p>
+        Already past prevention and trying to figure out what&apos;s actually wrong with a
+        specific plant?{" "}
+        <Link
+          href="/tools/plant-doctor"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Try the Plant Doctor tool →
+        </Link>
+      </p>
     </ArticleLayout>
   );
 }

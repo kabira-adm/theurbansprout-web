@@ -1,5 +1,26 @@
+import Link from "next/link";
 import { getAllPlants } from "@/lib/plants-data";
 import PlantGrid from "@/components/PlantGrid";
+
+// Same local-icon convention as the rest of the site: each file owns its
+// own icon paths. A plus-in-a-badge reads as "diagnostic/medical" without
+// needing a literal stethoscope glyph.
+function PlantDoctorIcon({ className }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M12 6v12M6 12h12" />
+    </svg>
+  );
+}
 
 export const metadata = {
   title: "Plant Encyclopedia",
@@ -34,6 +55,31 @@ export default function PlantEncyclopedia() {
 
       <section className="mx-auto max-w-6xl px-6 py-12">
         <PlantGrid plants={plants} />
+      </section>
+
+      <section className="border-t border-ink/10 bg-surface/50 font-body">
+        <div className="mx-auto max-w-6xl px-6 py-12">
+          <div className="flex flex-col items-start gap-5 rounded-[32px] border border-primary/30 bg-primary-soft/40 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+            <div>
+              <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-primary text-white">
+                <PlantDoctorIcon className="h-5 w-5" />
+              </span>
+              <h2 className="mt-4 font-display text-xl text-ink">
+                Not sure what&apos;s wrong with a plant?
+              </h2>
+              <p className="mt-2 max-w-md text-sm leading-6 text-ink/75">
+                Work through its symptoms with Plant Doctor, a quick step-by-step tool that points
+                you to the right guide instead of a generic answer.
+              </p>
+            </div>
+            <Link
+              href="/tools/plant-doctor"
+              className="flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-full bg-primary px-6 text-sm font-semibold text-white transition hover:brightness-90"
+            >
+              Try Plant Doctor →
+            </Link>
+          </div>
+        </div>
       </section>
     </div>
   );

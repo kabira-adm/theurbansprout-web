@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
@@ -87,6 +88,17 @@ export default function Article() {
       <p>
         Make the finger test a habit and the season stops being something you have to plan
         around. The soil tells you what it needs; you&apos;re just checking in.
+      </p>
+
+      <p>
+        Still not sure what&apos;s going on?{" "}
+        <Link
+          href="/tools/plant-doctor"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Try the Plant Doctor tool →
+        </Link>{" "}
+        to work through the symptoms and find the likely cause.
       </p>
     </ArticleLayout>
   );

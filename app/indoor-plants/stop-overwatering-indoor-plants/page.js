@@ -118,6 +118,17 @@ export default function Article() {
           See which low-light plants need the least water →
         </Link>
       </p>
+
+      <p>
+        Not sure whether what you&apos;re seeing is over- or under-watering, or something else
+        entirely?{" "}
+        <Link
+          href="/tools/plant-doctor"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Try the Plant Doctor tool →
+        </Link>
+      </p>
     </ArticleLayout>
   );
 }

@@ -177,6 +177,16 @@ export default function Article() {
         </Link>{" "}
         is the natural next read.
       </p>
+
+      <p>
+        Not sure what&apos;s actually wrong with a plant, pest or otherwise?{" "}
+        <Link
+          href="/tools/plant-doctor"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Try the Plant Doctor tool →
+        </Link>
+      </p>
     </ArticleLayout>
   );
 }

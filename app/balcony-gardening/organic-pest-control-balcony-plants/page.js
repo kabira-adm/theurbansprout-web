@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
@@ -195,6 +196,17 @@ export default function Article() {
         catches an aphid cluster or a handful of mealybugs long before it becomes a full
         infestation needing repeated treatment. The organic treatments above work best, and
         fastest, on problems caught small.
+      </p>
+
+      <p>
+        Not sure if what you&apos;re seeing is actually a pest, or something else like watering or
+        feeding?{" "}
+        <Link
+          href="/tools/plant-doctor"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          Try the Plant Doctor tool →
+        </Link>
       </p>
     </ArticleLayout>
   );
