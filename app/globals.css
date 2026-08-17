@@ -193,3 +193,30 @@ body {
   text-align-last: left;
   hyphens: auto;
 }
+
+/* Plant Encyclopedia care-sheet printing
+   (app/plant-encyclopedia/[slug]/page.js, components/PrintButton.js).
+   Standard page margins for the sheet, tighter than most browsers'
+   printer-driver defaults, closer to how a real reference card is laid
+   out. Global, not scoped to the plant sheet: @page only applies during
+   printing/PDF-saving in the first place, so it doesn't affect any
+   screen rendering on other pages. */
+@page {
+  margin: 1.5cm;
+}
+
+/* Nav and Footer are rendered by app/layout.js, as siblings of {children},
+   not inside the plant page itself, so a print:hidden utility on the page
+   can't reach them, and putting print:hidden directly on <Nav>/<Footer>
+   would hide them in print on every page, not just the plant sheet, which
+   is broader than this task asked for. :has() lets this stay scoped to
+   exactly the one template: only suppressed when the printing page is
+   itself the plant sheet (marked with .plant-print-sheet).
+   Baseline-supported since 2023 (Chrome 105+, Safari 15.4+, Firefox
+   121+), safe to rely on here. */
+@media print {
+  body:has(.plant-print-sheet) header,
+  body:has(.plant-print-sheet) footer {
+    display: none;
+  }
+}
