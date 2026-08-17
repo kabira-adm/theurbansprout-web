@@ -15,7 +15,7 @@ Encyclopedia gaps, or seasonal content.
 
 | # | Pillar | Working title | Target keyword | Status |
 |---|---|---|---|---|
-| 1 | Indoor Plants | Fertilizing Indoor Plants: A Simple Schedule for Indian Apartments | indoor plant fertilizer schedule india | queued |
+| 1 | Indoor Plants | Fertilizing Indoor Plants: A Simple Schedule for Indian Apartments | indoor plant fertilizer schedule india | published |
 | 2 | Terrace Gardening | Setting Up a Terrace Vegetable Garden From Scratch in India | terrace vegetable garden setup india | queued |
 | 3 | Indoor Plants | Keeping Indoor Plants Alive Through a Jaipur-Style Summer (40C+) | indoor plants extreme heat india | queued |
 | 4 | Terrace Gardening | Drip Irrigation for Terrace Gardens: Is It Worth Setting Up? | drip irrigation terrace garden india | queued |
