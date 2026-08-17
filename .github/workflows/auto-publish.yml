@@ -32,7 +32,7 @@ jobs:
       - name: Run Claude Code publishing pipeline
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
             You are running the Urban Sprout automated article pipeline. This is a fully unattended run, no
             one is available to answer questions. Make the most reasonable call and proceed, or stop cleanly
