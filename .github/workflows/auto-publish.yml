@@ -103,5 +103,5 @@ jobs:
                affiliate links used, and confirmation of a successful push, or, if something blocked the run,
                exactly what blocked it and what would need to change before the next scheduled run.
           claude_args: |
-            --max-turns 60
+            --max-turns 90
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
