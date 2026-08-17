@@ -17,6 +17,10 @@ const guides = [
     title: "Repotting: when and how",
     href: "/indoor-plants/repotting-indoor-plants-when-how",
   },
+  {
+    title: "Fertilizing indoor plants: a simple schedule",
+    href: "/indoor-plants/fertilizing-schedule-indoor-plants",
+  },
 ];
 
 const starterPlants = [

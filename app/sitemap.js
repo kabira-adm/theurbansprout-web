@@ -45,6 +45,7 @@ export default function sitemap() {
     "pet-safe-indoor-plants-india",
     "repotting-indoor-plants-when-how",
     "stop-overwatering-indoor-plants",
+    "fertilizing-schedule-indoor-plants",
   ].map((slug) => `${BASE_URL}/indoor-plants/${slug}`);
 
   const kitchenArticles = [
