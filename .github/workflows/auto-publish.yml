@@ -1,0 +1,107 @@
+name: Urban Sprout Auto-Publish
+
+on:
+  schedule:
+    - cron: "30 2 * * 1,3,5"   # 08:00 IST every Monday, Wednesday, Friday
+  workflow_dispatch: {}         # allows a manual test run from the Actions tab
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: urban-sprout-auto-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout with push access
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.REPO_PUSH_TOKEN }}
+          fetch-depth: 1
+
+      - name: Configure git identity
+        run: |
+          git config user.name "Urban Sprout Automation"
+          git config user.email "automation@theurbansprout.in"
+
+      - name: Run Claude Code publishing pipeline
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            You are running the Urban Sprout automated article pipeline. This is a fully unattended run, no
+            one is available to answer questions. Make the most reasonable call and proceed, or stop cleanly
+            and explain exactly what blocked you if you genuinely can't continue.
+
+            ## Orientation
+
+            Read `content-ops/automation-plan.md` and `content-ops/content-queue.md` in this checked-out
+            repository first. They are the complete source of truth for site rules, style, monetization, and
+            the pipeline steps, follow `automation-plan.md` exactly. If either file is missing, fall back to
+            the rules restated below, but treat that as worth flagging in your final summary since it means
+            the repo's operating docs got removed or moved.
+
+            ## Which slot is this run
+
+            Check today's day of week (`date -u +%A`, the cron already fires at 08:00 IST / 02:30 UTC on the
+            right days, but confirm rather than assume):
+
+            - **Monday:** Slot 1, Indoor Plants or Terrace Gardening, alternating from whichever pillar was
+              used last time (check recent commit history or `content-queue.md` status for that), default to
+              Indoor Plants if unclear.
+            - **Wednesday:** Slot 2, Kitchen Gardening. Fall back to Indoor Plants or Terrace Gardening if
+              Kitchen Gardening's queue is empty.
+            - **Friday:** Slot 3, floating. Balcony Gardening deep-dive, Plant Encyclopedia gap-fill, or
+              seasonal/Jaipur-specific content, whichever `content-queue.md` has queued next for this slot.
+            - Any other day (a manual/test run): treat it as Slot 3 unless told otherwise in this prompt.
+
+            ## Steps
+
+            1. Pick the next `queued` row in `content-ops/content-queue.md` for today's slot, mark it
+               `in-progress`.
+            2. Before drafting, confirm no existing article in the repo already covers this exact topic
+               (search the pillar's directory). If one does, skip to the next queued row for this slot and
+               note the skip in your final summary. For a Plant Encyclopedia entry, also confirm the plant
+               doesn't already have a profile.
+            3. Research current, accurate specifics via web search. Weave in the site's real Jaipur, Rajasthan
+               growing experience (semi-arid climate, extreme summer heat, the specific crops and plants
+               documented in `automation-plan.md`) wherever genuinely relevant, not as generic filler.
+            4. Draft the piece following the site's existing template exactly, copy structure from a real
+               existing article in the same pillar/section rather than inventing a new format:
+               - 1200-1400 words for a full article (Plant Encyclopedia entries follow that section's existing
+                 shorter profile format instead)
+               - Zero em-dash characters anywhere, no exceptions
+               - Sounds human: varied sentence length, contractions where natural, concrete specifics over
+                 filler, no AI-cliche phrases ("in today's world," "delve into," "it's important to note,"
+                 "unlock," "elevate")
+               - 2-4 contextual internal links to real, existing pages, plus the relevant Plant Encyclopedia
+                 entry and pillar hub where applicable
+               - 2-4 relevant affiliate links using Amazon Associates India tracking ID `theurbansprou-21`.
+                 Verify any new ASIN live on amazon.in before treating it as real (agri-brands like Ugaoo
+                 verify well for fertilizers/soil/pest consumables; default to Amazon search-result links for
+                 pots/hardware, that category doesn't verify reliably). Set the `hasAffiliateLinks` prop on
+                 `ArticleLayout` so the ASCI disclosure renders whenever affiliate links are present.
+               - Full metadata: canonical, openGraph, twitter, matching the sitewide pattern
+               - A licensed stock photo as the featured image
+            5. Run every check before touching git, and do not proceed past a failure:
+               - Word count strictly 1200-1400 (full articles)
+               - Zero em-dash characters anywhere in the new file
+               - Every internal link target resolves to a real, existing route
+               - `hasAffiliateLinks` set correctly and disclosure renders when affiliate links exist
+               - Local build/lint passes clean
+               - No path collision with an existing route
+            6. Commit and push directly to `main` using plain git commands. No PR, no review gate, that's a
+               deliberate decision already made, the checks above are the entire safety net so they must
+               actually block, never just warn.
+            7. Update `content-ops/content-queue.md` to mark the row `published` and commit that too.
+            8. End with a clear, specific summary: title, file path, pillar/section, word count, internal and
+               affiliate links used, and confirmation of a successful push, or, if something blocked the run,
+               exactly what blocked it and what would need to change before the next scheduled run.
+          claude_args: |
+            --max-turns 90
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
