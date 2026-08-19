@@ -74,6 +74,21 @@ export default function sitemap() {
     { url: `${BASE_URL}/tools/plant-doctor`, priority: 0.6, changeFrequency: "monthly" },
   ];
 
+  const buyingGuideSlugs = [
+    "best-pots-balcony-gardening-india",
+    "best-organic-fertilizers-container-gardens-india",
+    "best-potting-mix-ingredients-balcony-plants-india",
+    "best-liquid-fertilizer-container-plants-india",
+  ];
+  const buyingGuides = [
+    { url: `${BASE_URL}/buying-guides`, priority: 0.6, changeFrequency: "weekly" },
+    ...buyingGuideSlugs.map((slug) => ({
+      url: `${BASE_URL}/buying-guides/${slug}`,
+      priority: 0.7,
+      changeFrequency: "monthly",
+    })),
+  ];
+
   const plantSlugs = [
     "money-plant-pothos", "snake-plant", "zz-plant", "peace-lily", "spider-plant",
     "areca-palm", "aloe-vera", "curry-leaf-plant", "tulsi-holy-basil", "marigold",
@@ -88,7 +103,7 @@ export default function sitemap() {
     changeFrequency: "monthly",
   }));
 
-  return [...staticPages, ...hubs, ...articles, ...tools, ...plantPages].map((entry) => ({
+  return [...staticPages, ...hubs, ...articles, ...tools, ...buyingGuides, ...plantPages].map((entry) => ({
     ...entry,
     lastModified: now,
   }));

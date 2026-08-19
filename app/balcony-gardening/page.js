@@ -91,6 +91,29 @@ const moreGuides = [
   },
 ];
 
+const buyingGuides = [
+  {
+    title: "Plastic vs. terracotta pots",
+    description: "A genuine comparison of weight, cost, drainage, heat, and breakage risk.",
+    href: "/buying-guides/best-pots-balcony-gardening-india",
+  },
+  {
+    title: "Best organic fertilizers",
+    description: "Neem cake, bone meal, and NPK: what each one actually does.",
+    href: "/buying-guides/best-organic-fertilizers-container-gardens-india",
+  },
+  {
+    title: "Best potting mix ingredients",
+    description: "Cocopeat and vermicompost, the two core components of a DIY mix.",
+    href: "/buying-guides/best-potting-mix-ingredients-balcony-plants-india",
+  },
+  {
+    title: "Best liquid fertilizer",
+    description: "When liquid feeding beats granular, and our pick for a quick correction.",
+    href: "/buying-guides/best-liquid-fertilizer-container-plants-india",
+  },
+];
+
 const starterPlants = [
   {
     name: "Money Plant (Pothos)",
@@ -193,6 +216,28 @@ export default function BalconyGardening() {
                 <h3 className="font-semibold text-ink">{plant.name}</h3>
                 <p className="mt-1 text-sm leading-6 text-ink/70">{plant.note}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-ink/10 bg-surface/50 font-body">
+        <div className="mx-auto max-w-3xl px-6 py-16">
+          <h2 className="font-display text-2xl text-ink">Buying guides</h2>
+          <p className="mt-2 text-ink/70">
+            What we&apos;d actually buy, and why, for the pots, mix, and feed that come up
+            constantly across these guides:
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {buyingGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="rounded-[32px] border border-ink/10 bg-neutral-100 p-6 transition-colors hover:border-primary/40 hover:bg-primary-soft/20"
+              >
+                <h3 className="font-semibold text-ink">{guide.title}</h3>
+                <p className="mt-1 text-sm leading-6 text-ink/70">{guide.description}</p>
+              </Link>
             ))}
           </div>
         </div>

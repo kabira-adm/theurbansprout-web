@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
@@ -111,6 +112,18 @@ export default function Article() {
         are cheap,
         drain well without any fuss, and are the easiest option to shift around if you&apos;re
         renting and might be moving the whole setup next year.
+      </p>
+
+      <p>
+        For the fuller tradeoffs between plastic and terracotta, weight, heat, breakage risk, and
+        which one actually suits your balcony, see our{" "}
+        <Link
+          href="/buying-guides/best-pots-balcony-gardening-india"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          plastic vs. terracotta buying guide
+        </Link>
+        .
       </p>
     </ArticleLayout>
   );

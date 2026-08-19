@@ -249,6 +249,25 @@ export default function Article() {
         feeding schedule that actually tracks the plant&apos;s own growing season, rather than running
         on autopilot year-round.
       </p>
+
+      <p>
+        For a closer look at what neem cake, bone meal, and NPK actually do and when to reach for
+        each, see our{" "}
+        <Link
+          href="/buying-guides/best-organic-fertilizers-container-gardens-india"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          best organic fertilizers guide
+        </Link>
+        . For a fast-acting option between these slower, granular feeds, our{" "}
+        <Link
+          href="/buying-guides/best-liquid-fertilizer-container-plants-india"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          best liquid fertilizer guide
+        </Link>{" "}
+        covers when that&apos;s actually worth it.
+      </p>
     </ArticleLayout>
   );
 }

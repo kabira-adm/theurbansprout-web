@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
@@ -228,6 +229,18 @@ export default function Article() {
         defaulting to garden soil on its own, and adjusting the ratio toward drainage or retention
         based on what you&apos;re actually growing, rather than using one mix for everything on the
         balcony.
+      </p>
+
+      <p>
+        For a closer look at cocopeat and vermicompost specifically, what each one costs, and
+        which products we&apos;d actually buy, see our{" "}
+        <Link
+          href="/buying-guides/best-potting-mix-ingredients-balcony-plants-india"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          best potting mix ingredients guide
+        </Link>
+        .
       </p>
     </ArticleLayout>
   );
