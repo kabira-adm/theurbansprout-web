@@ -4,6 +4,11 @@ import Link from "next/link";
 import NewsletterForm from "@/components/NewsletterForm";
 import { getAllPlants, CONTENT_LAST_UPDATED } from "@/lib/plants-data";
 import { calculate } from "@/lib/watering-calc";
+import {
+  getCurrentMonthNumber,
+  getMonthName,
+  getPlantsForRegionMonth,
+} from "@/lib/seasonal-calendar-helpers";
 
 export const metadata = {
   alternates: { canonical: "/" },
@@ -50,6 +55,14 @@ const wateringPreview = calculate({
   season: "summer",
   location: "partialshade",
 });
+
+// Real, computed example for the seasonal-calendar preview card, same
+// reasoning as wateringPreview above: an actual result from today's real
+// date, not invented copy. North India is used as the one illustrative
+// region shown here; the tool itself covers all five.
+const currentMonthNumber = getCurrentMonthNumber();
+const currentMonthName = getMonthName(currentMonthNumber);
+const seasonalPreviewPlants = getPlantsForRegionMonth("north", currentMonthNumber).slice(0, 3);
 
 const valueProps = [
   {
@@ -421,6 +434,53 @@ export default function Home() {
             </p>
             <p className="mt-2 font-display text-2xl text-ink">{wateringPreview.frequency}</p>
             <p className="mt-3 text-sm leading-6 text-ink/70">{wateringPreview.plantNote}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Seasonal calendar preview */}
+      <section className="border-t border-ink/10 bg-surface/50 font-body">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+          <div className="grid items-center gap-8 rounded-[32px] border border-ink/10 bg-bg p-8 sm:grid-cols-2 sm:p-10">
+            <div>
+              <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-accent-2-100 text-accent-2-800">
+                <Icon name="sprout" className="h-6 w-6" />
+              </span>
+              <h2 className="mt-4 font-display text-2xl text-ink">
+                What should I plant this month?
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-ink/70">
+                Type your city and get sowing months built around your actual region, one of
+                five across India, not one generic answer for the whole country.
+              </p>
+              <Link
+                href="/tools/seasonal-calendar"
+                className="mt-6 inline-flex min-h-11 items-center text-sm font-semibold text-primary hover:text-ink"
+              >
+                Open the seasonal calendar →
+              </Link>
+            </div>
+            <div className="rounded-[24px] border border-primary/20 bg-primary-soft/30 p-6">
+              <p className="text-xs font-semibold uppercase tracking-wide text-primary">
+                Example: North India, {currentMonthName}
+              </p>
+              {seasonalPreviewPlants.length > 0 ? (
+                <>
+                  <p className="mt-2 font-display text-2xl text-ink">
+                    {seasonalPreviewPlants.map((p) => p.commonName).join(", ")}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-ink/70">
+                    A few of what&apos;s worth sowing right now, mapped to North India&apos;s
+                    current season.
+                  </p>
+                </>
+              ) : (
+                <p className="mt-2 text-sm leading-6 text-ink/70">
+                  Not a major sowing month for North India, but the tool still shows what&apos;s
+                  fine to start anytime, plus the full year ahead.
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </section>

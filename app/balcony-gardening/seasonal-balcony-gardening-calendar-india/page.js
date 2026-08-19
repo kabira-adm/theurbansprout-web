@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
@@ -206,6 +207,18 @@ export default function Article() {
         principles here, including heat management in summer, restraint with water in monsoon, and the bigger
         jobs saved for winter, and adjust exact timing by a few weeks based on what your own
         balcony is actually telling you.
+      </p>
+
+      <p>
+        For what to actually sow, month by month and personalized to your specific city rather
+        than India-wide averages, see our{" "}
+        <Link
+          href="/tools/seasonal-calendar"
+          className="font-medium text-brand-green hover:text-brand-green-dark"
+        >
+          seasonal planting calendar tool
+        </Link>
+        .
       </p>
     </ArticleLayout>
   );

@@ -72,6 +72,7 @@ export default function sitemap() {
   const tools = [
     { url: `${BASE_URL}/tools/watering-scheduler`, priority: 0.6, changeFrequency: "monthly" },
     { url: `${BASE_URL}/tools/plant-doctor`, priority: 0.6, changeFrequency: "monthly" },
+    { url: `${BASE_URL}/tools/seasonal-calendar`, priority: 0.6, changeFrequency: "monthly" },
   ];
 
   const buyingGuideSlugs = [
