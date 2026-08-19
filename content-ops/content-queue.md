@@ -24,7 +24,7 @@ Encyclopedia gaps, or seasonal content.
 
 | # | Pillar | Working title | Target keyword | Status |
 |---|---|---|---|---|
-| 5 | Kitchen Gardening | Growing Methi, Palak and Patta Gobhi in Containers | growing methi palak containers india | queued |
+| 5 | Kitchen Gardening | Growing Methi, Palak and Patta Gobhi in Containers | growing methi palak containers india | published |
 | 6 | Kitchen Gardening | Companion Planting for a Small Container Kitchen Garden | companion planting vegetables containers india | queued |
 | 7 | Kitchen Gardening | Starting Vegetables From Seed at Home: A Beginner's Timeline | starting vegetables from seed india | queued |
 | 8 | Kitchen Gardening | Dealing With Aphids and Whitefly on Container Vegetables | aphids whitefly container vegetables organic | queued |
