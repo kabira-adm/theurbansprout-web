@@ -54,6 +54,7 @@ export default function sitemap() {
     "kitchen-scraps-regrow-vegetables",
     "soil-and-fertilizer-basics-container-vegetables",
     "organic-pest-control-kitchen-garden-vegetables",
+    "growing-methi-palak-patta-gobhi-containers",
   ].map((slug) => `${BASE_URL}/kitchen-gardening/${slug}`);
 
   const terraceArticles = [

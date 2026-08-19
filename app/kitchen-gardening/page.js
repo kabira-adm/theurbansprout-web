@@ -21,6 +21,10 @@ const guides = [
     title: "Organic pest control for kitchen garden vegetables (safe to eat)",
     href: "/kitchen-gardening/organic-pest-control-kitchen-garden-vegetables",
   },
+  {
+    title: "Growing methi, palak and patta gobhi in containers",
+    href: "/kitchen-gardening/growing-methi-palak-patta-gobhi-containers",
+  },
 ];
 
 const starterPlants = [
