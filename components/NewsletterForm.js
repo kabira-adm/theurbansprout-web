@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 const API_BASE = "https://lively-flow-production-6a1e.up.railway.app";
 
@@ -23,6 +24,9 @@ export default function NewsletterForm() {
       if (!res.ok) throw new Error(data.error || "Something went wrong");
       setState("success");
       setMessage(data.message === "already subscribed" ? "You're already on the list." : "You're in, welcome!");
+      if (data.message !== "already subscribed") {
+        trackEvent("newsletter_signup", { page_path: window.location.pathname });
+      }
       setEmail("");
     } catch (err) {
       setState("error");

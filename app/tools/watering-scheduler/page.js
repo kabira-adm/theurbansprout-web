@@ -9,6 +9,7 @@ import {
   LOCATIONS,
   calculate,
 } from "@/lib/watering-calc";
+import { trackEvent } from "@/lib/analytics";
 
 // Matches the SELECT_CLASSES convention Phase 4 established in
 // components/PlantGrid.js (border-ink/15, text-ink, focus:border-primary/40,
@@ -63,6 +64,7 @@ export default function WateringSchedulerPage() {
 
   function handleCalculate() {
     setResult(calculate({ plantType, potSize, season, location }));
+    trackEvent("watering_scheduler_generated", { plantType, potSize, season, location });
   }
 
   return (
