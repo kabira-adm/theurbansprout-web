@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { SYMPTOMS, TREE } from "@/lib/plant-doctor-data";
+import { trackEvent } from "@/lib/analytics";
 
 // Rule-based click-through, not a form: every click both records the
 // choice (for the breadcrumb and Back) and immediately advances, no
@@ -28,6 +29,12 @@ export default function PlantDoctor() {
   function pickOption(option) {
     setChoices((c) => [...c, option.label]);
     setNodes((n) => [...n, option.next]);
+    if (option.next?.diagnosis) {
+      trackEvent("plant_doctor_diagnosis", {
+        diagnosis: option.next.title,
+        symptom_path: [...choices, option.label].join(" → "),
+      });
+    }
   }
 
   function handleBack() {

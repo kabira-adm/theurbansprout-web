@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 import Link from "next/link";
 import { REGIONS } from "@/lib/regions-data";
 import {
@@ -71,11 +72,15 @@ export default function SeasonalCalendar() {
   function pickLocation(location) {
     setSelected(location);
     setQuery("");
+    trackEvent("seasonal_calendar_lookup", { location: location.name, region_id: location.regionId });
   }
 
   function pickCityByName(name) {
     const resolved = resolveLocation(name);
-    if (resolved) setSelected(resolved);
+    if (resolved) {
+      setSelected(resolved);
+      trackEvent("seasonal_calendar_lookup", { location: resolved.name, region_id: resolved.regionId });
+    }
   }
 
   function clearSelection() {

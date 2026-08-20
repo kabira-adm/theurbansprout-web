@@ -1,7 +1,11 @@
 import { Figtree, Young_Serif } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import AffiliateClickTracker from "@/components/AffiliateClickTracker";
+
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -47,6 +51,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`h-full antialiased ${figtree.variable} ${youngSerif.variable}`}>
       <body className="flex min-h-full flex-col bg-brand-cream text-brand-green-dark font-sans">
+        {GA_MEASUREMENT_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}');
+              `}
+            </Script>
+            <AffiliateClickTracker />
+          </>
+        ) : null}
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
