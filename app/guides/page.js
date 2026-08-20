@@ -114,7 +114,7 @@ const pillars = [
     badge: "Reference",
     icon: "search",
     description:
-      "Not a guide to follow start to finish. A searchable lookup table for quick facts on any of 28 plants: light, water, difficulty, and pet safety.",
+      "Not a guide to follow start to finish. A searchable lookup table for quick facts on any of 32 plants: light, water, difficulty, and pet safety.",
   },
 ];
 

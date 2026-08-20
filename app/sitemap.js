@@ -97,7 +97,8 @@ export default function sitemap() {
     "hibiscus", "jade-plant", "boston-fern", "calathea", "coriander", "mint",
     "tomato", "green-chilli", "lemon", "papaya", "fenugreek-methi", "spinach-palak",
     "okra-bhindi", "bougainvillea", "jasmine-mogra", "rose", "rubber-plant",
-    "philodendron",
+    "philodendron", "cabbage-patta-gobhi", "cauliflower-phool-gobhi", "pea-matar",
+    "french-bean",
   ];
   const plantPages = plantSlugs.map((slug) => ({
     url: `${BASE_URL}/plant-encyclopedia/${slug}`,
