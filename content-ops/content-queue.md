@@ -33,7 +33,7 @@ Encyclopedia gaps, or seasonal content.
 
 | # | Pillar | Working title | Target keyword | Status |
 |---|---|---|---|---|
-| 9 | Balcony Gardening | Grow Lights for Balconies With Poor Sun: Do You Actually Need One? | grow lights balcony plants india | queued |
+| 9 | Balcony Gardening | Grow Lights for Balconies With Poor Sun: Do You Actually Need One? | grow lights balcony plants india | published |
 | 10 | Plant Encyclopedia | Bottle Gourd (Lauki): Growing Profile and Care Guide | lauki bottle gourd growing guide | queued |
 | 11 | Balcony Gardening | Monsoon Care for Balcony Gardens: What Changes When the Rains Hit | monsoon balcony garden care india | queued |
 | 12 | Plant Encyclopedia | Cauliflower (Phool Gobhi): Growing Profile and Care Guide | phool gobhi cauliflower growing guide | queued |
