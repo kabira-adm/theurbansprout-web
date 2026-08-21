@@ -38,6 +38,7 @@ export default function sitemap() {
     "balcony-privacy-screening-with-plants",
     "small-vs-large-balcony-strategies",
     "high-rise-balcony-challenges",
+    "grow-lights-for-balconies-with-poor-sun",
   ].map((slug) => `${BASE_URL}/balcony-gardening/${slug}`);
 
   const indoorArticles = [

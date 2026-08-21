@@ -89,6 +89,11 @@ const moreGuides = [
     description: "Heat reflection off glass buildings and lower humidity at height: the microclimate that wind advice doesn't cover.",
     href: "/balcony-gardening/high-rise-balcony-challenges",
   },
+  {
+    title: "Grow lights for balconies with poor sun",
+    description: "Whether a grow light is worth buying for a shaded balcony, what PPFD and full spectrum actually mean, and how to run one without a fat electricity bill.",
+    href: "/balcony-gardening/grow-lights-for-balconies-with-poor-sun",
+  },
 ];
 
 const buyingGuides = [
